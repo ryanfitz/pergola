@@ -3,6 +3,9 @@ class Pergola < Padrino::Application
   register Padrino::Helpers
   register SassInitializer
 
+  get :index do
+    "hello world"
+  end
 
   ##
   # Application configuration options
