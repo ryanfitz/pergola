@@ -1,3 +1,4 @@
 .bundle
 db/*.db
 tmp/**/*
+.sass-cache

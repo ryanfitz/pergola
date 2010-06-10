@@ -12,8 +12,14 @@
     .ui-layout-south
       South
       
-    .ui-layout-west
-      West
+    #connections_panel.ui-layout-west
+      Connections
+      - link_to url_for(:new, :format => :js), :remote => true, :id => "add_connection", :class => "ui-state-default ui-corner-all" do
+        add connection
+        
+      #connections= partial 'connections/connection', :collection => @connections
+      
+      #add_connection_dialog{:title => "add connection"}
       
     .ui-layout-center
       #main= yield

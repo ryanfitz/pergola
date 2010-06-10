@@ -33,8 +33,40 @@ class Pergola < Padrino::Application
   #   end
   #
   
-  get :index do
+  get :index, :respond_to => [:html, :js] do
+    @connections = Connection.all
     render 'connections/index'
+  end
+  
+  get :new, :respond_to => [:html, :js] do
+    @connection = Connection.new
+    render 'connections/new'
+  end
+  
+  post :create, :respond_to => [:html, :js] do
+    @connection = Connection.new(params[:connection])
+    if @connection.save
+      flash[:notice] = 'Connection was Saved'
+      redirect url(:index)
+    else
+      render 'connections/new'
+    end
+  end
+  
+  get :edit, :with => :id, :respond_to => [:html, :js] do
+    @connection = Connection.find(params[:id])
+    render 'connections/new'
+  end
+  
+  delete :destroy, :with => :id, :respond_to => [:html, :js] do
+    connection = Connection.find(params[:id])
+    if connection.destroy!
+      flash[:notice] = 'Connection was successfully destroyed.'
+    else
+      flash[:error] = 'Impossible destroy Post!'
+    end
+
+    redirect url(:index)
   end
   
 end

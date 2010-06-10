@@ -1,0 +1,17 @@
+-form_for @connection, url(:create), :id => :connection_form, :remote => true do |f|
+  = f.error_messages
+  %p
+    = f.label :title
+    = f.text_field :title  
+  %p
+    = f.label :username, :caption => "Username"
+    = f.text_field :username
+  %p
+    = f.label :password
+    = f.password_field :password
+  %p
+    = f.label :host
+    = f.text_field :host
+  %p
+    = f.label :port
+    = f.text_field :port
