@@ -3,10 +3,6 @@ class Pergola < Padrino::Application
   register Padrino::Helpers
   register SassInitializer
 
-  get :index do
-    "hello world"
-  end
-
   ##
   # Application configuration options
   #
@@ -15,7 +11,7 @@ class Pergola < Padrino::Application
   # set :reload, false          # Reload application files (default in development)
   # set :default_builder, "foo" # Set a custom form builder (default 'StandardFormBuilder')
   # set :locale_path, "bar"     # Set path for I18n translations (defaults to app/locale/)
-  # enable  :sessions           # Disabled by default
+  enable  :sessions           # Disabled by default
   # disable :flash              # Disables rack-flash (enabled by default if sessions)
   # layout  :my_layout          # Layout can be in views/layouts/foo.ext or views/foo.ext (default :application)
   #
@@ -36,4 +32,9 @@ class Pergola < Padrino::Application
   #     render 'errors/404'
   #   end
   #
+  
+  get :index do
+    render 'connections/index'
+  end
+  
 end

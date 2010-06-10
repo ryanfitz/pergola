@@ -1,0 +1,19 @@
+!!! Strict
+%html
+  %head
+    %title= [@title, "Pergola - a web frontend to mongoDB"].compact.join(" | ")
+    = stylesheet_link_tag 'reset', 'layout-default'
+    = javascript_include_tag 'jquery', 'jquery-ui-1.8.2', 'jquery.layout', 'application', 'rails'
+    = yield_content :include
+  %body
+    .ui-layout-north
+      North
+      
+    .ui-layout-south
+      South
+      
+    .ui-layout-west
+      West
+      
+    .ui-layout-center
+      #main= yield
