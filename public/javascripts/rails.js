@@ -23,7 +23,7 @@ jQuery(function ($) {
          */
         callRemote: function () {
             var el      = this,
-                method  = el.attr('method') || el.attr('data-method') || 'GET',
+                method  = el.find("input[name='_method']").val() || el.attr('method') || el.attr('data-method') || 'GET',
                 url     = el.attr('action') || el.attr('href'),
                 dataType  = el.attr('data-type')  || 'script';
 

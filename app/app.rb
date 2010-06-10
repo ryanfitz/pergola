@@ -43,6 +43,11 @@ class Pergola < Padrino::Application
     render 'connections/new'
   end
   
+  get :edit, :with => :id, :respond_to => [:html, :js] do
+    @connection = Connection.find(params[:id])
+    render 'connections/new'
+  end
+  
   post :create, :respond_to => [:html, :js] do
     @connection = Connection.new(params[:connection])
     if @connection.save
@@ -53,9 +58,14 @@ class Pergola < Padrino::Application
     end
   end
   
-  get :edit, :with => :id, :respond_to => [:html, :js] do
+  put :update, :with => :id do
     @connection = Connection.find(params[:id])
-    render 'connections/new'
+    if @connection.update_attributes(params[:connection])
+      flash[:notice] = 'Connection was successfully updated.'
+      redirect url(:index)
+    else
+      redirect url(:edit, :id => @connection.id)
+    end
   end
   
   delete :destroy, :with => :id, :respond_to => [:html, :js] do

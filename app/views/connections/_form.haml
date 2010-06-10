@@ -1,4 +1,7 @@
--form_for @connection, url(:create), :id => :connection_form, :remote => true do |f|
+- form_url = @connection.id ? url(:update, :id => @connection.id) : url(:create)
+- meth = @connection.id ? :put : :post
+
+-form_for @connection, form_url, :method => meth, :id => :connection_form, :remote => true do |f|
   = f.error_messages
   %p
     = f.label :title
