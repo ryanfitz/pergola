@@ -70,7 +70,7 @@ class Pergola < Padrino::Application
   
   delete :destroy, :with => :id, :respond_to => [:html, :js] do
     connection = Connection.find(params[:id])
-    if connection.destroy!
+    if connection.destroy
       flash[:notice] = 'Connection was successfully destroyed.'
     else
       flash[:error] = 'Impossible destroy Post!'
