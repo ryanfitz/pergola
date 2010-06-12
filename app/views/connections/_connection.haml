@@ -1,3 +1,6 @@
-.connection
-    = link_to connection.title, url(:edit, :id => connection.id), :remote => true
-    = link_to "[remove]", url(:destroy, :id => connection.id, :format => :js), :method => :delete, :'data-confirm' => "Are You Sure?", :remote => true
+%li.connection
+  = link_to connection.title, url(:edit, :id => connection.id), :remote => true
+  
+  %ul 
+    %li
+      = link_to "[remove]", url(:destroy, :id => connection.id, :format => :js), :method => :delete, :'data-confirm' => "Are You Sure?", :remote => true

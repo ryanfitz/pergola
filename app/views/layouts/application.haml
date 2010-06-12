@@ -3,7 +3,7 @@
   %head
     %title= [@title, "Pergola - a web frontend to mongoDB"].compact.join(" | ")
     = stylesheet_link_tag 'jquery-ui-1.8.2.custom', 'reset', 'layout-default', 'application'
-    = javascript_include_tag 'jquery', 'jquery-ui-1.8.2', 'jquery.layout', 'application', 'rails'
+    = javascript_include_tag 'jquery', 'jquery-ui-1.8.2', 'jquery.layout','jquery.jstree.min.js', 'application', 'rails'
     = yield_content :include
   %body
     .ui-layout-north
@@ -13,13 +13,18 @@
       South
       
     #connections_panel.ui-layout-west
-      Connections
-      - link_to url_for(:new, :format => :js), :remote => true, :id => "add_connection", :class => "ui-state-default ui-corner-all" do
-        add connection
+    
+      #head
+        Connections
         
-      #connections= partial 'connections/connection', :collection => @connections
+      #connections.ui-layout-content
+        %ul
+          = partial 'connections/connection', :collection => @connections
       
-      #add_connection_dialog
-      
+      #connection_footer
+        = link_to "add connection", url_for(:new, :format => :js), :remote => true, :id => "add_connection"
+
     .ui-layout-center
       #main= yield
+      
+      #add_connection_dialog

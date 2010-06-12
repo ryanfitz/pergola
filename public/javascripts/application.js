@@ -6,7 +6,7 @@ $(document).ready(function () {
 	  closable:	true,	
 	  resizable: true,
   	slidable:	true,
-  	south__size: 0
+  	south__size: 50
 	  });
 	  
   $("#add_connection").button({
@@ -16,4 +16,16 @@ $(document).ready(function () {
     text: false
   });
   
+  $.jstree._themes = "/stylesheets/themes/";
+  
+  $("#connections").jstree({
+    "themes" : {
+      "theme" : "default",
+      "dots" : false,
+      "icons" : false
+    },
+    "plugins" : [ "themes", "html_data" ]
+  });
+  
+
 });

@@ -3,9 +3,15 @@ ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; f
 ul#icons span.ui-icon {float: left; margin: 0 4px;}
 
 #add_connection{
-  font-size: 8px;
+  font-size: 16px;
 }
 
 .ui-dialog {
   font-size:.8em;
+}
+
+#connection_footer {
+  border-top: 2px solid #000;
+  height: 35px;
+/*  background-color: #555;*/
 }
