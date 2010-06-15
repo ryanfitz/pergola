@@ -1,7 +1,8 @@
 class Pergola < Padrino::Application
   register Padrino::Mailer
   register Padrino::Helpers
-  register SassInitializer
+  # register SassInitializer
+  register CompassInitializer
 
   ##
   # Application configuration options
@@ -33,22 +34,22 @@ class Pergola < Padrino::Application
   #   end
   #
   
-  get :index, :respond_to => [:html, :js] do
+  get :index, :provides => [:html, :js] do
     @connections = Connection.all
     render 'connections/index'
   end
   
-  get :new, :respond_to => [:html, :js] do
+  get :new, :provides => [:html, :js] do
     @connection = Connection.new
     render 'connections/new'
   end
   
-  get :edit, :with => :id, :respond_to => [:html, :js] do
+  get :edit, :with => :id, :provides => [:html, :js] do
     @connection = Connection.find(params[:id])
     render 'connections/new'
   end
   
-  post :create, :respond_to => [:html, :js] do
+  post :create, :provides => [:html, :js] do
     @connection = Connection.new(params[:connection])
     if @connection.save
       flash[:notice] = 'Connection was Saved'
@@ -68,7 +69,7 @@ class Pergola < Padrino::Application
     end
   end
   
-  delete :destroy, :with => :id, :respond_to => [:html, :js] do
+  delete :destroy, :with => :id, :provides => [:html, :js] do
     connection = Connection.find(params[:id])
     if connection.destroy
       flash[:notice] = 'Connection was successfully destroyed.'
