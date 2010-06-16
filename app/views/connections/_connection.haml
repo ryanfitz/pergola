@@ -1,6 +1,16 @@
-%li.connection
-  = link_to connection.title, url(:edit, :id => connection.id), :remote => true
-  
-  %ul 
-    %li
-      = link_to "[remove]", url(:destroy, :id => connection.id, :format => :js), :method => :delete, :'data-confirm' => "Are You Sure?", :remote => true
+.connection
+  .info
+    %h6
+      = link_to connection.title, url(:edit, :id => connection.id), :remote => true
+    User:
+    = connection.username
+    Host:
+    = connection.host
+    Port:
+    = connection.port
+    
+    - link_to  url(:destroy, :id => connection.id, :format => :js), :method => :delete, :'data-confirm' => "Are You Sure?", :remote => true do
+      = image_tag "icons/minus_white.png", :alt => "delete connection", :class => 'remove'
+    
+  = link_to "Connect", url_for(:new, :format => :js), :remote => true, :class => 'button'
+  / = link_to "Edit", url_for(:edit, :id => connection.id, :format => :js), :remote => true, :class => 'button'

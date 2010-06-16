@@ -14,10 +14,8 @@
         #db_box asdfasfds
         
     #main
-      .content
-        = yield
+      = yield
       
     #footer
       .content
-        #connection_footer
-          = link_to "add connection", url_for(:new, :format => :js), :remote => true, :id => "add_connection"
+        Footer

@@ -1,9 +1,12 @@
 - @title = "Welcome"
 
-Connections
-
-#connections
-  %ul
+.content
+  #connections
+    %h3 Connections:
     = partial 'connections/connection', :collection => @connections
     
+  - link_to url_for(:new, :format => :js), :remote => true, :id => "add_connection", :class => 'button' do
+    = image_tag "icons/db_add.png"
+    Add
+  
   #add_connection_dialog
