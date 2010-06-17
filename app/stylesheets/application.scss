@@ -69,10 +69,12 @@ form {
   h3 {
     font-weight: bold;
   }
+  
   .connection {
-    border-top: 3px solid #666;
+    border-top: 1px solid #666;
     padding-top: 10px;
     @include column(18, true);
+    margin-bottom: 10px;
     
     img.remove {
       height: 20px;
