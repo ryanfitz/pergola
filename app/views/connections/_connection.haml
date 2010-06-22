@@ -12,6 +12,8 @@
     %li
       %strong Port
       = connection.port
+      
+  = link_to "Connect", url_for(:new, :format => :js), :remote => true, :class => 'connect'
 
 / .connection
 /   .info

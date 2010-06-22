@@ -31,7 +31,7 @@ header {
 
   hgroup {
     @include columns(4);
-    @include prefix(2);
+//    @include prefix(1);
     @include alpha;
     
     h1 {
@@ -79,7 +79,6 @@ nav {
   	  margin-left: 0;
     	margin-bottom: 0;
     	padding: 2px 15px 10px;
-//        border-right: 1px solid #000;
     	list-style: none;
     	display: inline;
   	}
@@ -87,16 +86,16 @@ nav {
 }
 
 /* Content --------------------------------------------------------------*/
-
 section {
 
  article {
-   @include columns(9,12);
+   @include columns(10);
    @include alpha;
+   @include leader(1,14px);
    
    #connections {
-     @include columns(12);
-     @include alpha;
+     @include columns(10);
+//     @include alpha;
 //    display: inline;
      
      .connection:hover {
@@ -106,17 +105,18 @@ section {
        @include transition-duration(.2s);
        @include transition-timing-function(ease-in);
        background-color: #fff;
-//       margin-left:5px;
-//       margin-right:5px;
      }
      .connection {    
-       width: 180px;   
+       @include columns(3); 
+       @include omega(10); 
        float: left;
        border: 1px solid #DFE7EF;
    	   padding: 19px 19px 19px;
        margin-bottom:20px;
-       
+       background-color: #fff;
+     
        h4 {
+          padding-bottom: .5em;
           @include adjust-font-size-to(24px);
           font-weight:bold;
       	  text-align:center;
@@ -125,6 +125,26 @@ section {
        
        ul {
          @include no-style-list;
+       }
+       
+       a.connect {
+         margin-top:1em;
+         display: block;
+         margin-bottom: .5em;
+         padding: 10px 20px 12px;
+         text-align: center;
+         outline: none;
+         text-decoration: none;
+         
+         @include adjust-font-size-to(20px);
+         color: #1C4257;
+         text-shadow: 0px 1px 1px #FFF;
+         @include border-radius(5px);
+         @include linear-gradient(color-stops(#81AFC8, #BBE1F7));
+       }
+       
+       a.connect:hover {
+         @include box-shadow;
        }
      }
    }
@@ -143,7 +163,6 @@ aside {
 footer {
   border-top: 2px solid #979797;
   @include grey-background;
-  margin-top:30px;
   
   h1 {
     @include full;
