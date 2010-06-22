@@ -1,17 +1,32 @@
 .connection
-  .info
-    - link_to  url(:destroy, :id => connection.id, :format => :js), :method => :delete, :'data-confirm' => "Are You Sure?", :remote => true do
-      = image_tag "icons/minus_white.png", :alt => "delete connection", :class => 'remove'
-    %h6
-      = link_to connection.title, url(:edit, :id => connection.id), :remote => true
-    User:
-    = connection.username
-    Host:
-    = connection.host
-    Port:
-    = connection.port
-    
-  - link_to url_for(:new, :format => :js), :remote => true, :class => 'button' do
-    = image_tag "icons/refresh.png", :class => 'button'
-    Connect
-  / = link_to "Edit", url_for(:edit, :id => connection.id, :format => :js), :remote => true, :class => 'button'
+  %h4
+    = connection.title
+    / = link_to connection.title, url(:edit, :id => connection.id), :remote => true
+  %ul{:class => 'connection_info'}
+    %li
+      %strong User
+      = connection.username
+    %li
+      %strong Host
+      = connection.host
+    %li
+      %strong Port
+      = connection.port
+
+/ .connection
+/   .info
+/     - link_to  url(:destroy, :id => connection.id, :format => :js), :method => :delete, :'data-confirm' => "Are You Sure?", :remote => true do
+/       = image_tag "icons/minus_white.png", :alt => "delete connection", :class => 'remove'
+/     %h6
+/       = link_to connection.title, url(:edit, :id => connection.id), :remote => true
+/     User:
+/     = connection.username
+/     Host:
+/     = connection.host
+/     Port:
+/     = connection.port
+/     
+/   - link_to url_for(:new, :format => :js), :remote => true, :class => 'button' do
+/     = image_tag "icons/refresh.png", :class => 'button'
+/     Connect
+/   = link_to "Edit", url_for(:edit, :id => connection.id, :format => :js), :remote => true, :class => 'button'

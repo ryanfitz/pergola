@@ -2,12 +2,14 @@
 
 %section
   %article
-    %h1 Mongo Servers
+    %h3 Available Servers
+    
+    #connections
+      = partial 'connections/connection', :collection => @connections
 
-  %aside
-    %button
-      Add Server
-/   = partial 'connections/connection', :collection => @connections
+%aside
+  %button
+    Add Server
 /   
 / - link_to url_for(:new, :format => :js), :remote => true, :id => "add_connection", :class => 'button' do
 /   = image_tag "icons/db_add.png"
