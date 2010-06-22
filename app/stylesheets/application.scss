@@ -17,18 +17,21 @@
  }
 }
 
-/* Header --------------------------------------------------------------*/
-header {  
-//  border-bottom: 3px solid #515151;
+@mixin grey-background {
   border-bottom: 2px solid #979797;
   background: #C2C2C2;
   @include linear-gradient(color-stops(#EAEAEA, #C2C2C2));
   text-shadow: 0px 1px 1px #fff;
-  color: #2C2C2C;
+  color: #2C2C2C; 
+}
+
+/* Header --------------------------------------------------------------*/
+header {  
+  @include grey-background;
 
   hgroup {
     @include columns(4);
-    @include prefix(1);
+    @include prefix(2);
     @include alpha;
     
     h1 {
@@ -40,17 +43,15 @@ header {
     
     h4 {
       @include adjust-font-size-to(14px);
-//      color:#00B4FF;
       margin-bottom: 0;
     }
   }
   
   #db_box {
     @include columns(2, 12);
-    @include omega(12);
+    @include omega;
     @include adjust-font-size-to(14px);
     @include leader(1,14px);
-//    text-align: right;
   }
 }
 
@@ -85,53 +86,29 @@ nav {
   }
 }
 
-#nav2 {
-  @include columns(12);
-  @include alpha;
-//  @include linear-gradient(color-stops(#CDEFFF, #FFF 40%, #FFFFFF 80%));
-  
-  h1 {
-    @include columns(3, 12);
-    @include adjust-font-size-to(32px);
-//    @include alpha;
-  }
-  
-  h5 {
-    @include columns(5, 12);
-//    @include alpha;
-  }
-  
-  #db_box {
-    @include columns(3, 12);
-    @include omega(12);
-  }
-}
-
 /* Content --------------------------------------------------------------*/
 
 section {
- @include columns(12);
- @include omega;
+
  article {
    @include columns(9,12);
-   
-   p {
-     @include columns(3,6);
-   }
+   @include alpha;
  }
+ 
  aside {
-   @include columns(3,12);
-   @include omega(12);
-   background-color: #00B4FF;
-   color: #515151;
-   @include border-radius(5px);
+   @include columns(2,12);
+   @include omega;
+   @include leader(1,24px);
+//   color: #1C4257;
+   text-shadow: 0px 1px 1px #FFF;
  }
 }
 
 /* Footer --------------------------------------------------------------*/
 
 footer {
-  border-top: 3px solid #515151;
+  border-top: 2px solid #979797;
+  @include grey-background;
   
   h1 {
     @include full;

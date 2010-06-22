@@ -5,7 +5,8 @@
     %h1 Mongo Servers
 
   %aside
-    Add Server
+    %button
+      Add Server
 /   = partial 'connections/connection', :collection => @connections
 /   
 / - link_to url_for(:new, :format => :js), :remote => true, :id => "add_connection", :class => 'button' do
