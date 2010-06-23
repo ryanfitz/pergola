@@ -9,6 +9,9 @@
 
 @include susy;
 
+#main {
+  @include linear-gradient(color-stops(#AED6EE,#e4f1f9 20%, #FFF));
+}
 .container {
  @include container;
 // @include show-grid("/images/grid.png");
@@ -49,8 +52,8 @@ header {
   
   #db_box {
     @include columns(2, 12);
-    @include omega;
-    @include adjust-font-size-to(14px);
+    @include omega(12);
+    @include adjust-font-size-to(12px);
     @include leader(1,14px);
   }
 }
@@ -91,10 +94,15 @@ section {
  article {
    @include columns(10);
    @include alpha;
-   @include leader(1,14px);
+   
+   h3 {
+     @include columns(10, 10);
+     @include leader(1,24px);
+   }
    
    #connections {
-     @include columns(10);
+     @include columns(9, 10);
+     @include omega(10);
 //     @include alpha;
 //    display: inline;
      
@@ -107,7 +115,7 @@ section {
        background-color: #fff;
      }
      .connection {    
-       @include columns(3); 
+       @include columns(3,12); 
        @include omega(10); 
        float: left;
        border: 1px solid #DFE7EF;
@@ -137,10 +145,10 @@ section {
          text-decoration: none;
          
          @include adjust-font-size-to(20px);
-         color: #1C4257;
-         text-shadow: 0px 1px 1px #FFF;
+         color: #1F394D;
+//         text-shadow: 0px 1px 1px #FFF;
          @include border-radius(5px);
-         @include linear-gradient(color-stops(#81AFC8, #BBE1F7));
+         @include linear-gradient(color-stops(#70B370,#27825C));
        }
        
        a.connect:hover {
@@ -153,7 +161,7 @@ section {
 
 aside {
    @include columns(2,12);
-   @include omega;
+   @include omega(12);
    @include leader(1,24px);
    text-shadow: 0px 1px 1px #FFF;
  }
