@@ -21,11 +21,11 @@
 }
 
 @mixin grey-background {
-  border-bottom: 2px solid #979797;
+  border-bottom: 3px solid #44475f;
   background: #C2C2C2;
-  @include linear-gradient(color-stops(#EAEAEA, #C2C2C2));
-  text-shadow: 0px 1px 1px #fff;
-  color: #2C2C2C; 
+  @include linear-gradient(color-stops(#fff, #d6d6d6));
+  text-shadow: 1px 0px #ccc;
+  color: #000; 
 }
 
 /* Header --------------------------------------------------------------*/
@@ -51,10 +51,14 @@ header {
   }
   
   #db_box {
-    @include columns(2, 12);
-    @include omega(12);
+    @include columns(5, 12);
+    @include omega;
     @include adjust-font-size-to(12px);
-    @include leader(1,14px);
+    padding-top: 1em;
+    
+    background-color: #EAEAEA;
+    @include box-shadow;
+    @include border-bottom-radius(7px);
   }
 }
 
@@ -145,7 +149,7 @@ section {
          text-decoration: none;
          
          @include adjust-font-size-to(20px);
-         color: #1F394D;
+         color: #292929;
 //         text-shadow: 0px 1px 1px #FFF;
          @include border-radius(5px);
          @include linear-gradient(color-stops(#70B370,#27825C));
@@ -161,7 +165,7 @@ section {
 
 aside {
    @include columns(2,12);
-   @include omega(12);
+   @include omega;
    @include leader(1,24px);
    text-shadow: 0px 1px 1px #FFF;
  }
@@ -169,8 +173,11 @@ aside {
 /* Footer --------------------------------------------------------------*/
 
 footer {
-  border-top: 2px solid #979797;
-  @include grey-background;
+//  border-top: 3px solid #44475f;
+//  @include grey-background;
+//  @include linear-gradient(color-stops(#292929, #292929));
+//  background-color: #0E0E0E;
+  color: #A5A5A5;
   
   h1 {
     @include full;
@@ -179,3 +186,20 @@ footer {
   }
 }
 
+a.button {
+   display: block;
+   padding: 6px 10px 6px;
+   text-align: center;
+//   outline: none;
+   text-decoration: none;
+   text-shadow: 1px 2px #000;
+   
+   @include adjust-font-size-to(20px);
+   color: #ccc;
+   @include border-radius(5px);
+   @include linear-gradient(color-stops(#44475f, #05092E));
+ }
+ 
+ a.button:hover {
+   @include box-shadow;
+ }

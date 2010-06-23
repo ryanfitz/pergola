@@ -12,19 +12,13 @@
           %h1 Pergola
           %h4 {"tagline": "web frontend to mongoDB"} 
           / = link_to "Pergola", url_for(:index)
-        #db_box
-          %select{:title => 'available servers'}
-            %option{:disabled => 'true'} Select Server
-            %option Dev1
-            %option QA1
-            %option Prod   
-    %nav
-      .container
-        / %ul
-        /   %li About
-        /   %li Contact
-        /   %li Contribute
-        
+        / #db_box
+        /           Not Connected
+        /           %select{:title => 'available servers'}
+        /             %option{:disabled => 'true'} Select Server
+        /             %option Dev1
+        /             %option QA1
+        /             %option Prod   
     #main
       .container
         = yield
