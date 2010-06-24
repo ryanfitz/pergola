@@ -117,6 +117,7 @@ section {
        background-color: #fff;
      }
      .connection {    
+//       position:relative;
        @include columns(3,10); 
        @include omega(11);
        float: left;
@@ -126,7 +127,7 @@ section {
        margin-bottom:20px;
        background-color: #fff;
      
-       h4 {
+       h4{
           padding-bottom: .5em;
           @include adjust-font-size-to(24px);
           font-weight:bold;
@@ -197,6 +198,21 @@ a.button {
    color: #ddd;
    @include border-radius(5px);
    @include linear-gradient(color-stops(#44475f, #05092E));
+}
+
+a.remove {
+  float: right;
+  @include border-radius(5px);
+  @include adjust-font-size-to(12px);
+//  height: 20px;
+  width: 20px;
+  padding: 0px;
+//  @include linear-gradient(color-stops(#d14651, #CC333F));
+  @include linear-gradient(color-stops(#c2c2c2, #d6d6d6));
+  color: #000;
+  font-weight: bold;
+  text-shadow: none;
+  
 }
  
 a.button:hover {

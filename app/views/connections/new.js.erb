@@ -1,21 +1,14 @@
-// $("#add_connection_dialog").dialog({
-//   buttons: {
-//     'Save Connection': function() {
-//       $('#connection_form').submit();      
-//     },
-//     Cancel: function() {
-//      $(this).dialog('close');
-//    }
-//   },
-//   title: "<%=js_escape_html @connection.id ? 'Edit Connection' : 'Add Connection' %>"
-// });
-
 $("#add_connection_dialog").html("<%=js_escape_html partial "connections/form", :object => @connection %>");
 
 $('#add_connection_dialog').show();
 
 $('#add_connection_dialog').draggable();
+$("#add_connection_dialog").resizable();
 
 $('#cancel').click(function() {
   $('#add_connection_dialog').hide();
+});
+
+$('#submit').click(function() {
+  $('#connection_form').submit();
 });

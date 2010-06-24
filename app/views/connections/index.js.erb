@@ -1,3 +1,5 @@
 $("#connections").html("<%= js_escape_html partial 'connections/connection', :collection => @connections  %>");
 
-$("#add_connection_dialog").dialog('destroy');
+$("#add_connection_dialog").html('');
+
+$('#add_connection_dialog').hide();
