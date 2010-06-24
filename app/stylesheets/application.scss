@@ -10,7 +10,7 @@
 @include susy;
 
 #main {
-  @include linear-gradient(color-stops(#AED6EE,#e4f1f9 20%, #FFF));
+  @include linear-gradient(color-stops(#AED6EE, #e4f1f9 20%, #FFF));
 }
 .container {
  @include container;
@@ -94,21 +94,19 @@ nav {
 
 /* Content --------------------------------------------------------------*/
 section {
-
+     
  article {
    @include columns(10);
    @include alpha;
    
    h3 {
-     @include columns(10, 10);
      @include leader(1,24px);
    }
    
    #connections {
-     @include columns(9, 10);
-     @include omega(10);
+     @include columns(10,10);
+//     @include prefix(1);
 //     @include alpha;
-//    display: inline;
      
      .connection:hover {
        @include box-shadow;
@@ -119,11 +117,12 @@ section {
        background-color: #fff;
      }
      .connection {    
-       @include columns(3,12); 
-       @include omega(10); 
+       @include columns(3,10); 
+       @include omega(11);
        float: left;
        border: 1px solid #DFE7EF;
-   	   padding: 19px 19px 19px;
+//       padding: 19px 19px 19px;
+       padding: gutter(10);
        margin-bottom:20px;
        background-color: #fff;
      
@@ -164,7 +163,7 @@ section {
 }
 
 aside {
-   @include columns(2,12);
+   @include columns(2);
    @include omega;
    @include leader(1,24px);
    text-shadow: 0px 1px 1px #FFF;
@@ -195,11 +194,48 @@ a.button {
    text-shadow: 1px 2px #000;
    
    @include adjust-font-size-to(20px);
-   color: #ccc;
+   color: #ddd;
    @include border-radius(5px);
    @include linear-gradient(color-stops(#44475f, #05092E));
- }
+}
  
- a.button:hover {
-   @include box-shadow;
- }
+a.button:hover {
+ @include box-shadow;
+}
+ 
+#add_connection_dialog {
+  @include columns(4);
+  display: none;
+  position: absolute; top: 70px; left: 200px;
+  padding: 20px;
+  border: solid 1px #bbb;
+  background: #fff;
+  z-index: 100;
+  @include box-shadow; 
+  
+  h1 {
+    text-align:center;
+    @include adjust-font-size-to(32px);
+    border-bottom: 3px solid #44475f;
+  }
+  
+  form {
+    p {
+      @include clearfix;
+    }
+    label {
+      text-align:right;
+      @include columns(1,4);
+//      @include alpha;
+    }
+    input {
+      @include columns(3,4);
+      @include omega(4);
+    }
+    
+    .button {
+      @include columns(1,4);
+//      @include omega;
+    }
+  }
+}

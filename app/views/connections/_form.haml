@@ -1,6 +1,9 @@
 - form_url = @connection.id ? url(:update, :id => @connection.id) : url(:create)
 - meth = @connection.id ? :put : :post
 
+%h1
+  Add Server
+  
 -form_for @connection, form_url, :method => meth, :id => :connection_form, :remote => true do |f|
   = f.error_messages
   %p
@@ -18,3 +21,6 @@
   %p
     = f.label :port
     = f.text_field :port
+  %p
+    = link_to "Cancel", "#", :id => 'cancel', :class => 'button'
+    = link_to "Save", url_for(:new, :format => :js), :remote => true, :class => 'button'
