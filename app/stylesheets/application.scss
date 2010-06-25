@@ -147,12 +147,8 @@ section {
          text-align: center;
          outline: none;
          text-decoration: none;
-         
-         @include adjust-font-size-to(20px);
-         color: #292929;
-//         text-shadow: 0px 1px 1px #FFF;
-         @include border-radius(5px);
-         @include linear-gradient(color-stops(#70B370,#27825C));
+         font-weight: normal;
+//         @include linear-gradient(color-stops(#70B370,#27825C));
        }
        
        a.connect:hover {
@@ -167,15 +163,6 @@ aside {
    @include columns(2);
    @include omega;
    @include leader(1,24px);
-   text-shadow: 0px 1px 1px #FFF;
-   
-   a.button {
-     @include adjust-font-size-to(14px);
-     color: #ddd;
-     @include fancy-button-colors-matte(#44475f);
-//     @include border-radius(5px);
-//     @include linear-gradient(color-stops(#44475f, #05092E));
-   }
  }
 
 /* Footer --------------------------------------------------------------*/

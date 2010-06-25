@@ -27,7 +27,17 @@ a.button, button {
   border-color: #1e1e1e;
   text-shadow: #040404 0px 1px 1px;
   margin: 0 2px;
+  text-shadow: 0px 1px 1px #000;
   vertical-align: middle;
+  text-align: center;
+  font-size: 0.875em;
+  line-height: 1.714em;
+  color: #ddd;
+  background-color: #232e80;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #64688c), color-stop(100%, #373a4d));
+  background-image: -moz-linear-gradient(top, #64688c 0%, #373a4d 100%);
+  border-color: #242632;
+  text-shadow: #080a1c 0px 1px 1px;
 }
 /* line 163, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
 a.button::-moz-focus-inner, button::-moz-focus-inner {
@@ -102,14 +112,112 @@ a.button:active, button:active {
 a.button:active, a.button:active:visited, button:active, button:active:visited {
   color: #fff;
 }
-/* line 23, ../../app/stylesheets/partials/_buttons.scss */
+/* line 96, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
+a.button, a.button:visited, button, button:visited {
+  color: #fff;
+}
+/* line 24, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
+a.button.disabled:active, a.button.disabled:hover, a.button[disabled]:active, a.button[disabled]:hover, button.disabled:active, button.disabled:hover, button[disabled]:active, button[disabled]:hover {
+  background-color: #232e80;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #64688c), color-stop(100%, #373a4d));
+  background-image: -moz-linear-gradient(top, #64688c 0%, #373a4d 100%);
+  border-color: #242632;
+  text-shadow: #080a1c 0px 1px 1px;
+}
+/* line 96, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
+a.button.disabled:active, a.button.disabled:active:visited, a.button.disabled:hover, a.button.disabled:hover:visited, a.button[disabled]:active, a.button[disabled]:active:visited, a.button[disabled]:hover, a.button[disabled]:hover:visited, button.disabled:active, button.disabled:active:visited, button.disabled:hover, button.disabled:hover:visited, button[disabled]:active, button[disabled]:active:visited, button[disabled]:hover, button[disabled]:hover:visited {
+  color: #fff;
+}
+/* line 26, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
+a.button:hover, a.button:focus, button:hover, button:focus {
+  background-color: #202974;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #5e6283), color-stop(100%, #313344));
+  background-image: -moz-linear-gradient(top, #5e6283 0%, #313344 100%);
+  border-color: #1e1f29;
+  text-shadow: #040610 0px 1px 1px;
+}
+/* line 96, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
+a.button:hover, a.button:hover:visited, a.button:focus, a.button:focus:visited, button:hover, button:hover:visited, button:focus, button:focus:visited {
+  color: #fff;
+}
+/* line 31, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
+a.button:active, button:active {
+  background-color: #1d2568;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #35374a), color-stop(40%, #3b3e53), color-stop(85%, #3b3e53), color-stop(100%, #4a4e68));
+  background-image: -moz-linear-gradient(top, #35374a 0%, #3b3e53 40%, #3b3e53 85%, #4a4e68 100%);
+  border-color: #171821;
+  text-shadow: #010104 0px -1px -1px;
+}
+/* line 96, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
+a.button:active, a.button:active:visited, button:active, button:active:visited {
+  color: #fff;
+}
+/* line 29, ../../app/stylesheets/partials/_buttons.scss */
 a.button:hover, button:hover {
   -moz-box-shadow: #333333 1px 1px 5px;
   -webkit-box-shadow: #333333 1px 1px 5px;
   -o-box-shadow: #333333 1px 1px 5px;
   box-shadow: #333333 1px 1px 5px;
 }
-/* line 27, ../../app/stylesheets/partials/_buttons.scss */
+/* line 33, ../../app/stylesheets/partials/_buttons.scss */
+a.button.connect, button.connect {
+  font-size: 1.25em;
+  line-height: 1.2em;
+  color: #292929;
+  text-shadow: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #05a462;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #39bd86), color-stop(100%, #206a4b));
+  background-image: -moz-linear-gradient(top, #39bd86 0%, #206a4b 100%);
+  border-color: #154732;
+  text-shadow: #012818 0px 1px 1px;
+}
+/* line 96, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
+a.button.connect, a.button.connect:visited, button.connect, button.connect:visited {
+  color: #fff;
+}
+/* line 24, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
+a.button.connect.disabled:active, a.button.connect.disabled:hover, a.button.connect[disabled]:active, a.button.connect[disabled]:hover, button.connect.disabled:active, button.connect.disabled:hover, button.connect[disabled]:active, button.connect[disabled]:hover {
+  background-color: #05a462;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #39bd86), color-stop(100%, #206a4b));
+  background-image: -moz-linear-gradient(top, #39bd86 0%, #206a4b 100%);
+  border-color: #154732;
+  text-shadow: #012818 0px 1px 1px;
+}
+/* line 96, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
+a.button.connect.disabled:active, a.button.connect.disabled:active:visited, a.button.connect.disabled:hover, a.button.connect.disabled:hover:visited, a.button.connect[disabled]:active, a.button.connect[disabled]:active:visited, a.button.connect[disabled]:hover, a.button.connect[disabled]:hover:visited, button.connect.disabled:active, button.connect.disabled:active:visited, button.connect.disabled:hover, button.connect.disabled:hover:visited, button.connect[disabled]:active, button.connect[disabled]:active:visited, button.connect[disabled]:hover, button.connect[disabled]:hover:visited {
+  color: #fff;
+}
+/* line 26, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
+a.button.connect:hover, a.button.connect:focus, button.connect:hover, button.connect:focus {
+  background-color: #059559;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #35b17d), color-stop(100%, #1c5f43));
+  background-image: -moz-linear-gradient(top, #35b17d 0%, #1c5f43 100%);
+  border-color: #123b2a;
+  text-shadow: #01190f 0px 1px 1px;
+}
+/* line 96, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
+a.button.connect:hover, a.button.connect:hover:visited, a.button.connect:focus, a.button.connect:focus:visited, button.connect:hover, button.connect:hover:visited, button.connect:focus, button.connect:focus:visited {
+  color: #fff;
+}
+/* line 31, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
+a.button.connect:active, button.connect:active {
+  background-color: #048650;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #1f6749), color-stop(40%, #227251), color-stop(85%, #227251), color-stop(100%, #2b8e64));
+  background-image: -moz-linear-gradient(top, #1f6749 0%, #227251 40%, #227251 85%, #2b8e64 100%);
+  border-color: #0e3022;
+  text-shadow: #000b06 0px -1px -1px;
+}
+/* line 96, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
+a.button.connect:active, a.button.connect:active:visited, button.connect:active, button.connect:active:visited {
+  color: #fff;
+}
+/* line 41, ../../app/stylesheets/partials/_buttons.scss */
 a.button.remove, button.remove {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -191,11 +299,11 @@ a.button.remove.disabled:active, a.button.remove[disabled], button.remove.disabl
   padding: 2px 6px;
   border-width: 2px;
 }
-/* line 34, ../../app/stylesheets/partials/_buttons.scss */
+/* line 48, ../../app/stylesheets/partials/_buttons.scss */
 a.button.remove:hover, button.remove:hover {
   color: #932624;
 }
-/* line 39, ../../app/stylesheets/partials/_buttons.scss */
+/* line 53, ../../app/stylesheets/partials/_buttons.scss */
 a.button.light, button.light {
   background-color: white;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(100%, #cecece));
@@ -243,7 +351,7 @@ a.button.light:active, button.light:active {
 a.button.light:active, a.button.light:active:visited, button.light:active, button.light:active:visited {
   color: #222;
 }
-/* line 42, ../../app/stylesheets/partials/_buttons.scss */
+/* line 56, ../../app/stylesheets/partials/_buttons.scss */
 a.button.matte-blue, button.matte-blue {
   background-color: #0058b7;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #367fce), color-stop(100%, #1e4b7b));
@@ -291,7 +399,7 @@ a.button.matte-blue:active, button.matte-blue:active {
 a.button.matte-blue:active, a.button.matte-blue:active:visited, button.matte-blue:active, button.matte-blue:active:visited {
   color: #fff;
 }
-/* line 45, ../../app/stylesheets/partials/_buttons.scss */
+/* line 59, ../../app/stylesheets/partials/_buttons.scss */
 a.button.green, button.green {
   background-color: #3ab700;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #9ee080), color-stop(10%, #66ce36), color-stop(50%, #418721), color-stop(50%, #3b7b1e), color-stop(100%, #4fa428));
@@ -339,7 +447,7 @@ a.button.green:active, button.green:active {
 a.button.green:active, a.button.green:active:visited, button.green:active, button.green:active:visited {
   color: #fff;
 }
-/* line 48, ../../app/stylesheets/partials/_buttons.scss */
+/* line 62, ../../app/stylesheets/partials/_buttons.scss */
 a.button.blue, button.blue {
   -moz-border-radius: 32px;
   -webkit-border-radius: 32px;
@@ -407,7 +515,7 @@ a.button.blue:active, button.blue:active {
 a.button.blue:active, a.button.blue:active:visited, button.blue:active, button.blue:active:visited {
   color: #fff;
 }
-/* line 52, ../../app/stylesheets/partials/_buttons.scss */
+/* line 66, ../../app/stylesheets/partials/_buttons.scss */
 a.button.red, button.red {
   background-color: #b70300;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #e08180), color-stop(10%, #ce3836), color-stop(50%, #872321), color-stop(50%, #7b201e), color-stop(100%, #a42a28));
@@ -455,7 +563,7 @@ a.button.red:active, button.red:active {
 a.button.red:active, a.button.red:active:visited, button.red:active, button.red:active:visited {
   color: #fff;
 }
-/* line 55, ../../app/stylesheets/partials/_buttons.scss */
+/* line 69, ../../app/stylesheets/partials/_buttons.scss */
 a.button.yellow, button.yellow {
   background-color: #e5e600;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ebeba2), color-stop(10%, #dbdb57), color-stop(50%, #b1b125), color-stop(50%, #a4a423), color-stop(100%, #cece2c));
@@ -503,7 +611,7 @@ a.button.yellow:active, button.yellow:active {
 a.button.yellow:active, a.button.yellow:active:visited, button.yellow:active, button.yellow:active:visited {
   color: #fff;
 }
-/* line 58, ../../app/stylesheets/partials/_buttons.scss */
+/* line 72, ../../app/stylesheets/partials/_buttons.scss */
 a.button.custom, button.custom {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -538,7 +646,7 @@ a.button.custom.disabled:active, a.button.custom[disabled], button.custom.disabl
   padding: 2px 12px;
   border-width: 2px;
 }
-/* line 62, ../../app/stylesheets/partials/_buttons.scss */
+/* line 76, ../../app/stylesheets/partials/_buttons.scss */
 a.button.heart, button.heart {
   background-color: #c10300;
   background-image: -webkit-gradient(radial, 50% 10%, 0, 50% 10%, 30, color-stop(0%, #e82926), color-stop(100%, #7c0f0d));
@@ -586,7 +694,7 @@ a.button.heart:active, button.heart:active {
 a.button.heart:active, a.button.heart:active:visited, button.heart:active, button.heart:active:visited {
   color: #fff;
 }
-/* line 65, ../../app/stylesheets/partials/_buttons.scss */
+/* line 79, ../../app/stylesheets/partials/_buttons.scss */
 a.button.arrow, button.arrow {
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -666,7 +774,7 @@ a.button.arrow.disabled:active, a.button.arrow[disabled], button.arrow.disabled:
   padding: 2px 6px;
   border-width: 2px;
 }
-/* line 70, ../../app/stylesheets/partials/_buttons.scss */
+/* line 84, ../../app/stylesheets/partials/_buttons.scss */
 a.button.spade, button.spade {
   background-color: #0058b7;
   background-image: -webkit-gradient(radial, 50% 10%, 0, 50% 10%, 30, color-stop(0%, #367fce), color-stop(100%, #193e66));
@@ -1316,19 +1424,9 @@ section article #connections .connection a.connect {
   text-align: center;
   outline: none;
   text-decoration: none;
-  font-size: 1.25em;
-  line-height: 1.2em;
-  color: #292929;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #70b370), color-stop(100%, #27825c));
-  background-image: -moz-linear-gradient(top, #70b370 0%, #27825c 100%);
+  font-weight: normal;
 }
-/* line 158, ../../app/stylesheets/application.scss */
+/* line 154, ../../app/stylesheets/application.scss */
 section article #connections .connection a.connect:hover {
   -moz-box-shadow: #333333 1px 1px 5px;
   -webkit-box-shadow: #333333 1px 1px 5px;
@@ -1336,7 +1434,7 @@ section article #connections .connection a.connect:hover {
   box-shadow: #333333 1px 1px 5px;
 }
 
-/* line 166, ../../app/stylesheets/application.scss */
+/* line 162, ../../app/stylesheets/application.scss */
 aside {
   display: inline;
   float: left;
@@ -1348,66 +1446,14 @@ aside {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
   margin-top: 1em;
-  text-shadow: 0px 1px 1px #FFF;
-}
-/* line 172, ../../app/stylesheets/application.scss */
-aside a.button {
-  font-size: 0.875em;
-  line-height: 1.714em;
-  color: #ddd;
-  background-color: #232e80;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #64688c), color-stop(100%, #373a4d));
-  background-image: -moz-linear-gradient(top, #64688c 0%, #373a4d 100%);
-  border-color: #242632;
-  text-shadow: #080a1c 0px 1px 1px;
-}
-/* line 96, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
-aside a.button, aside a.button:visited {
-  color: #fff;
-}
-/* line 24, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
-aside a.button.disabled:active, aside a.button.disabled:hover, aside a.button[disabled]:active, aside a.button[disabled]:hover {
-  background-color: #232e80;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #64688c), color-stop(100%, #373a4d));
-  background-image: -moz-linear-gradient(top, #64688c 0%, #373a4d 100%);
-  border-color: #242632;
-  text-shadow: #080a1c 0px 1px 1px;
-}
-/* line 96, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
-aside a.button.disabled:active, aside a.button.disabled:active:visited, aside a.button.disabled:hover, aside a.button.disabled:hover:visited, aside a.button[disabled]:active, aside a.button[disabled]:active:visited, aside a.button[disabled]:hover, aside a.button[disabled]:hover:visited {
-  color: #fff;
-}
-/* line 26, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
-aside a.button:hover, aside a.button:focus {
-  background-color: #202974;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #5e6283), color-stop(100%, #313344));
-  background-image: -moz-linear-gradient(top, #5e6283 0%, #313344 100%);
-  border-color: #1e1f29;
-  text-shadow: #040610 0px 1px 1px;
-}
-/* line 96, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
-aside a.button:hover, aside a.button:hover:visited, aside a.button:focus, aside a.button:focus:visited {
-  color: #fff;
-}
-/* line 31, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
-aside a.button:active {
-  background-color: #1d2568;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #35374a), color-stop(40%, #3b3e53), color-stop(85%, #3b3e53), color-stop(100%, #4a4e68));
-  background-image: -moz-linear-gradient(top, #35374a 0%, #3b3e53 40%, #3b3e53 85%, #4a4e68 100%);
-  border-color: #171821;
-  text-shadow: #010104 0px -1px -1px;
-}
-/* line 96, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
-aside a.button:active, aside a.button:active:visited {
-  color: #fff;
 }
 
 /* Footer --------------------------------------------------------------*/
-/* line 183, ../../app/stylesheets/application.scss */
+/* line 170, ../../app/stylesheets/application.scss */
 footer {
   color: #A5A5A5;
 }
-/* line 190, ../../app/stylesheets/application.scss */
+/* line 177, ../../app/stylesheets/application.scss */
 footer h1 {
   clear: both;
   margin-right: 1.639%;
@@ -1416,7 +1462,7 @@ footer h1 {
   line-height: 1.5em;
 }
 
-/* line 197, ../../app/stylesheets/application.scss */
+/* line 184, ../../app/stylesheets/application.scss */
 #add_connection_dialog {
   display: inline;
   float: left;
@@ -1435,14 +1481,14 @@ footer h1 {
   -o-box-shadow: #333333 1px 1px 5px;
   box-shadow: #333333 1px 1px 5px;
 }
-/* line 207, ../../app/stylesheets/application.scss */
+/* line 194, ../../app/stylesheets/application.scss */
 #add_connection_dialog h1 {
   text-align: center;
   font-size: 2em;
   line-height: 1.5em;
   border-bottom: 3px solid #44475f;
 }
-/* line 214, ../../app/stylesheets/application.scss */
+/* line 201, ../../app/stylesheets/application.scss */
 #add_connection_dialog form p {
   overflow: hidden;
   display: inline-block;
@@ -1451,7 +1497,7 @@ footer h1 {
 #add_connection_dialog form p {
   display: block;
 }
-/* line 217, ../../app/stylesheets/application.scss */
+/* line 204, ../../app/stylesheets/application.scss */
 #add_connection_dialog form label {
   text-align: right;
   display: inline;
@@ -1459,7 +1505,7 @@ footer h1 {
   width: 21.053%;
   margin-right: 5.263%;
 }
-/* line 223, ../../app/stylesheets/application.scss */
+/* line 210, ../../app/stylesheets/application.scss */
 #add_connection_dialog form input {
   display: inline;
   float: left;
@@ -1471,7 +1517,7 @@ footer h1 {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
-/* line 228, ../../app/stylesheets/application.scss */
+/* line 215, ../../app/stylesheets/application.scss */
 #add_connection_dialog form .button {
   display: inline;
   float: left;
