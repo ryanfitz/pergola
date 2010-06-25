@@ -84,7 +84,5 @@ a.button, button {
   &.spade{
       @include fancy-button-colors-custom($blue);
       @include fancy-button-padding(2px, 8px, 2px);
-    }
-    
-    
+    }   
 }
