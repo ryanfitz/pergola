@@ -1,37 +1,76 @@
-@import "compass/utilities/general/float";
 @import "compass/css3/border-radius";
-@import "blueprint/buttons";
+@import "fancy-buttons";
 
-a.button {
-  // you can pass "left" or "right" to +anchor-button to float it in that direction
-  // or you can pass no argument to leave it inline-block (cross browser safe!) within
-  // the flow of your page.
-  @include anchor-button(left);
-  // All the button color mixins take 4 optional arguments:
-  // font color, background color, border color, border highlight color
-  // the first three default to constants set in blueprint/buttons
-  // the last one defaults to a shade lighter than the border color.
-  @include button-colors;
-  @include button-hover-colors;
-  @include button-active-colors; 
-  
-  @include border-radius(4px);
+$green: darken(#57b42c, 8);
+$blue: adjust_hue($green, 110);
+$red: adjust_hue($green, -100);
+$heart_button: saturate(lighten($red, 2), 20);
+
+@mixin custom-fancy-gradient($color1, $color2) {
+  @include radial-gradient(color_stops($color1, darken($color2, 5) 30px), "50% 10%");
 }
 
-button {
-  // The +button-button mixin is just like the +anchor-button mixin, but for <button> elements.
-  @include button-button(left);
-  @include button-colors;
-  @include button-hover-colors;
-  @include button-active-colors; }
+@mixin invert-custom-fancy-gradient($color1, $color2){
+  @include custom-fancy-gradient(lighten($color2, 10), lighten($color2, 25));
+}
 
-// We can change the colors for buttons of certain classes, etc.
-a.positive, button.positive {
-  color: #529214;
-  @include button-hover-colors(#529214, #e6efc2, #c6d880);
-  @include button-active-colors(white, #529214, #529214); }
-
-a.negative, button.negative {
-  color: #d12f19;
-  @include button-hover-colors(#d12f19, #fbe3e4, #fbc2c4);
-  @include button-active-colors(white, #d12f19, #d12f19); }
+a.button, button { 
+  @include fancy-button-structure;
+  @include fancy-button-colors;
+  margin: 0 2px;
+  vertical-align: middle;
+  
+  &:hover {
+    @include box-shadow;
+  }
+  
+  &.remove {
+    @include fancy-button-size(10px, 5px);
+    @include fancy-button-colors-custom(#ddd);
+    @include fancy-button-padding(2px, 6px, 2px);
+    font-size: 10px;
+    float: right;
+    
+    &:hover {
+      color: $red;
+    }
+  }
+  
+  &.light{
+      @include fancy-button-colors-matte(#ddd);
+  }
+  &.matte-blue{
+    @include fancy-button-colors-matte($blue);
+  }
+  &.green{
+      @include fancy-button-colors($green);
+    }
+  &.blue {
+    @include fancy-button-size(32px, 32px, 3px);
+    @include fancy-button-colors($blue);
+  }
+  &.red{
+      @include fancy-button-colors($red);
+    }
+  &.yellow{
+    @include fancy-button-colors(darken(desaturate(yellow, 35), 5));
+  }
+  &.custom{
+      @include fancy-button-size(30px, 10px);
+      @include fancy-button-padding(2px, 12px, 2px);
+    }
+  &.heart{
+    @include fancy-button-colors-custom($heart_button);
+  }
+  &.arrow{
+      @include fancy-button-size(30px, 30px);
+      @include fancy-button-colors-custom(#ddd);
+      @include fancy-button-padding(2px, 6px, 2px);
+    }
+  &.spade{
+      @include fancy-button-colors-custom($blue);
+      @include fancy-button-padding(2px, 8px, 2px);
+    }
+    
+    
+}

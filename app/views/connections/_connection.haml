@@ -1,5 +1,5 @@
 .connection
-  = link_to  "X", url(:destroy, :id => connection.id, :format => :js), :class => 'remove button', :method => :delete, :'data-confirm' => "Delete connection?", :remote => true
+  = link_to "X", url(:destroy, :id => connection.id, :format => :js), :class => 'remove button', :method => :delete, :'data-confirm' => "Delete connection?", :remote => true
   %h4
     = connection.title
     / = link_to connection.title, url(:edit, :id => connection.id), :remote => true

@@ -168,6 +168,14 @@ aside {
    @include omega;
    @include leader(1,24px);
    text-shadow: 0px 1px 1px #FFF;
+   
+   a.button {
+     @include adjust-font-size-to(14px);
+     color: #ddd;
+     @include fancy-button-colors-matte(#44475f);
+//     @include border-radius(5px);
+//     @include linear-gradient(color-stops(#44475f, #05092E));
+   }
  }
 
 /* Footer --------------------------------------------------------------*/
@@ -184,39 +192,6 @@ footer {
     @include adjust-font-size-to(32px);
 //    @include pad(1,3);
   }
-}
-
-a.button {
-   display: block;
-   padding: 6px 10px 6px;
-   text-align: center;
-//   outline: none;
-   text-decoration: none;
-   text-shadow: 1px 2px #000;
-   
-   @include adjust-font-size-to(20px);
-   color: #ddd;
-   @include border-radius(5px);
-   @include linear-gradient(color-stops(#44475f, #05092E));
-}
-
-a.remove {
-  float: right;
-  @include border-radius(5px);
-  @include adjust-font-size-to(12px);
-//  height: 20px;
-  width: 20px;
-  padding: 0px;
-//  @include linear-gradient(color-stops(#d14651, #CC333F));
-  @include linear-gradient(color-stops(#c2c2c2, #d6d6d6));
-  color: #000;
-  font-weight: bold;
-  text-shadow: none;
-  
-}
- 
-a.button:hover {
- @include box-shadow;
 }
  
 #add_connection_dialog {
@@ -244,6 +219,7 @@ a.button:hover {
       @include columns(1,4);
 //      @include alpha;
     }
+    
     input {
       @include columns(3,4);
       @include omega(4);
