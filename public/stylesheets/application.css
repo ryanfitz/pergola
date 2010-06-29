@@ -1201,12 +1201,16 @@ body {
 }
 
 /* line 12, ../../app/stylesheets/application.scss */
-#main {
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #aed6ee), color-stop(20%, #e4f1f9), color-stop(100%, #ffffff));
-  background-image: -moz-linear-gradient(top, #aed6ee 0%, #e4f1f9 20%, #ffffff 100%);
+body {
+  background: #EBEBEB;
 }
 
-/* line 15, ../../app/stylesheets/application.scss */
+/* line 16, ../../app/stylesheets/application.scss */
+#main .container {
+  background-color: #fff;
+}
+
+/* line 20, ../../app/stylesheets/application.scss */
 .container {
   overflow: hidden;
   display: inline-block;
@@ -1222,16 +1226,14 @@ body {
 }
 
 /* Header --------------------------------------------------------------*/
-/* line 32, ../../app/stylesheets/application.scss */
+/* line 36, ../../app/stylesheets/application.scss */
 header {
-  border-bottom: 3px solid #44475f;
-  background: #C2C2C2;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(100%, #d6d6d6));
-  background-image: -moz-linear-gradient(top, #ffffff 0%, #d6d6d6 100%);
-  text-shadow: 1px 0px #ccc;
-  color: #000;
+  background: #0c0c0c;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #0c0c0c), color-stop(50%, #242424), color-stop(75%, #2e2e2e), color-stop(100%, #363636));
+  background-image: -moz-linear-gradient(top, #0c0c0c 0%, #242424 50%, #2e2e2e 75%, #363636 100%);
+  color: #666;
 }
-/* line 35, ../../app/stylesheets/application.scss */
+/* line 40, ../../app/stylesheets/application.scss */
 header hgroup {
   display: inline;
   float: left;
@@ -1239,19 +1241,20 @@ header hgroup {
   margin-right: 1.639%;
   margin-left: 1.639%;
 }
-/* line 40, ../../app/stylesheets/application.scss */
+/* line 45, ../../app/stylesheets/application.scss */
 header hgroup h1 {
   font-size: 2em;
   line-height: 1.5em;
+  color: #69D2E7;
   margin-bottom: 0;
 }
-/* line 47, ../../app/stylesheets/application.scss */
+/* line 53, ../../app/stylesheets/application.scss */
 header hgroup h4 {
   font-size: 0.875em;
   line-height: 1.714em;
   margin-bottom: 0;
 }
-/* line 53, ../../app/stylesheets/application.scss */
+/* line 59, ../../app/stylesheets/application.scss */
 header #db_box {
   display: inline;
   float: left;
@@ -1284,8 +1287,94 @@ header #db_box {
   border-bottom-right-radius: 7px;
 }
 
+/* line 71, ../../app/stylesheets/application.scss */
+#page_nav {
+  overflow: hidden;
+  display: inline-block;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 61em;
+  max-width: 100%;
+  -moz-border-radius-topleft: 15px;
+  -webkit-border-top-left-radius: 15px;
+  -o-border-top-left-radius: 15px;
+  -ms-border-top-left-radius: 15px;
+  -khtml-border-top-left-radius: 15px;
+  border-top-left-radius: 15px;
+  -moz-border-radius-topright: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -o-border-top-right-radius: 15px;
+  -ms-border-top-right-radius: 15px;
+  -khtml-border-top-right-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #1b1b1b), color-stop(50%, #0d0d0d), color-stop(75%, #050505), color-stop(100%, #0c0c0c));
+  background-image: -moz-linear-gradient(top, #1b1b1b 0%, #0d0d0d 50%, #050505 75%, #0c0c0c 100%);
+}
+/* line 8, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
+#page_nav {
+  display: block;
+}
+/* line 76, ../../app/stylesheets/application.scss */
+#page_nav h1 {
+  display: inline;
+  float: left;
+  width: 39.344%;
+  margin-right: 1.639%;
+  margin-left: 1.639%;
+  font-size: 2em;
+  line-height: 1.5em;
+  padding: 10px 0px 0px 0px;
+  margin-bottom: 0px;
+  color: #fff;
+}
+/* line 85, ../../app/stylesheets/application.scss */
+#page_nav ul {
+  display: inline;
+  float: left;
+  width: 14.754%;
+  margin-right: 1.639%;
+  display: inline;
+  float: right;
+  margin-right: 1.639%;
+  /* ugly hacks for IE6-7 */
+  #margin-left: -1em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 0;
+  padding-left: 0;
+  display: inline;
+  margin-top: 1em;
+}
+/* line 11, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.scss */
+#page_nav ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+}
+/* line 94, ../../app/stylesheets/application.scss */
+#page_nav ul li {
+  margin-left: 0;
+  margin-bottom: 0;
+  color: #ACACAC;
+  list-style: none;
+  display: inline;
+  font-size: 0.875em;
+  line-height: 1.714em;
+}
+/* line 103, ../../app/stylesheets/application.scss */
+#page_nav ul li a {
+  color: #ACACAC;
+  text-decoration: none;
+}
+/* line 107, ../../app/stylesheets/application.scss */
+#page_nav ul li a:hover {
+  color: #fff;
+}
+
 /* Nav --------------------------------------------------------------*/
-/* line 67, ../../app/stylesheets/application.scss */
+/* line 116, ../../app/stylesheets/application.scss */
 nav {
   background-color: #7ED2DF;
   overflow: hidden;
@@ -1299,7 +1388,7 @@ nav {
 nav {
   display: block;
 }
-/* line 74, ../../app/stylesheets/application.scss */
+/* line 123, ../../app/stylesheets/application.scss */
 nav .container {
   display: inline;
   float: left;
@@ -1307,7 +1396,7 @@ nav .container {
   margin-right: 1.639%;
   padding-left: 65.574%;
 }
-/* line 79, ../../app/stylesheets/application.scss */
+/* line 128, ../../app/stylesheets/application.scss */
 nav ul {
   list-style: none;
   margin: 0;
@@ -1322,7 +1411,7 @@ nav ul li {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 85, ../../app/stylesheets/application.scss */
+/* line 134, ../../app/stylesheets/application.scss */
 nav ul li {
   margin-left: 0;
   margin-bottom: 0;
@@ -1332,7 +1421,7 @@ nav ul li {
 }
 
 /* Content --------------------------------------------------------------*/
-/* line 98, ../../app/stylesheets/application.scss */
+/* line 147, ../../app/stylesheets/application.scss */
 section article {
   display: inline;
   float: left;
@@ -1340,18 +1429,18 @@ section article {
   margin-right: 1.639%;
   margin-left: 1.639%;
 }
-/* line 102, ../../app/stylesheets/application.scss */
+/* line 151, ../../app/stylesheets/application.scss */
 section article h3 {
   margin-top: 1em;
 }
-/* line 106, ../../app/stylesheets/application.scss */
+/* line 155, ../../app/stylesheets/application.scss */
 section article #connections {
   display: inline;
   float: left;
   width: 100%;
   margin-right: 2.041%;
 }
-/* line 111, ../../app/stylesheets/application.scss */
+/* line 160, ../../app/stylesheets/application.scss */
 section article #connections .connection:hover {
   -moz-box-shadow: #333333 1px 1px 5px;
   -webkit-box-shadow: #333333 1px 1px 5px;
@@ -1377,7 +1466,7 @@ section article #connections .connection:hover {
   transition-timing-function: ease-in;
   background-color: #fff;
 }
-/* line 119, ../../app/stylesheets/application.scss */
+/* line 168, ../../app/stylesheets/application.scss */
 section article #connections .connection {
   display: inline;
   float: left;
@@ -1394,7 +1483,7 @@ section article #connections .connection {
   margin-bottom: 20px;
   background-color: #fff;
 }
-/* line 130, ../../app/stylesheets/application.scss */
+/* line 179, ../../app/stylesheets/application.scss */
 section article #connections .connection h4 {
   padding-bottom: .5em;
   font-size: 1.5em;
@@ -1403,7 +1492,7 @@ section article #connections .connection h4 {
   text-align: center;
   border-bottom: 1px solid #DFE7EF;
 }
-/* line 138, ../../app/stylesheets/application.scss */
+/* line 187, ../../app/stylesheets/application.scss */
 section article #connections .connection ul {
   list-style: none;
   margin: 0;
@@ -1415,7 +1504,7 @@ section article #connections .connection ul li {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 142, ../../app/stylesheets/application.scss */
+/* line 191, ../../app/stylesheets/application.scss */
 section article #connections .connection a.connect {
   margin-top: 1em;
   display: block;
@@ -1426,7 +1515,7 @@ section article #connections .connection a.connect {
   text-decoration: none;
   font-weight: normal;
 }
-/* line 154, ../../app/stylesheets/application.scss */
+/* line 203, ../../app/stylesheets/application.scss */
 section article #connections .connection a.connect:hover {
   -moz-box-shadow: #333333 1px 1px 5px;
   -webkit-box-shadow: #333333 1px 1px 5px;
@@ -1434,7 +1523,7 @@ section article #connections .connection a.connect:hover {
   box-shadow: #333333 1px 1px 5px;
 }
 
-/* line 162, ../../app/stylesheets/application.scss */
+/* line 211, ../../app/stylesheets/application.scss */
 aside {
   display: inline;
   float: left;
@@ -1449,11 +1538,32 @@ aside {
 }
 
 /* Footer --------------------------------------------------------------*/
-/* line 170, ../../app/stylesheets/application.scss */
+/* line 219, ../../app/stylesheets/application.scss */
 footer {
+  margin-top: 40px;
   color: #A5A5A5;
+  overflow: hidden;
+  display: inline-block;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 61em;
+  max-width: 100%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  height: 175px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #1b1b1b), color-stop(50%, #0d0d0d), color-stop(75%, #050505), color-stop(100%, #0c0c0c));
+  background-image: -moz-linear-gradient(top, #1b1b1b 0%, #0d0d0d 50%, #050505 75%, #0c0c0c 100%);
 }
-/* line 177, ../../app/stylesheets/application.scss */
+/* line 8, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
+footer {
+  display: block;
+}
+/* line 228, ../../app/stylesheets/application.scss */
 footer h1 {
   clear: both;
   margin-right: 1.639%;
@@ -1462,7 +1572,7 @@ footer h1 {
   line-height: 1.5em;
 }
 
-/* line 184, ../../app/stylesheets/application.scss */
+/* line 235, ../../app/stylesheets/application.scss */
 #add_connection_dialog {
   display: inline;
   float: left;
@@ -1481,14 +1591,14 @@ footer h1 {
   -o-box-shadow: #333333 1px 1px 5px;
   box-shadow: #333333 1px 1px 5px;
 }
-/* line 194, ../../app/stylesheets/application.scss */
+/* line 245, ../../app/stylesheets/application.scss */
 #add_connection_dialog h1 {
   text-align: center;
   font-size: 2em;
   line-height: 1.5em;
   border-bottom: 3px solid #44475f;
 }
-/* line 201, ../../app/stylesheets/application.scss */
+/* line 252, ../../app/stylesheets/application.scss */
 #add_connection_dialog form p {
   overflow: hidden;
   display: inline-block;
@@ -1497,7 +1607,7 @@ footer h1 {
 #add_connection_dialog form p {
   display: block;
 }
-/* line 204, ../../app/stylesheets/application.scss */
+/* line 255, ../../app/stylesheets/application.scss */
 #add_connection_dialog form label {
   text-align: right;
   display: inline;
@@ -1505,7 +1615,7 @@ footer h1 {
   width: 21.053%;
   margin-right: 5.263%;
 }
-/* line 210, ../../app/stylesheets/application.scss */
+/* line 261, ../../app/stylesheets/application.scss */
 #add_connection_dialog form input {
   display: inline;
   float: left;
@@ -1517,7 +1627,7 @@ footer h1 {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
-/* line 215, ../../app/stylesheets/application.scss */
+/* line 266, ../../app/stylesheets/application.scss */
 #add_connection_dialog form .button {
   display: inline;
   float: left;

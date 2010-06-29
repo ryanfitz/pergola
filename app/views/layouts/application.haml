@@ -19,10 +19,14 @@
         /             %option Dev1
         /             %option QA1
         /             %option Prod   
+        
+      #page_nav
+        .container
+          = yield_content :page_nav
+        
     #main
       .container
         = yield
       
     %footer
-      .container
-        %h1 Footer
+      %h1 Footer
