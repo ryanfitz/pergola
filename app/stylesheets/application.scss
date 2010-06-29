@@ -153,46 +153,61 @@ section {
    }
    
    #connections {
-     @include columns(10,10);
+//     @include columns(10,10);
 //     @include prefix(1);
 //     @include alpha;
      
-     .connection:hover {
-       @include box-shadow;
-       @include border-radius(5px);
-       @include scale(1.05);
-       @include transition-duration(.2s);
-       @include transition-timing-function(ease-in);
-       background-color: #fff;
-     }
      .connection {    
-//       position:relative;
-       @include columns(3,10); 
-       @include omega(11);
-       float: left;
-       border: 1px solid #DFE7EF;
-//       padding: 19px 19px 19px;
-       padding: gutter(10);
+       @include columns(5,10);
+       
+       &:nth-child(even) {
+          @include omega(10);
+        }
+//       @include omega(10);
+//       float: left;
+//       padding: gutter(10);
        margin-bottom:20px;
-       background-color: #fff;
+       
+       .header {
+         @include border-top-radius(10px);
+         background: #C2C2C2;
+         color: #2C2C2C;
+         @include linear-gradient(color-stops(#EAEAEA, #C2C2C2));
+       }
+       
+       &:hover {
+          @include box-shadow;
+          @include border-radius(10px);
+          @include scale(1.05);
+          @include transition-duration(.2s);
+          @include transition-timing-function(ease-in);
+        }
      
        h4{
-          padding-bottom: .5em;
+          padding: 5px;
           @include adjust-font-size-to(24px);
           font-weight:bold;
       	  text-align:center;
-      	  border-bottom:1px solid #DFE7EF;
+      	  margin-bottom:0px;
        }
        
        ul {
          @include no-style-list;
+         background-color: #f2f2f2;
+         border: 1px solid #e0e0e0;
+         @include border-bottom-radius(10px);
+
+        li {
+          padding: 5px 0px 5px 10px;
+          border-top: 1px solid #e1e1e1;
+        }
        }
        
        a.connect {
-         margin-top:1em;
+//         margin-top:1em;
          display: block;
-         margin-bottom: .5em;
-         padding: 10px 20px 12px;
+//         margin-bottom: .5em;
+//         padding: 10px 20px 12px;
          text-align: center;
          outline: none;
          text-decoration: none;
@@ -201,7 +216,9 @@ section {
        }
        
        a.connect:hover {
-         @include box-shadow;
+//         @include box-shadow;
+//         text-decoration: underline;
+//          @include linear-gradient(color-stops(#EAEAEA, #C2C2C2));
        }
      }
    }

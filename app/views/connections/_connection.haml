@@ -1,7 +1,8 @@
 .connection
-  = link_to "X", url(:destroy, :id => connection.id, :format => :js), :class => 'remove button', :method => :delete, :'data-confirm' => "Delete connection?", :remote => true
-  %h4
-    = connection.title
+  .header
+    = link_to "X", url(:destroy, :id => connection.id, :format => :js), :class => 'remove button', :method => :delete, :'data-confirm' => "Delete connection?", :remote => true
+    %h4
+      = connection.title
     / = link_to connection.title, url(:edit, :id => connection.id), :remote => true
   %ul{:class => 'connection_info'}
     %li
@@ -13,5 +14,6 @@
     %li
       %strong Port
       = connection.port
+    %li
+      = link_to "Connect", url_for(:new, :format => :js), :remote => true, :class => 'connect'
       
-  = link_to "Connect", url_for(:new, :format => :js), :remote => true, :class => 'button connect'

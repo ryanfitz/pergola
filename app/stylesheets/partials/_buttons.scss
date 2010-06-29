@@ -27,7 +27,7 @@ a.button, button {
   @include fancy-button-colors-matte(#44475f);
   
   &:hover {
-    @include box-shadow;
+//    @include box-shadow;
   }
   
   &.connect {
@@ -44,6 +44,8 @@ a.button, button {
     @include fancy-button-padding(2px, 6px, 2px);
     font-size: 10px;
     float: right;
+    margin-top: 5px;
+    margin-right: 5px;
     
     &:hover {
       color: $red;

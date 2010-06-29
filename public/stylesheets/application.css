@@ -152,13 +152,6 @@ a.button:active, button:active {
 a.button:active, a.button:active:visited, button:active, button:active:visited {
   color: #fff;
 }
-/* line 29, ../../app/stylesheets/partials/_buttons.scss */
-a.button:hover, button:hover {
-  -moz-box-shadow: #333333 1px 1px 5px;
-  -webkit-box-shadow: #333333 1px 1px 5px;
-  -o-box-shadow: #333333 1px 1px 5px;
-  box-shadow: #333333 1px 1px 5px;
-}
 /* line 33, ../../app/stylesheets/partials/_buttons.scss */
 a.button.connect, button.connect {
   font-size: 1.25em;
@@ -238,6 +231,8 @@ a.button.remove, button.remove {
   border-width: 2px;
   font-size: 10px;
   float: right;
+  margin-top: 5px;
+  margin-right: 5px;
 }
 /* line 144, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/fancy-buttons-0.5.4/lib/stylesheets/_fancy-buttons.sass */
 a.button.remove:active, button.remove:active {
@@ -299,11 +294,11 @@ a.button.remove.disabled:active, a.button.remove[disabled], button.remove.disabl
   padding: 2px 6px;
   border-width: 2px;
 }
-/* line 48, ../../app/stylesheets/partials/_buttons.scss */
+/* line 50, ../../app/stylesheets/partials/_buttons.scss */
 a.button.remove:hover, button.remove:hover {
   color: #932624;
 }
-/* line 53, ../../app/stylesheets/partials/_buttons.scss */
+/* line 55, ../../app/stylesheets/partials/_buttons.scss */
 a.button.light, button.light {
   background-color: white;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(100%, #cecece));
@@ -351,7 +346,7 @@ a.button.light:active, button.light:active {
 a.button.light:active, a.button.light:active:visited, button.light:active, button.light:active:visited {
   color: #222;
 }
-/* line 56, ../../app/stylesheets/partials/_buttons.scss */
+/* line 58, ../../app/stylesheets/partials/_buttons.scss */
 a.button.matte-blue, button.matte-blue {
   background-color: #0058b7;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #367fce), color-stop(100%, #1e4b7b));
@@ -399,7 +394,7 @@ a.button.matte-blue:active, button.matte-blue:active {
 a.button.matte-blue:active, a.button.matte-blue:active:visited, button.matte-blue:active, button.matte-blue:active:visited {
   color: #fff;
 }
-/* line 59, ../../app/stylesheets/partials/_buttons.scss */
+/* line 61, ../../app/stylesheets/partials/_buttons.scss */
 a.button.green, button.green {
   background-color: #3ab700;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #9ee080), color-stop(10%, #66ce36), color-stop(50%, #418721), color-stop(50%, #3b7b1e), color-stop(100%, #4fa428));
@@ -447,7 +442,7 @@ a.button.green:active, button.green:active {
 a.button.green:active, a.button.green:active:visited, button.green:active, button.green:active:visited {
   color: #fff;
 }
-/* line 62, ../../app/stylesheets/partials/_buttons.scss */
+/* line 64, ../../app/stylesheets/partials/_buttons.scss */
 a.button.blue, button.blue {
   -moz-border-radius: 32px;
   -webkit-border-radius: 32px;
@@ -515,7 +510,7 @@ a.button.blue:active, button.blue:active {
 a.button.blue:active, a.button.blue:active:visited, button.blue:active, button.blue:active:visited {
   color: #fff;
 }
-/* line 66, ../../app/stylesheets/partials/_buttons.scss */
+/* line 68, ../../app/stylesheets/partials/_buttons.scss */
 a.button.red, button.red {
   background-color: #b70300;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #e08180), color-stop(10%, #ce3836), color-stop(50%, #872321), color-stop(50%, #7b201e), color-stop(100%, #a42a28));
@@ -563,7 +558,7 @@ a.button.red:active, button.red:active {
 a.button.red:active, a.button.red:active:visited, button.red:active, button.red:active:visited {
   color: #fff;
 }
-/* line 69, ../../app/stylesheets/partials/_buttons.scss */
+/* line 71, ../../app/stylesheets/partials/_buttons.scss */
 a.button.yellow, button.yellow {
   background-color: #e5e600;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ebeba2), color-stop(10%, #dbdb57), color-stop(50%, #b1b125), color-stop(50%, #a4a423), color-stop(100%, #cece2c));
@@ -611,7 +606,7 @@ a.button.yellow:active, button.yellow:active {
 a.button.yellow:active, a.button.yellow:active:visited, button.yellow:active, button.yellow:active:visited {
   color: #fff;
 }
-/* line 72, ../../app/stylesheets/partials/_buttons.scss */
+/* line 74, ../../app/stylesheets/partials/_buttons.scss */
 a.button.custom, button.custom {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -646,7 +641,7 @@ a.button.custom.disabled:active, a.button.custom[disabled], button.custom.disabl
   padding: 2px 12px;
   border-width: 2px;
 }
-/* line 76, ../../app/stylesheets/partials/_buttons.scss */
+/* line 78, ../../app/stylesheets/partials/_buttons.scss */
 a.button.heart, button.heart {
   background-color: #c10300;
   background-image: -webkit-gradient(radial, 50% 10%, 0, 50% 10%, 30, color-stop(0%, #e82926), color-stop(100%, #7c0f0d));
@@ -694,7 +689,7 @@ a.button.heart:active, button.heart:active {
 a.button.heart:active, a.button.heart:active:visited, button.heart:active, button.heart:active:visited {
   color: #fff;
 }
-/* line 79, ../../app/stylesheets/partials/_buttons.scss */
+/* line 81, ../../app/stylesheets/partials/_buttons.scss */
 a.button.arrow, button.arrow {
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -774,7 +769,7 @@ a.button.arrow.disabled:active, a.button.arrow[disabled], button.arrow.disabled:
   padding: 2px 6px;
   border-width: 2px;
 }
-/* line 84, ../../app/stylesheets/partials/_buttons.scss */
+/* line 86, ../../app/stylesheets/partials/_buttons.scss */
 a.button.spade, button.spade {
   background-color: #0058b7;
   background-image: -webkit-gradient(radial, 50% 10%, 0, 50% 10%, 30, color-stop(0%, #367fce), color-stop(100%, #193e66));
@@ -1433,25 +1428,53 @@ section article {
 section article h3 {
   margin-top: 1em;
 }
-/* line 155, ../../app/stylesheets/application.scss */
-section article #connections {
+/* line 160, ../../app/stylesheets/application.scss */
+section article #connections .connection {
   display: inline;
   float: left;
-  width: 100%;
+  width: 48.98%;
   margin-right: 2.041%;
+  margin-bottom: 20px;
 }
-/* line 160, ../../app/stylesheets/application.scss */
+/* line 163, ../../app/stylesheets/application.scss */
+section article #connections .connection:nth-child(even) {
+  display: inline;
+  float: right;
+  margin-right: 0;
+  /* ugly hacks for IE6-7 */
+  #margin-left: -1em;
+}
+/* line 171, ../../app/stylesheets/application.scss */
+section article #connections .connection .header {
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -o-border-top-left-radius: 10px;
+  -ms-border-top-left-radius: 10px;
+  -khtml-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -o-border-top-right-radius: 10px;
+  -ms-border-top-right-radius: 10px;
+  -khtml-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #C2C2C2;
+  color: #2C2C2C;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #eaeaea), color-stop(100%, #c2c2c2));
+  background-image: -moz-linear-gradient(top, #eaeaea 0%, #c2c2c2 100%);
+}
+/* line 178, ../../app/stylesheets/application.scss */
 section article #connections .connection:hover {
   -moz-box-shadow: #333333 1px 1px 5px;
   -webkit-box-shadow: #333333 1px 1px 5px;
   -o-box-shadow: #333333 1px 1px 5px;
   box-shadow: #333333 1px 1px 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
   -moz-transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -o-transform: scale(1.05);
@@ -1464,39 +1487,35 @@ section article #connections .connection:hover {
   -webkit-transition-timing-function: ease-in;
   -o-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
-  background-color: #fff;
 }
-/* line 168, ../../app/stylesheets/application.scss */
-section article #connections .connection {
-  display: inline;
-  float: left;
-  width: 28.571%;
-  margin-right: 2.041%;
-  display: inline;
-  float: right;
-  margin-right: 0;
-  /* ugly hacks for IE6-7 */
-  #margin-left: -1em;
-  float: left;
-  border: 1px solid #DFE7EF;
-  padding: 2.041%;
-  margin-bottom: 20px;
-  background-color: #fff;
-}
-/* line 179, ../../app/stylesheets/application.scss */
+/* line 186, ../../app/stylesheets/application.scss */
 section article #connections .connection h4 {
-  padding-bottom: .5em;
+  padding: 5px;
   font-size: 1.5em;
   line-height: 1em;
   font-weight: bold;
   text-align: center;
-  border-bottom: 1px solid #DFE7EF;
+  margin-bottom: 0px;
 }
-/* line 187, ../../app/stylesheets/application.scss */
+/* line 194, ../../app/stylesheets/application.scss */
 section article #connections .connection ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: #f2f2f2;
+  border: 1px solid #e0e0e0;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -o-border-bottom-left-radius: 10px;
+  -ms-border-bottom-left-radius: 10px;
+  -khtml-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -o-border-bottom-right-radius: 10px;
+  -ms-border-bottom-right-radius: 10px;
+  -khtml-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 /* line 11, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.scss */
 section article #connections .connection ul li {
@@ -1504,26 +1523,21 @@ section article #connections .connection ul li {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 191, ../../app/stylesheets/application.scss */
+/* line 200, ../../app/stylesheets/application.scss */
+section article #connections .connection ul li {
+  padding: 5px 0px 5px 10px;
+  border-top: 1px solid #e1e1e1;
+}
+/* line 206, ../../app/stylesheets/application.scss */
 section article #connections .connection a.connect {
-  margin-top: 1em;
   display: block;
-  margin-bottom: .5em;
-  padding: 10px 20px 12px;
   text-align: center;
   outline: none;
   text-decoration: none;
   font-weight: normal;
 }
-/* line 203, ../../app/stylesheets/application.scss */
-section article #connections .connection a.connect:hover {
-  -moz-box-shadow: #333333 1px 1px 5px;
-  -webkit-box-shadow: #333333 1px 1px 5px;
-  -o-box-shadow: #333333 1px 1px 5px;
-  box-shadow: #333333 1px 1px 5px;
-}
 
-/* line 211, ../../app/stylesheets/application.scss */
+/* line 228, ../../app/stylesheets/application.scss */
 aside {
   display: inline;
   float: left;
@@ -1538,7 +1552,7 @@ aside {
 }
 
 /* Footer --------------------------------------------------------------*/
-/* line 219, ../../app/stylesheets/application.scss */
+/* line 236, ../../app/stylesheets/application.scss */
 footer {
   margin-top: 40px;
   color: #A5A5A5;
@@ -1563,7 +1577,7 @@ footer {
 footer {
   display: block;
 }
-/* line 228, ../../app/stylesheets/application.scss */
+/* line 245, ../../app/stylesheets/application.scss */
 footer h1 {
   clear: both;
   margin-right: 1.639%;
@@ -1572,7 +1586,7 @@ footer h1 {
   line-height: 1.5em;
 }
 
-/* line 235, ../../app/stylesheets/application.scss */
+/* line 252, ../../app/stylesheets/application.scss */
 #add_connection_dialog {
   display: inline;
   float: left;
@@ -1591,14 +1605,14 @@ footer h1 {
   -o-box-shadow: #333333 1px 1px 5px;
   box-shadow: #333333 1px 1px 5px;
 }
-/* line 245, ../../app/stylesheets/application.scss */
+/* line 262, ../../app/stylesheets/application.scss */
 #add_connection_dialog h1 {
   text-align: center;
   font-size: 2em;
   line-height: 1.5em;
   border-bottom: 3px solid #44475f;
 }
-/* line 252, ../../app/stylesheets/application.scss */
+/* line 269, ../../app/stylesheets/application.scss */
 #add_connection_dialog form p {
   overflow: hidden;
   display: inline-block;
@@ -1607,7 +1621,7 @@ footer h1 {
 #add_connection_dialog form p {
   display: block;
 }
-/* line 255, ../../app/stylesheets/application.scss */
+/* line 272, ../../app/stylesheets/application.scss */
 #add_connection_dialog form label {
   text-align: right;
   display: inline;
@@ -1615,7 +1629,7 @@ footer h1 {
   width: 21.053%;
   margin-right: 5.263%;
 }
-/* line 261, ../../app/stylesheets/application.scss */
+/* line 278, ../../app/stylesheets/application.scss */
 #add_connection_dialog form input {
   display: inline;
   float: left;
@@ -1627,7 +1641,7 @@ footer h1 {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
-/* line 266, ../../app/stylesheets/application.scss */
+/* line 283, ../../app/stylesheets/application.scss */
 #add_connection_dialog form .button {
   display: inline;
   float: left;
