@@ -1633,12 +1633,12 @@ footer h1 {
 
 /* line 243, ../../app/stylesheets/application.scss */
 #add_connection_dialog {
+  display: none;
   display: inline;
   float: left;
-  width: 31.148%;
+  width: 80.328%;
   margin-right: 1.639%;
-  padding-left: 32.787%;
-  display: none;
+  padding-left: 8.197%;
 }
 /* line 254, ../../app/stylesheets/application.scss */
 #add_connection_dialog h1 {
@@ -1648,35 +1648,63 @@ footer h1 {
   border-bottom: 3px solid #44475f;
 }
 /* line 261, ../../app/stylesheets/application.scss */
-#add_connection_dialog form p {
-  overflow: hidden;
-  display: inline-block;
+#add_connection_dialog form fieldset {
+  border: 0;
+  padding: 0;
+  margin-bottom: .5em;
 }
-/* line 8, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
-#add_connection_dialog form p {
-  display: block;
-}
-/* line 264, ../../app/stylesheets/application.scss */
-#add_connection_dialog form label {
-  text-align: right;
+/* line 267, ../../app/stylesheets/application.scss */
+#add_connection_dialog form fieldset .left {
   display: inline;
   float: left;
-  width: 21.053%;
-  margin-right: 5.263%;
+  width: 48.98%;
+  margin-right: 2.041%;
 }
-/* line 270, ../../app/stylesheets/application.scss */
-#add_connection_dialog form input {
+/* line 271, ../../app/stylesheets/application.scss */
+#add_connection_dialog form fieldset .right {
   display: inline;
   float: left;
-  width: 73.684%;
-  margin-right: 5.263%;
+  width: 48.98%;
+  margin-right: 2.041%;
   display: inline;
   float: right;
   margin-right: 0;
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
-/* line 275, ../../app/stylesheets/application.scss */
+/* line 276, ../../app/stylesheets/application.scss */
+#add_connection_dialog form fieldset label {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin-right: 4.167%;
+}
+/* line 288, ../../app/stylesheets/application.scss */
+#add_connection_dialog form input, #add_connection_dialog form textarea {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin-right: 4.167%;
+  padding: 8px;
+  margin-bottom: 20px;
+  background: #fff;
+  font-size: 14px;
+  color: #555;
+  border: 1px #ddd solid;
+  -moz-box-shadow: #aaaaaa 0px 0px 4px;
+  -webkit-box-shadow: #aaaaaa 0px 0px 4px;
+  -o-box-shadow: #aaaaaa 0px 0px 4px;
+  box-shadow: #aaaaaa 0px 0px 4px;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 301, ../../app/stylesheets/application.scss */
+#add_connection_dialog form input:hover, #add_connection_dialog form textarea:hover {
+  background: #eee;
+}
+/* line 306, ../../app/stylesheets/application.scss */
 #add_connection_dialog form .button {
   display: inline;
   float: left;

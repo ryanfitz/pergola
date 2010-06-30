@@ -6,21 +6,24 @@
   
 -form_for @connection, form_url, :method => meth, :id => :connection_form, :remote => true do |f|
   = f.error_messages
-  %p
-    = f.label :title
-    = f.text_field :title  
-  %p
-    = f.label :username, :caption => "Username"
-    = f.text_field :username
-  %p
-    = f.label :password
-    = f.password_field :password
-  %p
-    = f.label :host
-    = f.text_field :host
-  %p
-    = f.label :port
-    = f.text_field :port
-  %p
+  %fieldset
+    .left
+      = f.label :title
+      = f.text_field :title  
+  %fieldset
+    .left
+      = f.label :username, :caption => "Username:"
+      = f.text_field :username
+    .right
+      = f.label :password
+      = f.password_field :password
+  %fieldset
+    .left
+      = f.label :host
+      = f.text_field :host
+    .right
+      = f.label :port
+      = f.text_field :port
+  %fieldset
     = link_to "Cancel", url_for(:index, :format => :js), :remote => true, :id => 'cancel', :class => 'awesome'
     = link_to "Save", "#", :id=>'submit', :class => 'awesome'

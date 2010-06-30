@@ -241,9 +241,9 @@ footer {
 }
  
 #add_connection_dialog {
-  @include columns(4);
-  @include prefix(4);
   display: none;
+  @include columns(10);
+  @include prefix(1);
 //  position: absolute; top: 70px; left: 200px;
 //  padding: 20px;
 //  border: solid 1px #bbb;
@@ -258,18 +258,49 @@ footer {
   }
   
   form {
-    p {
-      @include clearfix;
-    }
-    label {
-      text-align:right;
-      @include columns(1,4);
-//      @include alpha;
+    fieldset {
+      border: 0;
+      padding: 0;
+      margin-bottom: .5em;
+//      @include columns(10);
+      
+      .left {
+        @include columns(5, 10);
+      }
+      
+      .right {
+         @include columns(5, 10);
+         @include omega(10);
+      }
+      
+      label {
+//        display: block;
+//        padding-right: 10px;
+  //      text-align:right;
+        @include columns(5,5);
+
+        &:nth-child(odd) {
+//            @include alpha;
+          }
+      }
     }
     
-    input {
-      @include columns(3,4);
-      @include omega(4);
+    input, textarea { 		
+        @include columns(5,5);
+        padding: 8px; 
+        margin-bottom: 20px; 
+        background: #fff; 
+//        width: 220px; 
+        font-size: 14px; 
+        color: #555; 
+        border: 1px #ddd solid;
+        
+        @include box-shadow(#aaa, 0px, 0px, 4px);
+        @include transition-duration(0.3s);
+        
+        &:hover { 
+            background: #eee; 
+        }
     }
     
     .button {
