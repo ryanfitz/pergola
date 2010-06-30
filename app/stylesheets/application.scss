@@ -101,11 +101,14 @@ header {
     	@include adjust-font-size-to(14px);
     	
     	a {
+    	  padding:8px;
     	  color: #ACACAC;
     	  text-decoration: none;
     	  
     	  &:hover {
     	    color: #fff;
+    	    background-color: #202020;
+      	  @include border-radius(20px);
     	  }
     	}
   	}
