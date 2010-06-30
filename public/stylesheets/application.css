@@ -1463,7 +1463,17 @@ section article #connections .connection .header {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #eaeaea), color-stop(100%, #c2c2c2));
   background-image: -moz-linear-gradient(top, #eaeaea 0%, #c2c2c2 100%);
 }
-/* line 178, ../../app/stylesheets/application.scss */
+/* line 177, ../../app/stylesheets/application.scss */
+section article #connections .connection .header h4 {
+  color: #2C2C2C;
+  padding: 5px;
+  font-size: 1.5em;
+  line-height: 1em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0px;
+}
+/* line 187, ../../app/stylesheets/application.scss */
 section article #connections .connection:hover {
   -moz-box-shadow: #333333 1px 1px 5px;
   -webkit-box-shadow: #333333 1px 1px 5px;
@@ -1488,16 +1498,7 @@ section article #connections .connection:hover {
   -o-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 186, ../../app/stylesheets/application.scss */
-section article #connections .connection h4 {
-  padding: 5px;
-  font-size: 1.5em;
-  line-height: 1em;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 0px;
-}
-/* line 194, ../../app/stylesheets/application.scss */
+/* line 196, ../../app/stylesheets/application.scss */
 section article #connections .connection ul {
   list-style: none;
   margin: 0;
@@ -1523,12 +1524,12 @@ section article #connections .connection ul li {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 200, ../../app/stylesheets/application.scss */
+/* line 202, ../../app/stylesheets/application.scss */
 section article #connections .connection ul li {
   padding: 5px 0px 5px 10px;
   border-top: 1px solid #e1e1e1;
 }
-/* line 206, ../../app/stylesheets/application.scss */
+/* line 208, ../../app/stylesheets/application.scss */
 section article #connections .connection a.connect {
   display: block;
   text-align: center;
@@ -1537,7 +1538,7 @@ section article #connections .connection a.connect {
   font-weight: normal;
 }
 
-/* line 228, ../../app/stylesheets/application.scss */
+/* line 230, ../../app/stylesheets/application.scss */
 aside {
   display: inline;
   float: left;
@@ -1552,7 +1553,7 @@ aside {
 }
 
 /* Footer --------------------------------------------------------------*/
-/* line 236, ../../app/stylesheets/application.scss */
+/* line 238, ../../app/stylesheets/application.scss */
 footer {
   margin-top: 40px;
   color: #A5A5A5;
@@ -1577,7 +1578,7 @@ footer {
 footer {
   display: block;
 }
-/* line 245, ../../app/stylesheets/application.scss */
+/* line 247, ../../app/stylesheets/application.scss */
 footer h1 {
   clear: both;
   margin-right: 1.639%;
@@ -1586,7 +1587,7 @@ footer h1 {
   line-height: 1.5em;
 }
 
-/* line 252, ../../app/stylesheets/application.scss */
+/* line 254, ../../app/stylesheets/application.scss */
 #add_connection_dialog {
   display: inline;
   float: left;
@@ -1605,14 +1606,14 @@ footer h1 {
   -o-box-shadow: #333333 1px 1px 5px;
   box-shadow: #333333 1px 1px 5px;
 }
-/* line 262, ../../app/stylesheets/application.scss */
+/* line 264, ../../app/stylesheets/application.scss */
 #add_connection_dialog h1 {
   text-align: center;
   font-size: 2em;
   line-height: 1.5em;
   border-bottom: 3px solid #44475f;
 }
-/* line 269, ../../app/stylesheets/application.scss */
+/* line 271, ../../app/stylesheets/application.scss */
 #add_connection_dialog form p {
   overflow: hidden;
   display: inline-block;
@@ -1621,7 +1622,7 @@ footer h1 {
 #add_connection_dialog form p {
   display: block;
 }
-/* line 272, ../../app/stylesheets/application.scss */
+/* line 274, ../../app/stylesheets/application.scss */
 #add_connection_dialog form label {
   text-align: right;
   display: inline;
@@ -1629,7 +1630,7 @@ footer h1 {
   width: 21.053%;
   margin-right: 5.263%;
 }
-/* line 278, ../../app/stylesheets/application.scss */
+/* line 280, ../../app/stylesheets/application.scss */
 #add_connection_dialog form input {
   display: inline;
   float: left;
@@ -1641,7 +1642,7 @@ footer h1 {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
-/* line 283, ../../app/stylesheets/application.scss */
+/* line 285, ../../app/stylesheets/application.scss */
 #add_connection_dialog form .button {
   display: inline;
   float: left;

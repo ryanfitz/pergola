@@ -173,6 +173,15 @@ section {
          background: #C2C2C2;
          color: #2C2C2C;
          @include linear-gradient(color-stops(#EAEAEA, #C2C2C2));
+         
+         h4 {
+            color: #2C2C2C;
+             padding: 5px;
+             @include adjust-font-size-to(24px);
+             font-weight:bold;
+         	  text-align:center;
+         	  margin-bottom:0px;
+          }
        }
        
        &:hover {
@@ -183,13 +192,6 @@ section {
           @include transition-timing-function(ease-in);
         }
      
-       h4{
-          padding: 5px;
-          @include adjust-font-size-to(24px);
-          font-weight:bold;
-      	  text-align:center;
-      	  margin-bottom:0px;
-       }
        
        ul {
          @include no-style-list;
