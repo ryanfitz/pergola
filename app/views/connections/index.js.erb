@@ -1,5 +1,8 @@
 $("#connections").html("<%= js_escape_html partial 'connections/connection', :collection => @connections  %>");
 
+remove_active();
+$('#connect').addClass('active');
+
 $("#add_connection_dialog").html('');
 
 $('#add_connection_dialog').hide();

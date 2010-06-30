@@ -38,7 +38,7 @@ header {
 //  height: 130px;
 
   hgroup {
-    @include columns(4);
+    @include columns(12);
 //    @include prefix(1);
     @include alpha;
     
@@ -46,11 +46,13 @@ header {
      @include adjust-font-size-to(32px);
      color: #69D2E7;
      margin-bottom: 0;
+     display: inline;
     // @include leader(6,32px);
 //     @include trailer(1,32px);
     }
     
     h4 {
+      display: inline;
       @include adjust-font-size-to(14px);
       margin-bottom: 0;
     }
@@ -97,20 +99,24 @@ header {
   	  margin-left: 0;
     	margin-bottom: 0;
     	color: #ACACAC;
-//      padding: 2px 15px 10px;
+      padding:6px 14px 6px 14px;
     	list-style: none;
     	display: inline;
     	@include adjust-font-size-to(14px);
+    	text-align: center;
+    	
+    	&.active {
+    	  a {
+  	      color: #fff;
+	      }
+	      
+  	    background-color: #202020;
+    	  @include border-radius(20px);
+  	  }
     	
     	a {
-    	  padding:8px;
-    	  color: #ACACAC;
+        color: #ACACAC;
     	  text-decoration: none;
-    	  
-    	  &.active {
-    	    background-color: #202020;
-      	  @include border-radius(20px);
-    	  }
     	  
     	  &:hover {
     	    color: #fff;
@@ -204,11 +210,6 @@ section {
 //         @include linear-gradient(color-stops(#70B370,#27825C));
        }
        
-       a.connect:hover {
-//         @include box-shadow;
-//         text-decoration: underline;
-//          @include linear-gradient(color-stops(#EAEAEA, #C2C2C2));
-       }
      }
    }
  }

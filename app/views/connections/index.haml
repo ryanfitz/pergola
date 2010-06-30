@@ -3,9 +3,9 @@
 - content_for :page_nav do
   %h1 Servers
   %ul
-    %li
-      = link_to "Connect", url_for(:index, :format => :js), :remote => true, :class => 'active'
-    %li
+    %li#connect.active
+      = link_to "Connect", url_for(:index, :format => :js), :remote => true
+    %li#add_server
       = link_to "Add Server", url_for(:new, :format => :js), :remote => true
   
 %section

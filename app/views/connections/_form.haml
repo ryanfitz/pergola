@@ -22,5 +22,5 @@
     = f.label :port
     = f.text_field :port
   %p
-    = link_to "Cancel", "#", :id => 'cancel', :class => 'awesome'
+    = link_to "Cancel", url_for(:index, :format => :js), :remote => true, :id => 'cancel', :class => 'awesome'
     = link_to "Save", "#", :id=>'submit', :class => 'awesome'
