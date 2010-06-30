@@ -9,7 +9,6 @@ gem 'thin' # or mongrel
 gem 'haml'
 gem 'compass', '>= 0.10.2'
 gem 'compass-susy-plugin', :require => "susy"
-gem 'fancy-buttons'
 gem 'activerecord', '= 2.3.8', :require => "active_record"
 gem 'sqlite3-ruby', :require => "sqlite3"
 
