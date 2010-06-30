@@ -879,11 +879,31 @@ a.button.spade.disabled:active, a.button.spade[disabled], button.spade.disabled:
 }
 
 /* line 140, ../../app/stylesheets/partials/_buttons.scss */
-.blue.awesome, .blue.awesome:visited {
-  background-color: #1273E6;
+.red.awesome, .red.awesome:visited {
+  background-color: #e33100;
 }
 
 /* line 141, ../../app/stylesheets/partials/_buttons.scss */
+.red.awesome:hover {
+  background-color: #872300;
+}
+
+/* line 143, ../../app/stylesheets/partials/_buttons.scss */
+.green.awesome, .green.awesome:visited {
+  background-color: #91bd09;
+}
+
+/* line 144, ../../app/stylesheets/partials/_buttons.scss */
+.green.awesome:hover {
+  background-color: #749a02;
+}
+
+/* line 145, ../../app/stylesheets/partials/_buttons.scss */
+.blue.awesome, .blue.awesome:visited {
+  background-color: #2daebf;
+}
+
+/* line 146, ../../app/stylesheets/partials/_buttons.scss */
 .blue.awesome:hover {
   background-color: #007d9a;
 }
@@ -965,11 +985,11 @@ body {
 /* Links --------------------------------------------------------------*/
 /* line 22, ../../app/stylesheets/partials/_default.scss */
 a:link, a:visited {
-  color: #005498;
+  color: white;
 }
 /* line 25, ../../app/stylesheets/partials/_default.scss */
 a:focus, a:hover, a:active {
-  color: #00467f;
+  color: #f2f2f2;
   text-decoration: none;
 }
 /* line 29, ../../app/stylesheets/partials/_default.scss */
@@ -1651,7 +1671,11 @@ footer h1 {
 #add_connection_dialog form fieldset {
   border: 0;
   padding: 0;
-  margin-bottom: .5em;
+  margin-bottom: 1em;
+  display: inline;
+  float: left;
+  width: 100%;
+  margin-right: 2.041%;
 }
 /* line 267, ../../app/stylesheets/application.scss */
 #add_connection_dialog form fieldset .left {
@@ -1672,23 +1696,12 @@ footer h1 {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
-/* line 276, ../../app/stylesheets/application.scss */
-#add_connection_dialog form fieldset label {
-  display: inline;
-  float: left;
-  width: 100%;
-  margin-right: 4.167%;
-}
-/* line 288, ../../app/stylesheets/application.scss */
-#add_connection_dialog form input, #add_connection_dialog form textarea {
-  display: inline;
-  float: left;
-  width: 100%;
-  margin-right: 4.167%;
+/* line 280, ../../app/stylesheets/application.scss */
+#add_connection_dialog form fieldset input:not([type="submit"]) {
   padding: 8px;
-  margin-bottom: 20px;
   background: #fff;
-  font-size: 14px;
+  font-size: 0.875em;
+  line-height: 1.714em;
   color: #555;
   border: 1px #ddd solid;
   -moz-box-shadow: #aaaaaa 0px 0px 4px;
@@ -1700,14 +1713,28 @@ footer h1 {
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 301, ../../app/stylesheets/application.scss */
-#add_connection_dialog form input:hover, #add_connection_dialog form textarea:hover {
+/* line 289, ../../app/stylesheets/application.scss */
+#add_connection_dialog form fieldset input:not([type="submit"]):hover {
   background: #eee;
 }
-/* line 306, ../../app/stylesheets/application.scss */
-#add_connection_dialog form .button {
+/* line 295, ../../app/stylesheets/application.scss */
+#add_connection_dialog form #submit, #add_connection_dialog form #cancel {
   display: inline;
   float: left;
-  width: 21.053%;
-  margin-right: 5.263%;
+  width: 37.5%;
+  margin-right: 4.167%;
+  display: block;
+  padding: 8px;
+  font-size: 0.875em;
+  line-height: 1.714em;
+  border: none;
+  text-align: center;
+}
+/* line 304, ../../app/stylesheets/application.scss */
+#add_connection_dialog form #submit {
+  display: inline;
+  float: right;
+  margin-right: 0;
+  /* ugly hacks for IE6-7 */
+  #margin-left: -1em;
 }

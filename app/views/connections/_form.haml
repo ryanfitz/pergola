@@ -25,5 +25,8 @@
       = f.label :port
       = f.text_field :port
   %fieldset
-    = link_to "Cancel", url_for(:index, :format => :js), :remote => true, :id => 'cancel', :class => 'awesome'
-    = link_to "Save", "#", :id=>'submit', :class => 'awesome'
+    .left
+      = link_to "Cancel", url_for(:index, :format => :js), :remote => true, :id => 'cancel', :class => 'awesome red'
+    .right
+      = f.submit "Save", :id => 'submit', :class => 'awesome blue'
+      / = link_to "Save", "#", :id=>'submit', :class => 'awesome'
