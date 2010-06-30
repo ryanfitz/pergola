@@ -1584,7 +1584,7 @@ section article #connections .connection ul li {
 /* line 189, ../../app/stylesheets/application.scss */
 section article #connections .connection ul li {
   color: #5583B1;
-  padding: 5px 0px 5px 10px;
+  padding: 5px 10px 5px 10px;
   border-top: 1px solid #e1e1e1;
 }
 /* line 194, ../../app/stylesheets/application.scss */
@@ -1595,11 +1595,19 @@ section article #connections .connection ul li strong {
 }
 /* line 202, ../../app/stylesheets/application.scss */
 section article #connections .connection a.connect {
-  display: block;
+  margin-left: 79.167%;
+  margin-bottom: 0px;
   text-align: center;
   outline: none;
   text-decoration: none;
   font-weight: normal;
+  overflow: hidden;
+  display: inline-block;
+  float: none;
+}
+/* line 8, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
+section article #connections .connection a.connect {
+  display: block;
 }
 
 /* line 219, ../../app/stylesheets/application.scss */
