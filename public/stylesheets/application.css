@@ -1372,7 +1372,7 @@ header #db_box {
 #page_nav h1 {
   display: inline;
   float: left;
-  width: 39.344%;
+  width: 14.754%;
   margin-right: 1.639%;
   margin-left: 1.639%;
   font-size: 2em;
@@ -1385,18 +1385,20 @@ header #db_box {
 #page_nav ul {
   display: inline;
   float: left;
-  width: 14.754%;
+  width: 63.934%;
   margin-right: 1.639%;
   display: inline;
   float: right;
   margin-right: 1.639%;
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
+  text-align: right;
   list-style: none;
   margin: 0;
   padding: 0;
   margin-left: 0;
   padding-left: 0;
+  padding-right: 10px;
   display: inline;
   margin-top: 1em;
 }
@@ -1406,7 +1408,7 @@ header #db_box {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 94, ../../app/stylesheets/application.scss */
+/* line 96, ../../app/stylesheets/application.scss */
 #page_nav ul li {
   margin-left: 0;
   margin-bottom: 0;
@@ -1416,15 +1418,14 @@ header #db_box {
   font-size: 0.875em;
   line-height: 1.714em;
 }
-/* line 103, ../../app/stylesheets/application.scss */
+/* line 105, ../../app/stylesheets/application.scss */
 #page_nav ul li a {
   padding: 8px;
   color: #ACACAC;
   text-decoration: none;
 }
-/* line 108, ../../app/stylesheets/application.scss */
-#page_nav ul li a:hover {
-  color: #fff;
+/* line 110, ../../app/stylesheets/application.scss */
+#page_nav ul li a.active {
   background-color: #202020;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -1433,76 +1434,34 @@ header #db_box {
   -khtml-border-radius: 20px;
   border-radius: 20px;
 }
+/* line 115, ../../app/stylesheets/application.scss */
+#page_nav ul li a:hover {
+  color: #fff;
+}
 
 /* Nav --------------------------------------------------------------*/
-/* line 119, ../../app/stylesheets/application.scss */
-nav {
-  background-color: #7ED2DF;
-  overflow: hidden;
-  display: inline-block;
-  height: 33px;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #030303), color-stop(100%, #44474b));
-  background-image: -moz-linear-gradient(top, #030303 0%, #44474b 100%);
-  color: #A5A5A5;
-}
-/* line 8, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
-nav {
-  display: block;
-}
-/* line 126, ../../app/stylesheets/application.scss */
-nav .container {
-  display: inline;
-  float: left;
-  width: 31.148%;
-  margin-right: 1.639%;
-  padding-left: 65.574%;
-}
-/* line 131, ../../app/stylesheets/application.scss */
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin-left: 0;
-  padding-left: 0;
-  display: inline;
-}
-/* line 11, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.scss */
-nav ul li {
-  list-style-image: none;
-  list-style-type: none;
-  margin-left: 0px;
-}
-/* line 137, ../../app/stylesheets/application.scss */
-nav ul li {
-  margin-left: 0;
-  margin-bottom: 0;
-  padding: 2px 15px 10px;
-  list-style: none;
-  display: inline;
-}
-
 /* Content --------------------------------------------------------------*/
-/* line 150, ../../app/stylesheets/application.scss */
+/* line 127, ../../app/stylesheets/application.scss */
 section article {
   display: inline;
   float: left;
-  width: 80.328%;
+  width: 96.721%;
   margin-right: 1.639%;
   margin-left: 1.639%;
 }
-/* line 154, ../../app/stylesheets/application.scss */
+/* line 131, ../../app/stylesheets/application.scss */
 section article h3 {
   margin-top: 1em;
 }
-/* line 163, ../../app/stylesheets/application.scss */
+/* line 140, ../../app/stylesheets/application.scss */
 section article #connections .connection {
   display: inline;
   float: left;
-  width: 48.98%;
-  margin-right: 2.041%;
+  width: 49.153%;
+  margin-right: 1.695%;
   margin-bottom: 20px;
 }
-/* line 166, ../../app/stylesheets/application.scss */
+/* line 143, ../../app/stylesheets/application.scss */
 section article #connections .connection:nth-child(even) {
   display: inline;
   float: right;
@@ -1510,7 +1469,7 @@ section article #connections .connection:nth-child(even) {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
-/* line 174, ../../app/stylesheets/application.scss */
+/* line 151, ../../app/stylesheets/application.scss */
 section article #connections .connection .header {
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -1529,17 +1488,18 @@ section article #connections .connection .header {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #eaeaea), color-stop(100%, #c2c2c2));
   background-image: -moz-linear-gradient(top, #eaeaea 0%, #c2c2c2 100%);
 }
-/* line 180, ../../app/stylesheets/application.scss */
+/* line 157, ../../app/stylesheets/application.scss */
 section article #connections .connection .header h4 {
   color: #2C2C2C;
-  padding: 5px;
+  padding: 5px 5px 3px;
   font-size: 1.5em;
   line-height: 1em;
   font-weight: bold;
   text-align: center;
   margin-bottom: 0px;
+  text-shadow: 0px 1px 1px #fff;
 }
-/* line 190, ../../app/stylesheets/application.scss */
+/* line 168, ../../app/stylesheets/application.scss */
 section article #connections .connection:hover {
   -moz-box-shadow: #333333 1px 1px 5px;
   -webkit-box-shadow: #333333 1px 1px 5px;
@@ -1564,7 +1524,7 @@ section article #connections .connection:hover {
   -o-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 199, ../../app/stylesheets/application.scss */
+/* line 176, ../../app/stylesheets/application.scss */
 section article #connections .connection ul {
   list-style: none;
   margin: 0;
@@ -1590,12 +1550,19 @@ section article #connections .connection ul li {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 205, ../../app/stylesheets/application.scss */
+/* line 182, ../../app/stylesheets/application.scss */
 section article #connections .connection ul li {
+  color: #5583B1;
   padding: 5px 0px 5px 10px;
   border-top: 1px solid #e1e1e1;
 }
-/* line 211, ../../app/stylesheets/application.scss */
+/* line 187, ../../app/stylesheets/application.scss */
+section article #connections .connection ul li strong {
+  text-shadow: 0px 1px 1px #fff;
+  color: #2C2C2C;
+  padding-right: 5px;
+}
+/* line 195, ../../app/stylesheets/application.scss */
 section article #connections .connection a.connect {
   display: block;
   text-align: center;
@@ -1604,7 +1571,7 @@ section article #connections .connection a.connect {
   font-weight: normal;
 }
 
-/* line 233, ../../app/stylesheets/application.scss */
+/* line 217, ../../app/stylesheets/application.scss */
 aside {
   display: inline;
   float: left;
@@ -1619,7 +1586,7 @@ aside {
 }
 
 /* Footer --------------------------------------------------------------*/
-/* line 241, ../../app/stylesheets/application.scss */
+/* line 225, ../../app/stylesheets/application.scss */
 footer {
   margin-top: 40px;
   color: #A5A5A5;
@@ -1644,7 +1611,7 @@ footer {
 footer {
   display: block;
 }
-/* line 250, ../../app/stylesheets/application.scss */
+/* line 234, ../../app/stylesheets/application.scss */
 footer h1 {
   clear: both;
   margin-right: 1.639%;
@@ -1653,7 +1620,7 @@ footer h1 {
   line-height: 1.5em;
 }
 
-/* line 257, ../../app/stylesheets/application.scss */
+/* line 241, ../../app/stylesheets/application.scss */
 #add_connection_dialog {
   display: inline;
   float: left;
@@ -1672,14 +1639,14 @@ footer h1 {
   -o-box-shadow: #333333 1px 1px 5px;
   box-shadow: #333333 1px 1px 5px;
 }
-/* line 267, ../../app/stylesheets/application.scss */
+/* line 251, ../../app/stylesheets/application.scss */
 #add_connection_dialog h1 {
   text-align: center;
   font-size: 2em;
   line-height: 1.5em;
   border-bottom: 3px solid #44475f;
 }
-/* line 274, ../../app/stylesheets/application.scss */
+/* line 258, ../../app/stylesheets/application.scss */
 #add_connection_dialog form p {
   overflow: hidden;
   display: inline-block;
@@ -1688,7 +1655,7 @@ footer h1 {
 #add_connection_dialog form p {
   display: block;
 }
-/* line 277, ../../app/stylesheets/application.scss */
+/* line 261, ../../app/stylesheets/application.scss */
 #add_connection_dialog form label {
   text-align: right;
   display: inline;
@@ -1696,7 +1663,7 @@ footer h1 {
   width: 21.053%;
   margin-right: 5.263%;
 }
-/* line 283, ../../app/stylesheets/application.scss */
+/* line 267, ../../app/stylesheets/application.scss */
 #add_connection_dialog form input {
   display: inline;
   float: left;
@@ -1708,7 +1675,7 @@ footer h1 {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
-/* line 288, ../../app/stylesheets/application.scss */
+/* line 272, ../../app/stylesheets/application.scss */
 #add_connection_dialog form .button {
   display: inline;
   float: left;

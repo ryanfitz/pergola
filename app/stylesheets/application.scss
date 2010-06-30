@@ -74,7 +74,7 @@ header {
   @include linear-gradient(color-stops(#1b1b1b, #0d0d0d 50%, #050505 75%, #0c0c0c));
   
   h1 {
-    @include columns(5);
+    @include columns(2);
     @include alpha;
     @include adjust-font-size-to(32px);
     padding: 10px 0px 0px 0px;
@@ -83,11 +83,13 @@ header {
   }
   
   ul { 
-    @include columns(2);
+    @include columns(8);
     @include omega;   
+    text-align: right;
     @include no-style-list;
     margin-left: 0;
     padding-left: 0;
+    padding-right: 10px;
   	display: inline;
   	margin-top: 1em;
   	
@@ -105,10 +107,13 @@ header {
     	  color: #ACACAC;
     	  text-decoration: none;
     	  
-    	  &:hover {
-    	    color: #fff;
+    	  &.active {
     	    background-color: #202020;
       	  @include border-radius(20px);
+    	  }
+    	  
+    	  &:hover {
+    	    color: #fff;
     	  }
     	}
   	}
@@ -116,39 +121,11 @@ header {
 }
 /* Nav --------------------------------------------------------------*/
 
-nav {
-  background-color: #7ED2DF;
-  @include clearfix;
-  height: 33px;
-  @include linear-gradient(color-stops(#030303, #44474b));
-  color: #A5A5A5;
-
-  .container {
-    @include columns(4);
-    @include prefix(8);
-  }
-  
-  ul {    
-    @include no-style-list;
-    margin-left: 0;
-    padding-left: 0;
-  	display: inline;
-  	
-  	li {
-  	  margin-left: 0;
-    	margin-bottom: 0;
-    	padding: 2px 15px 10px;
-    	list-style: none;
-    	display: inline;
-  	}
-  }
-}
-
 /* Content --------------------------------------------------------------*/
 section {
      
  article {
-   @include columns(10);
+   @include columns(12);
    @include alpha;
    
    h3 {
@@ -161,10 +138,10 @@ section {
 //     @include alpha;
      
      .connection {    
-       @include columns(5,10);
+       @include columns(6,12);
        
        &:nth-child(even) {
-          @include omega(10);
+          @include omega(12);
         }
 //       @include omega(10);
 //       float: left;
@@ -178,12 +155,13 @@ section {
          @include linear-gradient(color-stops(#EAEAEA, #C2C2C2));
          
          h4 {
-            color: #2C2C2C;
-             padding: 5px;
-             @include adjust-font-size-to(24px);
-             font-weight:bold;
-         	  text-align:center;
-         	  margin-bottom:0px;
+           color: #2C2C2C;
+           padding: 5px 5px 3px;
+           @include adjust-font-size-to(24px);
+           font-weight:bold;
+         	 text-align:center;
+         	 margin-bottom:0px;
+         	 text-shadow: 0px 1px 1px #fff;
           }
        }
        
@@ -194,7 +172,6 @@ section {
           @include transition-duration(.2s);
           @include transition-timing-function(ease-in);
         }
-     
        
        ul {
          @include no-style-list;
@@ -203,8 +180,15 @@ section {
          @include border-bottom-radius(10px);
 
         li {
+          color: #5583B1;
           padding: 5px 0px 5px 10px;
           border-top: 1px solid #e1e1e1;
+          
+          strong {
+            text-shadow: 0px 1px 1px #fff;
+            color: #2C2C2C;
+            padding-right: 5px;
+          }
         }
        }
        
