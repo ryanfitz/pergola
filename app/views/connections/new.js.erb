@@ -1,10 +1,11 @@
 $("#add_connection_dialog").html("<%=js_escape_html partial "connections/form", :object => @connection %>");
 
+$('#connections').hide();
+
 $('#add_connection_dialog').show();
 
-$('#add_connection_dialog').draggable();
-
-$("#add_connection_dialog").resizable();
+// $('#add_connection_dialog').draggable();
+// $("#add_connection_dialog").resizable();
 
 $('#submit').click(function() {
   $('#connection_form').submit();

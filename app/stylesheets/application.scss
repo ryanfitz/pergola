@@ -142,6 +142,7 @@ section {
 //     @include columns(10,10);
 //     @include prefix(1);
 //     @include alpha;
+     margin-top: 1em;
      
      .connection {    
        @include columns(6,12);
@@ -241,13 +242,14 @@ footer {
  
 #add_connection_dialog {
   @include columns(4);
+  @include prefix(4);
   display: none;
-  position: absolute; top: 70px; left: 200px;
-  padding: 20px;
-  border: solid 1px #bbb;
-  background: #fff;
-  z-index: 100;
-  @include box-shadow; 
+//  position: absolute; top: 70px; left: 200px;
+//  padding: 20px;
+//  border: solid 1px #bbb;
+//  background: #fff;
+//  z-index: 100;
+//  @include box-shadow; 
   
   h1 {
     text-align:center;

@@ -10,15 +10,12 @@
   
 %section
   %article
-    %h3
     #connections
       = partial 'connections/connection', :collection => @connections
-
+    #add_connection_dialog
 / %aside
 / = link_to "Add Server", url_for(:new, :format => :js), :remote => true, :class => 'button'
 /   
 / - link_to url_for(:new, :format => :js), :remote => true, :id => "add_connection", :class => 'button' do
 /   = image_tag "icons/db_add.png"
 /   Add
-
-#add_connection_dialog.modal
