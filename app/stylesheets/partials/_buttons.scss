@@ -88,3 +88,54 @@ a.button, button {
       @include fancy-button-padding(2px, 8px, 2px);
     }   
 }
+
+.awesome, .awesome:visited {
+	background: #222 url(/images/alert-overlay.png) repeat-x; 
+	display: inline-block; 
+	padding: 5px 10px 6px; 
+	color: #fff; 
+	text-decoration: none;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 5px;
+	
+	&:hover { 
+	  background-color: #111; 
+	  color: #fff; 
+	}
+	
+	&:active { 
+	  top: 1px; 
+	}
+	
+	&.remove {
+	  font-family: 'Lucida Grande', Lucida, Arial, sans_serif;
+	  color: #000;
+    background-color: #ddd;
+    padding: 2px 6px;
+    font-size: 10px;
+    line-height: 12px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    border: 2px solid #A7A7A7;
+    vertical-align: middle;
+    width: auto;
+    
+    -moz-box-shadow: none;
+  	-webkit-box-shadow: none;
+    
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+.blue.awesome, .blue.awesome:visited		{ background-color: #1273E6; }
+.blue.awesome:hover							{ background-color: #007d9a; }

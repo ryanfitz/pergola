@@ -830,6 +830,64 @@ a.button.spade.disabled:active, a.button.spade[disabled], button.spade.disabled:
   border-width: 2px;
 }
 
+/* line 92, ../../app/stylesheets/partials/_buttons.scss */
+.awesome, .awesome:visited {
+  background: #222222 url(/images/alert-overlay.png) repeat-x;
+  display: inline-block;
+  padding: 5px 10px 6px;
+  color: #fff;
+  text-decoration: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+/* line 108, ../../app/stylesheets/partials/_buttons.scss */
+.awesome:hover, .awesome:visited:hover {
+  background-color: #111;
+  color: #fff;
+}
+/* line 113, ../../app/stylesheets/partials/_buttons.scss */
+.awesome:active, .awesome:visited:active {
+  top: 1px;
+}
+/* line 117, ../../app/stylesheets/partials/_buttons.scss */
+.awesome.remove, .awesome:visited.remove {
+  font-family: 'Lucida Grande', Lucida, Arial, sans_serif;
+  color: #000;
+  background-color: #ddd;
+  padding: 2px 6px;
+  font-size: 10px;
+  line-height: 12px;
+  float: right;
+  margin-top: 5px;
+  margin-right: 5px;
+  border: 2px solid #A7A7A7;
+  vertical-align: middle;
+  width: auto;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+/* line 134, ../../app/stylesheets/partials/_buttons.scss */
+.awesome.remove:hover, .awesome:visited.remove:hover {
+  color: #932624;
+}
+
+/* line 140, ../../app/stylesheets/partials/_buttons.scss */
+.blue.awesome, .blue.awesome:visited {
+  background-color: #1273E6;
+}
+
+/* line 141, ../../app/stylesheets/partials/_buttons.scss */
+.blue.awesome:hover {
+  background-color: #007d9a;
+}
+
 /* Reset --------------------------------------------------------------*/
 /* line 14, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
