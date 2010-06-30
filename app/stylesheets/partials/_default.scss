@@ -16,6 +16,18 @@ body {
   color: $base;
 }
 
+.clear {
+  clear:both;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
 /* Links --------------------------------------------------------------*/
 
 a {

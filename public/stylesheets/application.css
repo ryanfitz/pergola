@@ -982,104 +982,119 @@ body {
   color: #4c4c4c;
 }
 
+/* line 19, ../../app/stylesheets/partials/_default.scss */
+.clear {
+  clear: both;
+}
+
+/* line 23, ../../app/stylesheets/partials/_default.scss */
+.right {
+  float: right;
+}
+
+/* line 27, ../../app/stylesheets/partials/_default.scss */
+.left {
+  float: left;
+}
+
 /* Links --------------------------------------------------------------*/
-/* line 22, ../../app/stylesheets/partials/_default.scss */
+/* line 34, ../../app/stylesheets/partials/_default.scss */
 a:link, a:visited {
   color: white;
 }
-/* line 25, ../../app/stylesheets/partials/_default.scss */
+/* line 37, ../../app/stylesheets/partials/_default.scss */
 a:focus, a:hover, a:active {
   color: #f2f2f2;
   text-decoration: none;
 }
-/* line 29, ../../app/stylesheets/partials/_default.scss */
+/* line 41, ../../app/stylesheets/partials/_default.scss */
 a img {
   border: none;
 }
 
 /* Headings --------------------------------------------------------------*/
-/* line 36, ../../app/stylesheets/partials/_default.scss */
+/* line 48, ../../app/stylesheets/partials/_default.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
-/* line 38, ../../app/stylesheets/partials/_default.scss */
+/* line 50, ../../app/stylesheets/partials/_default.scss */
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
   margin: 0;
 }
 
-/* line 43, ../../app/stylesheets/partials/_default.scss */
+/* line 55, ../../app/stylesheets/partials/_default.scss */
 h1 {
   font-size: 3em;
   line-height: 1em;
   margin-bottom: 0.5em;
 }
 
-/* line 48, ../../app/stylesheets/partials/_default.scss */
+/* line 60, ../../app/stylesheets/partials/_default.scss */
 h2 {
   font-size: 2em;
   line-height: 1.5em;
   margin-bottom: 0.75em;
 }
 
-/* line 53, ../../app/stylesheets/partials/_default.scss */
+/* line 65, ../../app/stylesheets/partials/_default.scss */
 h3 {
   font-size: 1.5em;
   line-height: 1em;
   margin-bottom: 1em;
 }
 
-/* line 58, ../../app/stylesheets/partials/_default.scss */
+/* line 70, ../../app/stylesheets/partials/_default.scss */
 h4 {
   font-size: 1.125em;
   line-height: 1.333em;
   margin-bottom: 1.333em;
 }
 
-/* line 63, ../../app/stylesheets/partials/_default.scss */
+/* line 75, ../../app/stylesheets/partials/_default.scss */
 h5, h6 {
   margin-bottom: 1.5em;
   font-weight: bold;
 }
 
 /* Text --------------------------------------------------------------*/
-/* line 70, ../../app/stylesheets/partials/_default.scss */
+/* line 82, ../../app/stylesheets/partials/_default.scss */
 cite, em, dfn {
   font-style: italic;
 }
 
-/* line 74, ../../app/stylesheets/partials/_default.scss */
+/* line 86, ../../app/stylesheets/partials/_default.scss */
 strong, dfn {
   font-weight: bold;
 }
 
-/* line 78, ../../app/stylesheets/partials/_default.scss */
+/* line 90, ../../app/stylesheets/partials/_default.scss */
 sup, sub {
   line-height: 0;
 }
 
-/* line 82, ../../app/stylesheets/partials/_default.scss */
+/* line 94, ../../app/stylesheets/partials/_default.scss */
 abbr, acronym {
   border-bottom: 1px dotted;
   cursor: help;
 }
 
-/* line 87, ../../app/stylesheets/partials/_default.scss */
+/* line 99, ../../app/stylesheets/partials/_default.scss */
 address {
   margin-bottom: 1.5em;
   font-style: italic;
 }
 
-/* line 92, ../../app/stylesheets/partials/_default.scss */
+/* line 104, ../../app/stylesheets/partials/_default.scss */
 ins {
   text-decoration: underline;
 }
 
-/* line 96, ../../app/stylesheets/partials/_default.scss */
+/* line 108, ../../app/stylesheets/partials/_default.scss */
 del {
   text-decoration: line-through;
 }
 
-/* line 100, ../../app/stylesheets/partials/_default.scss */
+/* line 112, ../../app/stylesheets/partials/_default.scss */
 pre, code, tt {
   margin: 1.5em;
   margin-left: -1.5em;
@@ -1088,36 +1103,36 @@ pre, code, tt {
   font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
 }
 
-/* line 109, ../../app/stylesheets/partials/_default.scss */
+/* line 121, ../../app/stylesheets/partials/_default.scss */
 pre {
   white-space: pre;
 }
 
-/* line 113, ../../app/stylesheets/partials/_default.scss */
+/* line 125, ../../app/stylesheets/partials/_default.scss */
 code {
   display: block;
 }
 
-/* line 117, ../../app/stylesheets/partials/_default.scss */
+/* line 129, ../../app/stylesheets/partials/_default.scss */
 q {
   font-style: italic;
 }
-/* line 119, ../../app/stylesheets/partials/_default.scss */
+/* line 131, ../../app/stylesheets/partials/_default.scss */
 q em {
   font-style: normal;
 }
 
-/* line 124, ../../app/stylesheets/partials/_default.scss */
+/* line 136, ../../app/stylesheets/partials/_default.scss */
 p {
   margin-bottom: 1.5em;
 }
 
-/* line 128, ../../app/stylesheets/partials/_default.scss */
+/* line 140, ../../app/stylesheets/partials/_default.scss */
 blockquote, q {
   quotes: "" "";
 }
 
-/* line 132, ../../app/stylesheets/partials/_default.scss */
+/* line 144, ../../app/stylesheets/partials/_default.scss */
 blockquote {
   margin: 1.5em;
   margin-left: -1.5em;
@@ -1127,51 +1142,51 @@ blockquote {
   font-style: italic;
 }
 
-/* line 143, ../../app/stylesheets/partials/_default.scss */
+/* line 155, ../../app/stylesheets/partials/_default.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
 /* Replaced --------------------------------------------------------------*/
-/* line 150, ../../app/stylesheets/partials/_default.scss */
+/* line 162, ../../app/stylesheets/partials/_default.scss */
 img {
   vertical-align: bottom;
 }
 
 /* Lists --------------------------------------------------------------*/
-/* line 171, ../../app/stylesheets/partials/_default.scss */
+/* line 183, ../../app/stylesheets/partials/_default.scss */
 ol {
   margin: 0 1.5em 1.5em 0;
   list-style: decimal;
 }
 
-/* line 175, ../../app/stylesheets/partials/_default.scss */
+/* line 187, ../../app/stylesheets/partials/_default.scss */
 ul {
   margin: 0 1.5em 1.5em 0;
   list-style: disc;
 }
 
-/* line 180, ../../app/stylesheets/partials/_default.scss */
+/* line 192, ../../app/stylesheets/partials/_default.scss */
 li ul, li ol {
   list-style-type: circle;
   margin: 0 1.5em 0.75em;
 }
 
-/* line 186, ../../app/stylesheets/partials/_default.scss */
+/* line 198, ../../app/stylesheets/partials/_default.scss */
 dl {
   margin-bottom: 1.5em;
   border-top-style: solid;
   border-top-width: 0.063em;
   padding-top: 1.438em;
 }
-/* line 189, ../../app/stylesheets/partials/_default.scss */
+/* line 201, ../../app/stylesheets/partials/_default.scss */
 dl dt {
   font-size: 1.125em;
   line-height: 1.333em;
   margin-bottom: 0.667em;
 }
 
-/* line 195, ../../app/stylesheets/partials/_default.scss */
+/* line 207, ../../app/stylesheets/partials/_default.scss */
 dd {
   margin-bottom: 1.5em;
   border-bottom-style: solid;
@@ -1181,7 +1196,7 @@ dd {
 
 /* Tables --------------------------------------------------------------*/
 /* tables still need 'cellspacing="0"' in the markup */
-/* line 203, ../../app/stylesheets/partials/_default.scss */
+/* line 215, ../../app/stylesheets/partials/_default.scss */
 table {
   margin-bottom: 1.5em;
   width: 100%;
@@ -1189,37 +1204,37 @@ table {
   border-spacing: 0;
 }
 
-/* line 210, ../../app/stylesheets/partials/_default.scss */
+/* line 222, ../../app/stylesheets/partials/_default.scss */
 table, td, th {
   vertical-align: top;
 }
 
-/* line 214, ../../app/stylesheets/partials/_default.scss */
+/* line 226, ../../app/stylesheets/partials/_default.scss */
 th, thead th {
   font-weight: bold;
 }
 
-/* line 218, ../../app/stylesheets/partials/_default.scss */
+/* line 230, ../../app/stylesheets/partials/_default.scss */
 th, td, caption {
   padding: 0.75em;
   text-align: left;
   font-weight: normal;
 }
 
-/* line 224, ../../app/stylesheets/partials/_default.scss */
+/* line 236, ../../app/stylesheets/partials/_default.scss */
 th, td {
   border-bottom-style: solid;
   border-bottom-width: 0.063em;
   padding-bottom: 0.688em;
 }
 
-/* line 228, ../../app/stylesheets/partials/_default.scss */
+/* line 240, ../../app/stylesheets/partials/_default.scss */
 tfoot {
   font-size: 0.875em;
   line-height: 1.714em;
 }
 
-/* line 232, ../../app/stylesheets/partials/_default.scss */
+/* line 244, ../../app/stylesheets/partials/_default.scss */
 caption {
   font-size: 1.5em;
   line-height: 1em;
@@ -1227,7 +1242,7 @@ caption {
 }
 
 /* Forms --------------------------------------------------------------*/
-/* line 239, ../../app/stylesheets/partials/_default.scss */
+/* line 251, ../../app/stylesheets/partials/_default.scss */
 fieldset {
   margin-bottom: 1.5em;
   border-style: solid;
@@ -1235,19 +1250,19 @@ fieldset {
   padding: 1.438em;
 }
 
-/* line 244, ../../app/stylesheets/partials/_default.scss */
+/* line 256, ../../app/stylesheets/partials/_default.scss */
 legend {
   font-size: 1.125em;
   line-height: 1.333em;
   font-weight: bold;
 }
 
-/* line 249, ../../app/stylesheets/partials/_default.scss */
+/* line 261, ../../app/stylesheets/partials/_default.scss */
 label {
   font-weight: bold;
 }
 
-/* line 253, ../../app/stylesheets/partials/_default.scss */
+/* line 265, ../../app/stylesheets/partials/_default.scss */
 textarea, input:not([type="radio"]) {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1595,22 +1610,17 @@ section article #connections .connection ul li strong {
 }
 /* line 202, ../../app/stylesheets/application.scss */
 section article #connections .connection a.connect {
-  margin-left: 79.167%;
   margin-bottom: 0px;
+  font-size: 0.875em;
+  line-height: 1.714em;
   text-align: center;
   outline: none;
   text-decoration: none;
   font-weight: normal;
-  overflow: hidden;
-  display: inline-block;
-  float: none;
-}
-/* line 8, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
-section article #connections .connection a.connect {
-  display: block;
+  float: right;
 }
 
-/* line 219, ../../app/stylesheets/application.scss */
+/* line 216, ../../app/stylesheets/application.scss */
 aside {
   display: inline;
   float: left;
@@ -1625,7 +1635,7 @@ aside {
 }
 
 /* Footer --------------------------------------------------------------*/
-/* line 227, ../../app/stylesheets/application.scss */
+/* line 224, ../../app/stylesheets/application.scss */
 footer {
   margin-top: 40px;
   color: #A5A5A5;
@@ -1650,7 +1660,7 @@ footer {
 footer {
   display: block;
 }
-/* line 236, ../../app/stylesheets/application.scss */
+/* line 233, ../../app/stylesheets/application.scss */
 footer h1 {
   clear: both;
   margin-right: 1.639%;
@@ -1659,7 +1669,7 @@ footer h1 {
   line-height: 1.5em;
 }
 
-/* line 243, ../../app/stylesheets/application.scss */
+/* line 240, ../../app/stylesheets/application.scss */
 #add_connection_dialog {
   display: none;
   display: inline;
@@ -1668,14 +1678,14 @@ footer h1 {
   margin-right: 1.639%;
   padding-left: 8.197%;
 }
-/* line 254, ../../app/stylesheets/application.scss */
+/* line 251, ../../app/stylesheets/application.scss */
 #add_connection_dialog h1 {
   text-align: center;
   font-size: 2em;
   line-height: 1.5em;
   border-bottom: 3px solid #44475f;
 }
-/* line 261, ../../app/stylesheets/application.scss */
+/* line 258, ../../app/stylesheets/application.scss */
 #add_connection_dialog form fieldset {
   border: 0;
   padding: 0;
@@ -1685,14 +1695,14 @@ footer h1 {
   width: 100%;
   margin-right: 2.041%;
 }
-/* line 267, ../../app/stylesheets/application.scss */
+/* line 264, ../../app/stylesheets/application.scss */
 #add_connection_dialog form fieldset .left {
   display: inline;
   float: left;
   width: 48.98%;
   margin-right: 2.041%;
 }
-/* line 271, ../../app/stylesheets/application.scss */
+/* line 268, ../../app/stylesheets/application.scss */
 #add_connection_dialog form fieldset .right {
   display: inline;
   float: left;
@@ -1704,7 +1714,7 @@ footer h1 {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
-/* line 280, ../../app/stylesheets/application.scss */
+/* line 277, ../../app/stylesheets/application.scss */
 #add_connection_dialog form fieldset input:not([type="submit"]) {
   padding: 8px;
   background: #fff;
@@ -1721,11 +1731,11 @@ footer h1 {
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 289, ../../app/stylesheets/application.scss */
+/* line 286, ../../app/stylesheets/application.scss */
 #add_connection_dialog form fieldset input:not([type="submit"]):hover {
   background: #eee;
 }
-/* line 295, ../../app/stylesheets/application.scss */
+/* line 292, ../../app/stylesheets/application.scss */
 #add_connection_dialog form #submit, #add_connection_dialog form #cancel {
   display: inline;
   float: left;
@@ -1738,7 +1748,7 @@ footer h1 {
   border: none;
   text-align: center;
 }
-/* line 304, ../../app/stylesheets/application.scss */
+/* line 301, ../../app/stylesheets/application.scss */
 #add_connection_dialog form #submit {
   display: inline;
   float: right;

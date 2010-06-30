@@ -200,17 +200,14 @@ section {
        }
        
        a.connect {
-//         @include columns(2, 5);
-         margin-left: columns(4,5);
          margin-bottom: 0px;
+         @include adjust-font-size-to(14px);
          text-align: center;
          outline: none;
          text-decoration: none;
          font-weight: normal;
-         @include clearfix;
-         float: none;
+         float: right;
        }
-       
      }
    }
  }
@@ -220,10 +217,10 @@ aside {
    @include columns(2);
    @include omega;
    @include leader(1,24px);
- }
+}
 
 /* Footer --------------------------------------------------------------*/
-  
+
 footer {
 
   margin-top: 40px;
