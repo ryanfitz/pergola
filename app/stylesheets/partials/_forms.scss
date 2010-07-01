@@ -1,0 +1,48 @@
+form {
+  fieldset {
+    border: 0;
+    padding: 0;
+    margin-bottom: 1em;
+    @include columns(10,10);
+    
+    .left {
+      @include columns(5, 10);
+    }
+    
+    .right {
+       @include columns(5, 10);
+       @include omega(10);
+    }
+    
+    label {
+//        @include columns(5,5);
+    }
+    
+    input:not([type="submit"]) { 		
+      padding: 5px; 
+      background: #fff;  
+      @include adjust-font-size-to(14px);
+      color: #555; 
+      border: 1px #ddd solid;
+      @include box-shadow(#aaa, 0px, 0px, 4px);
+      @include transition-duration(0.3s);
+
+      &:hover { 
+          background: #eee; 
+      }
+    }
+  }
+  
+  #submit, #cancel {
+    @include columns(2,5);
+    display: block;
+    padding: 8px; 
+    @include adjust-font-size-to(14px);
+    border: none;
+    text-align: center;
+  }
+  
+  #submit {
+    @include omega(5);
+  }
+}

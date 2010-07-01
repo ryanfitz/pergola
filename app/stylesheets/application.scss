@@ -9,14 +9,12 @@
 
 @include susy;
 
-body {
-  background: #EBEBEB;
-}
 #main {
   .container {
     background-color: #fff;
   }
 }
+
 .container {
  @include container;
 // @include show-grid("/images/grid.png");
@@ -25,17 +23,11 @@ body {
  }
 }
 
-@mixin grey-background {
-  background: #0c0c0c;
-  @include linear-gradient(color-stops(#0c0c0c, #242424 50%, #2e2e2e 75%, #363636));
-//  text-shadow: 1px 0px #ccc;
-  color: #666; 
-}
-
 /* Header --------------------------------------------------------------*/
 header {  
-  @include grey-background;
-//  height: 130px;
+  background: #0c0c0c;
+  @include linear-gradient(color-stops(#0c0c0c, #242424 50%, #2e2e2e 75%, #363636));
+  color: #666;
 
   hgroup {
     @include columns(12);
@@ -241,65 +233,10 @@ footer {
   display: none;
   @include columns(10);
   @include prefix(1);
-//  position: absolute; top: 70px; left: 200px;
-//  padding: 20px;
-//  border: solid 1px #bbb;
-//  background: #fff;
-//  z-index: 100;
-//  @include box-shadow; 
   
   h1 {
     text-align:center;
     @include adjust-font-size-to(32px);
     border-bottom: 3px solid #44475f;
-  }
-  
-  form {
-    fieldset {
-      border: 0;
-      padding: 0;
-      margin-bottom: 1em;
-      @include columns(10,10);
-      
-      .left {
-        @include columns(5, 10);
-      }
-      
-      .right {
-         @include columns(5, 10);
-         @include omega(10);
-      }
-      
-      label {
-//        @include columns(5,5);
-      }
-      
-      input:not([type="submit"]) { 		
-        padding: 5px; 
-        background: #fff;  
-        @include adjust-font-size-to(14px);
-        color: #555; 
-        border: 1px #ddd solid;
-        @include box-shadow(#aaa, 0px, 0px, 4px);
-        @include transition-duration(0.3s);
-
-        &:hover { 
-            background: #eee; 
-        }
-      }
-    }
-    
-    #submit, #cancel {
-      @include columns(2,5);
-      display: block;
-      padding: 8px; 
-      @include adjust-font-size-to(14px);
-      border: none;
-      text-align: center;
-    }
-    
-    #submit {
-      @include omega(5);
-    }
   }
 }

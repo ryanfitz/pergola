@@ -64,6 +64,78 @@
   color: #932624;
 }
 
+/* line 2, ../../app/stylesheets/partials/_forms.scss */
+form fieldset {
+  border: 0;
+  padding: 0;
+  margin-bottom: 1em;
+  display: inline;
+  float: left;
+  width: 100%;
+  margin-right: 2.041%;
+}
+/* line 8, ../../app/stylesheets/partials/_forms.scss */
+form fieldset .left {
+  display: inline;
+  float: left;
+  width: 48.98%;
+  margin-right: 2.041%;
+}
+/* line 12, ../../app/stylesheets/partials/_forms.scss */
+form fieldset .right {
+  display: inline;
+  float: left;
+  width: 48.98%;
+  margin-right: 2.041%;
+  display: inline;
+  float: right;
+  margin-right: 0;
+  /* ugly hacks for IE6-7 */
+  #margin-left: -1em;
+}
+/* line 21, ../../app/stylesheets/partials/_forms.scss */
+form fieldset input:not([type="submit"]) {
+  padding: 5px;
+  background: #fff;
+  font-size: 0.875em;
+  line-height: 1.714em;
+  color: #555;
+  border: 1px #ddd solid;
+  -moz-box-shadow: #aaaaaa 0px 0px 4px;
+  -webkit-box-shadow: #aaaaaa 0px 0px 4px;
+  -o-box-shadow: #aaaaaa 0px 0px 4px;
+  box-shadow: #aaaaaa 0px 0px 4px;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 30, ../../app/stylesheets/partials/_forms.scss */
+form fieldset input:not([type="submit"]):hover {
+  background: #eee;
+}
+/* line 36, ../../app/stylesheets/partials/_forms.scss */
+form #submit, form #cancel {
+  display: inline;
+  float: left;
+  width: 37.5%;
+  margin-right: 4.167%;
+  display: block;
+  padding: 8px;
+  font-size: 0.875em;
+  line-height: 1.714em;
+  border: none;
+  text-align: center;
+}
+/* line 45, ../../app/stylesheets/partials/_forms.scss */
+form #submit {
+  display: inline;
+  float: right;
+  margin-right: 0;
+  /* ugly hacks for IE6-7 */
+  #margin-left: -1em;
+}
+
 /* Reset --------------------------------------------------------------*/
 /* line 14, ../../../../.rvm/gems/ruby-1.8.7-p174@pergola/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
@@ -132,125 +204,126 @@ section, article, aside, header, footer, nav, dialog, figure {
 }
 
 /* Body --------------------------------------------------------------*/
-/* line 14, ../../app/stylesheets/partials/_default.scss */
+/* line 15, ../../app/stylesheets/partials/_default.scss */
 body {
   font-family: 'Adobe Caslon Pro', Caslon, Baskerville, Palatino, 'Palatino Linotype', "Hoefler Text", Garamond, "URW Palladio L", "Book Antiqua", Georgia, serif;
   color: #4c4c4c;
+  background: #EBEBEB;
 }
 
-/* line 19, ../../app/stylesheets/partials/_default.scss */
+/* line 21, ../../app/stylesheets/partials/_default.scss */
 .clear {
   clear: both;
 }
 
-/* line 23, ../../app/stylesheets/partials/_default.scss */
+/* line 25, ../../app/stylesheets/partials/_default.scss */
 .right {
   float: right;
 }
 
-/* line 27, ../../app/stylesheets/partials/_default.scss */
+/* line 29, ../../app/stylesheets/partials/_default.scss */
 .left {
   float: left;
 }
 
 /* Links --------------------------------------------------------------*/
-/* line 34, ../../app/stylesheets/partials/_default.scss */
+/* line 36, ../../app/stylesheets/partials/_default.scss */
 a:link, a:visited {
   color: white;
 }
-/* line 37, ../../app/stylesheets/partials/_default.scss */
+/* line 39, ../../app/stylesheets/partials/_default.scss */
 a:focus, a:hover, a:active {
   color: #f2f2f2;
   text-decoration: none;
 }
-/* line 41, ../../app/stylesheets/partials/_default.scss */
+/* line 43, ../../app/stylesheets/partials/_default.scss */
 a img {
   border: none;
 }
 
 /* Headings --------------------------------------------------------------*/
-/* line 48, ../../app/stylesheets/partials/_default.scss */
+/* line 50, ../../app/stylesheets/partials/_default.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
-/* line 50, ../../app/stylesheets/partials/_default.scss */
+/* line 52, ../../app/stylesheets/partials/_default.scss */
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
   margin: 0;
 }
 
-/* line 55, ../../app/stylesheets/partials/_default.scss */
+/* line 57, ../../app/stylesheets/partials/_default.scss */
 h1 {
   font-size: 3em;
   line-height: 1em;
   margin-bottom: 0.5em;
 }
 
-/* line 60, ../../app/stylesheets/partials/_default.scss */
+/* line 62, ../../app/stylesheets/partials/_default.scss */
 h2 {
   font-size: 2em;
   line-height: 1.5em;
   margin-bottom: 0.75em;
 }
 
-/* line 65, ../../app/stylesheets/partials/_default.scss */
+/* line 67, ../../app/stylesheets/partials/_default.scss */
 h3 {
   font-size: 1.5em;
   line-height: 1em;
   margin-bottom: 1em;
 }
 
-/* line 70, ../../app/stylesheets/partials/_default.scss */
+/* line 72, ../../app/stylesheets/partials/_default.scss */
 h4 {
   font-size: 1.125em;
   line-height: 1.333em;
   margin-bottom: 1.333em;
 }
 
-/* line 75, ../../app/stylesheets/partials/_default.scss */
+/* line 77, ../../app/stylesheets/partials/_default.scss */
 h5, h6 {
   margin-bottom: 1.5em;
   font-weight: bold;
 }
 
 /* Text --------------------------------------------------------------*/
-/* line 82, ../../app/stylesheets/partials/_default.scss */
+/* line 84, ../../app/stylesheets/partials/_default.scss */
 cite, em, dfn {
   font-style: italic;
 }
 
-/* line 86, ../../app/stylesheets/partials/_default.scss */
+/* line 88, ../../app/stylesheets/partials/_default.scss */
 strong, dfn {
   font-weight: bold;
 }
 
-/* line 90, ../../app/stylesheets/partials/_default.scss */
+/* line 92, ../../app/stylesheets/partials/_default.scss */
 sup, sub {
   line-height: 0;
 }
 
-/* line 94, ../../app/stylesheets/partials/_default.scss */
+/* line 96, ../../app/stylesheets/partials/_default.scss */
 abbr, acronym {
   border-bottom: 1px dotted;
   cursor: help;
 }
 
-/* line 99, ../../app/stylesheets/partials/_default.scss */
+/* line 101, ../../app/stylesheets/partials/_default.scss */
 address {
   margin-bottom: 1.5em;
   font-style: italic;
 }
 
-/* line 104, ../../app/stylesheets/partials/_default.scss */
+/* line 106, ../../app/stylesheets/partials/_default.scss */
 ins {
   text-decoration: underline;
 }
 
-/* line 108, ../../app/stylesheets/partials/_default.scss */
+/* line 110, ../../app/stylesheets/partials/_default.scss */
 del {
   text-decoration: line-through;
 }
 
-/* line 112, ../../app/stylesheets/partials/_default.scss */
+/* line 114, ../../app/stylesheets/partials/_default.scss */
 pre, code, tt {
   margin: 1.5em;
   margin-left: -1.5em;
@@ -259,36 +332,36 @@ pre, code, tt {
   font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
 }
 
-/* line 121, ../../app/stylesheets/partials/_default.scss */
+/* line 123, ../../app/stylesheets/partials/_default.scss */
 pre {
   white-space: pre;
 }
 
-/* line 125, ../../app/stylesheets/partials/_default.scss */
+/* line 127, ../../app/stylesheets/partials/_default.scss */
 code {
   display: block;
 }
 
-/* line 129, ../../app/stylesheets/partials/_default.scss */
+/* line 131, ../../app/stylesheets/partials/_default.scss */
 q {
   font-style: italic;
 }
-/* line 131, ../../app/stylesheets/partials/_default.scss */
+/* line 133, ../../app/stylesheets/partials/_default.scss */
 q em {
   font-style: normal;
 }
 
-/* line 136, ../../app/stylesheets/partials/_default.scss */
+/* line 138, ../../app/stylesheets/partials/_default.scss */
 p {
   margin-bottom: 1.5em;
 }
 
-/* line 140, ../../app/stylesheets/partials/_default.scss */
+/* line 142, ../../app/stylesheets/partials/_default.scss */
 blockquote, q {
   quotes: "" "";
 }
 
-/* line 144, ../../app/stylesheets/partials/_default.scss */
+/* line 146, ../../app/stylesheets/partials/_default.scss */
 blockquote {
   margin: 1.5em;
   margin-left: -1.5em;
@@ -298,51 +371,51 @@ blockquote {
   font-style: italic;
 }
 
-/* line 155, ../../app/stylesheets/partials/_default.scss */
+/* line 157, ../../app/stylesheets/partials/_default.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
 /* Replaced --------------------------------------------------------------*/
-/* line 162, ../../app/stylesheets/partials/_default.scss */
+/* line 164, ../../app/stylesheets/partials/_default.scss */
 img {
   vertical-align: bottom;
 }
 
 /* Lists --------------------------------------------------------------*/
-/* line 183, ../../app/stylesheets/partials/_default.scss */
+/* line 185, ../../app/stylesheets/partials/_default.scss */
 ol {
   margin: 0 1.5em 1.5em 0;
   list-style: decimal;
 }
 
-/* line 187, ../../app/stylesheets/partials/_default.scss */
+/* line 189, ../../app/stylesheets/partials/_default.scss */
 ul {
   margin: 0 1.5em 1.5em 0;
   list-style: disc;
 }
 
-/* line 192, ../../app/stylesheets/partials/_default.scss */
+/* line 194, ../../app/stylesheets/partials/_default.scss */
 li ul, li ol {
   list-style-type: circle;
   margin: 0 1.5em 0.75em;
 }
 
-/* line 198, ../../app/stylesheets/partials/_default.scss */
+/* line 200, ../../app/stylesheets/partials/_default.scss */
 dl {
   margin-bottom: 1.5em;
   border-top-style: solid;
   border-top-width: 0.063em;
   padding-top: 1.438em;
 }
-/* line 201, ../../app/stylesheets/partials/_default.scss */
+/* line 203, ../../app/stylesheets/partials/_default.scss */
 dl dt {
   font-size: 1.125em;
   line-height: 1.333em;
   margin-bottom: 0.667em;
 }
 
-/* line 207, ../../app/stylesheets/partials/_default.scss */
+/* line 209, ../../app/stylesheets/partials/_default.scss */
 dd {
   margin-bottom: 1.5em;
   border-bottom-style: solid;
@@ -352,7 +425,7 @@ dd {
 
 /* Tables --------------------------------------------------------------*/
 /* tables still need 'cellspacing="0"' in the markup */
-/* line 215, ../../app/stylesheets/partials/_default.scss */
+/* line 217, ../../app/stylesheets/partials/_default.scss */
 table {
   margin-bottom: 1.5em;
   width: 100%;
@@ -360,37 +433,37 @@ table {
   border-spacing: 0;
 }
 
-/* line 222, ../../app/stylesheets/partials/_default.scss */
+/* line 224, ../../app/stylesheets/partials/_default.scss */
 table, td, th {
   vertical-align: top;
 }
 
-/* line 226, ../../app/stylesheets/partials/_default.scss */
+/* line 228, ../../app/stylesheets/partials/_default.scss */
 th, thead th {
   font-weight: bold;
 }
 
-/* line 230, ../../app/stylesheets/partials/_default.scss */
+/* line 232, ../../app/stylesheets/partials/_default.scss */
 th, td, caption {
   padding: 0.75em;
   text-align: left;
   font-weight: normal;
 }
 
-/* line 236, ../../app/stylesheets/partials/_default.scss */
+/* line 238, ../../app/stylesheets/partials/_default.scss */
 th, td {
   border-bottom-style: solid;
   border-bottom-width: 0.063em;
   padding-bottom: 0.688em;
 }
 
-/* line 240, ../../app/stylesheets/partials/_default.scss */
+/* line 242, ../../app/stylesheets/partials/_default.scss */
 tfoot {
   font-size: 0.875em;
   line-height: 1.714em;
 }
 
-/* line 244, ../../app/stylesheets/partials/_default.scss */
+/* line 246, ../../app/stylesheets/partials/_default.scss */
 caption {
   font-size: 1.5em;
   line-height: 1em;
@@ -398,7 +471,7 @@ caption {
 }
 
 /* Forms --------------------------------------------------------------*/
-/* line 251, ../../app/stylesheets/partials/_default.scss */
+/* line 253, ../../app/stylesheets/partials/_default.scss */
 fieldset {
   margin-bottom: 1.5em;
   border-style: solid;
@@ -406,19 +479,19 @@ fieldset {
   padding: 1.438em;
 }
 
-/* line 256, ../../app/stylesheets/partials/_default.scss */
+/* line 258, ../../app/stylesheets/partials/_default.scss */
 legend {
   font-size: 1.125em;
   line-height: 1.333em;
   font-weight: bold;
 }
 
-/* line 261, ../../app/stylesheets/partials/_default.scss */
+/* line 263, ../../app/stylesheets/partials/_default.scss */
 label {
   font-weight: bold;
 }
 
-/* line 265, ../../app/stylesheets/partials/_default.scss */
+/* line 267, ../../app/stylesheets/partials/_default.scss */
 textarea, input:not([type="radio"]) {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -444,17 +517,12 @@ body {
   text-align: center;
 }
 
-/* line 12, ../../app/stylesheets/application.scss */
-body {
-  background: #EBEBEB;
-}
-
-/* line 16, ../../app/stylesheets/application.scss */
+/* line 13, ../../app/stylesheets/application.scss */
 #main .container {
   background-color: #fff;
 }
 
-/* line 20, ../../app/stylesheets/application.scss */
+/* line 18, ../../app/stylesheets/application.scss */
 .container {
   overflow: hidden;
   display: inline-block;
@@ -470,14 +538,14 @@ body {
 }
 
 /* Header --------------------------------------------------------------*/
-/* line 36, ../../app/stylesheets/application.scss */
+/* line 27, ../../app/stylesheets/application.scss */
 header {
   background: #0c0c0c;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #0c0c0c), color-stop(50%, #242424), color-stop(75%, #2e2e2e), color-stop(100%, #363636));
   background-image: -moz-linear-gradient(top, #0c0c0c 0%, #242424 50%, #2e2e2e 75%, #363636 100%);
   color: #666;
 }
-/* line 40, ../../app/stylesheets/application.scss */
+/* line 32, ../../app/stylesheets/application.scss */
 header hgroup {
   display: inline;
   float: left;
@@ -485,7 +553,7 @@ header hgroup {
   margin-right: 1.639%;
   margin-left: 1.639%;
 }
-/* line 45, ../../app/stylesheets/application.scss */
+/* line 37, ../../app/stylesheets/application.scss */
 header hgroup h1 {
   font-size: 2em;
   line-height: 1.5em;
@@ -493,14 +561,14 @@ header hgroup h1 {
   margin-bottom: 0;
   display: inline;
 }
-/* line 54, ../../app/stylesheets/application.scss */
+/* line 46, ../../app/stylesheets/application.scss */
 header hgroup h4 {
   display: inline;
   font-size: 0.875em;
   line-height: 1.714em;
   margin-bottom: 0;
 }
-/* line 61, ../../app/stylesheets/application.scss */
+/* line 53, ../../app/stylesheets/application.scss */
 header #db_box {
   display: inline;
   float: left;
@@ -533,7 +601,7 @@ header #db_box {
   border-bottom-right-radius: 7px;
 }
 
-/* line 73, ../../app/stylesheets/application.scss */
+/* line 65, ../../app/stylesheets/application.scss */
 #page_nav {
   overflow: hidden;
   display: inline-block;
@@ -561,7 +629,7 @@ header #db_box {
 #page_nav {
   display: block;
 }
-/* line 78, ../../app/stylesheets/application.scss */
+/* line 70, ../../app/stylesheets/application.scss */
 #page_nav h1 {
   display: inline;
   float: left;
@@ -574,7 +642,7 @@ header #db_box {
   margin-bottom: 0px;
   color: #fff;
 }
-/* line 87, ../../app/stylesheets/application.scss */
+/* line 79, ../../app/stylesheets/application.scss */
 #page_nav ul {
   display: inline;
   float: left;
@@ -601,7 +669,7 @@ header #db_box {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 98, ../../app/stylesheets/application.scss */
+/* line 90, ../../app/stylesheets/application.scss */
 #page_nav ul li {
   margin-left: 0;
   margin-bottom: 0;
@@ -613,7 +681,7 @@ header #db_box {
   line-height: 1.714em;
   text-align: center;
 }
-/* line 108, ../../app/stylesheets/application.scss */
+/* line 100, ../../app/stylesheets/application.scss */
 #page_nav ul li.active {
   background-color: #202020;
   -moz-border-radius: 20px;
@@ -623,23 +691,23 @@ header #db_box {
   -khtml-border-radius: 20px;
   border-radius: 20px;
 }
-/* line 109, ../../app/stylesheets/application.scss */
+/* line 101, ../../app/stylesheets/application.scss */
 #page_nav ul li.active a {
   color: #fff;
 }
-/* line 117, ../../app/stylesheets/application.scss */
+/* line 109, ../../app/stylesheets/application.scss */
 #page_nav ul li a {
   color: #ACACAC;
   text-decoration: none;
 }
-/* line 121, ../../app/stylesheets/application.scss */
+/* line 113, ../../app/stylesheets/application.scss */
 #page_nav ul li a:hover {
   color: #fff;
 }
 
 /* Nav --------------------------------------------------------------*/
 /* Content --------------------------------------------------------------*/
-/* line 133, ../../app/stylesheets/application.scss */
+/* line 125, ../../app/stylesheets/application.scss */
 section article {
   display: inline;
   float: left;
@@ -647,15 +715,15 @@ section article {
   margin-right: 1.639%;
   margin-left: 1.639%;
 }
-/* line 137, ../../app/stylesheets/application.scss */
+/* line 129, ../../app/stylesheets/application.scss */
 section article h3 {
   margin-top: 1em;
 }
-/* line 141, ../../app/stylesheets/application.scss */
+/* line 133, ../../app/stylesheets/application.scss */
 section article #connections {
   margin-top: 1em;
 }
-/* line 147, ../../app/stylesheets/application.scss */
+/* line 139, ../../app/stylesheets/application.scss */
 section article #connections .connection {
   display: inline;
   float: left;
@@ -663,7 +731,7 @@ section article #connections .connection {
   margin-right: 1.695%;
   margin-bottom: 20px;
 }
-/* line 150, ../../app/stylesheets/application.scss */
+/* line 142, ../../app/stylesheets/application.scss */
 section article #connections .connection:nth-child(even) {
   display: inline;
   float: right;
@@ -671,7 +739,7 @@ section article #connections .connection:nth-child(even) {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
-/* line 158, ../../app/stylesheets/application.scss */
+/* line 150, ../../app/stylesheets/application.scss */
 section article #connections .connection .header {
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -690,7 +758,7 @@ section article #connections .connection .header {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #eaeaea), color-stop(100%, #c2c2c2));
   background-image: -moz-linear-gradient(top, #eaeaea 0%, #c2c2c2 100%);
 }
-/* line 164, ../../app/stylesheets/application.scss */
+/* line 156, ../../app/stylesheets/application.scss */
 section article #connections .connection .header h4 {
   color: #2C2C2C;
   padding: 5px 5px 3px;
@@ -701,7 +769,7 @@ section article #connections .connection .header h4 {
   margin-bottom: 0px;
   text-shadow: 0px 1px 1px #fff;
 }
-/* line 175, ../../app/stylesheets/application.scss */
+/* line 167, ../../app/stylesheets/application.scss */
 section article #connections .connection:hover {
   -moz-box-shadow: #333333 1px 1px 5px;
   -webkit-box-shadow: #333333 1px 1px 5px;
@@ -726,7 +794,7 @@ section article #connections .connection:hover {
   -o-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 183, ../../app/stylesheets/application.scss */
+/* line 175, ../../app/stylesheets/application.scss */
 section article #connections .connection ul {
   list-style: none;
   margin: 0;
@@ -752,19 +820,19 @@ section article #connections .connection ul li {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 189, ../../app/stylesheets/application.scss */
+/* line 181, ../../app/stylesheets/application.scss */
 section article #connections .connection ul li {
   color: #5583B1;
   padding: 5px 10px 5px 10px;
   border-top: 1px solid #e1e1e1;
 }
-/* line 194, ../../app/stylesheets/application.scss */
+/* line 186, ../../app/stylesheets/application.scss */
 section article #connections .connection ul li strong {
   text-shadow: 0px 1px 1px #fff;
   color: #2C2C2C;
   padding-right: 5px;
 }
-/* line 202, ../../app/stylesheets/application.scss */
+/* line 194, ../../app/stylesheets/application.scss */
 section article #connections .connection a.connect {
   margin-bottom: 0px;
   font-size: 0.875em;
@@ -776,7 +844,7 @@ section article #connections .connection a.connect {
   float: right;
 }
 
-/* line 216, ../../app/stylesheets/application.scss */
+/* line 208, ../../app/stylesheets/application.scss */
 aside {
   display: inline;
   float: left;
@@ -791,7 +859,7 @@ aside {
 }
 
 /* Footer --------------------------------------------------------------*/
-/* line 224, ../../app/stylesheets/application.scss */
+/* line 216, ../../app/stylesheets/application.scss */
 footer {
   margin-top: 40px;
   color: #A5A5A5;
@@ -816,7 +884,7 @@ footer {
 footer {
   display: block;
 }
-/* line 233, ../../app/stylesheets/application.scss */
+/* line 225, ../../app/stylesheets/application.scss */
 footer h1 {
   clear: both;
   margin-right: 1.639%;
@@ -825,7 +893,7 @@ footer h1 {
   line-height: 1.5em;
 }
 
-/* line 240, ../../app/stylesheets/application.scss */
+/* line 232, ../../app/stylesheets/application.scss */
 #add_connection_dialog {
   display: none;
   display: inline;
@@ -834,81 +902,10 @@ footer h1 {
   margin-right: 1.639%;
   padding-left: 8.197%;
 }
-/* line 251, ../../app/stylesheets/application.scss */
+/* line 237, ../../app/stylesheets/application.scss */
 #add_connection_dialog h1 {
   text-align: center;
   font-size: 2em;
   line-height: 1.5em;
   border-bottom: 3px solid #44475f;
-}
-/* line 258, ../../app/stylesheets/application.scss */
-#add_connection_dialog form fieldset {
-  border: 0;
-  padding: 0;
-  margin-bottom: 1em;
-  display: inline;
-  float: left;
-  width: 100%;
-  margin-right: 2.041%;
-}
-/* line 264, ../../app/stylesheets/application.scss */
-#add_connection_dialog form fieldset .left {
-  display: inline;
-  float: left;
-  width: 48.98%;
-  margin-right: 2.041%;
-}
-/* line 268, ../../app/stylesheets/application.scss */
-#add_connection_dialog form fieldset .right {
-  display: inline;
-  float: left;
-  width: 48.98%;
-  margin-right: 2.041%;
-  display: inline;
-  float: right;
-  margin-right: 0;
-  /* ugly hacks for IE6-7 */
-  #margin-left: -1em;
-}
-/* line 277, ../../app/stylesheets/application.scss */
-#add_connection_dialog form fieldset input:not([type="submit"]) {
-  padding: 5px;
-  background: #fff;
-  font-size: 0.875em;
-  line-height: 1.714em;
-  color: #555;
-  border: 1px #ddd solid;
-  -moz-box-shadow: #aaaaaa 0px 0px 4px;
-  -webkit-box-shadow: #aaaaaa 0px 0px 4px;
-  -o-box-shadow: #aaaaaa 0px 0px 4px;
-  box-shadow: #aaaaaa 0px 0px 4px;
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-/* line 286, ../../app/stylesheets/application.scss */
-#add_connection_dialog form fieldset input:not([type="submit"]):hover {
-  background: #eee;
-}
-/* line 292, ../../app/stylesheets/application.scss */
-#add_connection_dialog form #submit, #add_connection_dialog form #cancel {
-  display: inline;
-  float: left;
-  width: 37.5%;
-  margin-right: 4.167%;
-  display: block;
-  padding: 8px;
-  font-size: 0.875em;
-  line-height: 1.714em;
-  border: none;
-  text-align: center;
-}
-/* line 301, ../../app/stylesheets/application.scss */
-#add_connection_dialog form #submit {
-  display: inline;
-  float: right;
-  margin-right: 0;
-  /* ugly hacks for IE6-7 */
-  #margin-left: -1em;
 }
