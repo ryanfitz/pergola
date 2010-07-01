@@ -275,7 +275,7 @@ footer {
       }
       
       input:not([type="submit"]) { 		
-        padding: 8px; 
+        padding: 5px; 
         background: #fff;  
         @include adjust-font-size-to(14px);
         color: #555; 

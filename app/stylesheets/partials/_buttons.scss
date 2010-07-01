@@ -5,6 +5,15 @@ $blue: adjust_hue($green, 110);
 $red: adjust_hue($green, -100);
 $heart_button: saturate(lighten($red, 2), 20);
 
+@mixin awesome_button($color) {
+  font-family: 'Lucida Grande', Lucida, Arial, sans_serif;
+  background-color: $color;
+  
+  &:hover {
+    background-color: darken($color, 8);
+  }
+}
+
 .awesome, .awesome:visited {
 	background: #222 url(/images/alert-overlay.png) repeat-x; 
 	display: inline-block; 
@@ -30,6 +39,14 @@ $heart_button: saturate(lighten($red, 2), 20);
 	  top: 1px; 
 	}
 	
+	&.blue, &.blue:visited {
+	  @include awesome_button($blue);
+	}
+	
+	&.red, &.red:visited {
+	  @include awesome_button($red);
+	}
+	
 	&.remove {
 	  font-family: 'Lucida Grande', Lucida, Arial, sans_serif;
 	  color: #000;
@@ -52,11 +69,3 @@ $heart_button: saturate(lighten($red, 2), 20);
     }
   }
 }
-
-.red.awesome, .red.awesome:visited			{ background-color: #e33100; }
-.red.awesome:hover							{ background-color: #872300; }
-
-.green.awesome, .green.awesome:visited		{ background-color: #91bd09; }
-.green.awesome:hover						{ background-color: #749a02; }
-.blue.awesome, .blue.awesome:visited		{ background-color: #2daebf; }
-.blue.awesome:hover							{ background-color: #007d9a;}

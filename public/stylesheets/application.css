@@ -1,4 +1,4 @@
-/* line 8, ../../app/stylesheets/partials/_buttons.scss */
+/* line 17, ../../app/stylesheets/partials/_buttons.scss */
 .awesome, .awesome:visited {
   background: #222222 url(/images/alert-overlay.png) repeat-x;
   display: inline-block;
@@ -15,16 +15,34 @@
   cursor: pointer;
   margin-bottom: 5px;
 }
-/* line 24, ../../app/stylesheets/partials/_buttons.scss */
+/* line 33, ../../app/stylesheets/partials/_buttons.scss */
 .awesome:hover, .awesome:visited:hover {
   background-color: #111;
   color: #fff;
 }
-/* line 29, ../../app/stylesheets/partials/_buttons.scss */
+/* line 38, ../../app/stylesheets/partials/_buttons.scss */
 .awesome:active, .awesome:visited:active {
   top: 1px;
 }
-/* line 33, ../../app/stylesheets/partials/_buttons.scss */
+/* line 42, ../../app/stylesheets/partials/_buttons.scss */
+.awesome.blue, .awesome.blue:visited, .awesome:visited.blue, .awesome:visited.blue:visited {
+  font-family: 'Lucida Grande', Lucida, Arial, sans_serif;
+  background-color: #245a93;
+}
+/* line 12, ../../app/stylesheets/partials/_buttons.scss */
+.awesome.blue:hover, .awesome.blue:visited:hover, .awesome:visited.blue:hover, .awesome:visited.blue:visited:hover {
+  background-color: #1c4672;
+}
+/* line 46, ../../app/stylesheets/partials/_buttons.scss */
+.awesome.red, .awesome.red:visited, .awesome:visited.red, .awesome:visited.red:visited {
+  font-family: 'Lucida Grande', Lucida, Arial, sans_serif;
+  background-color: #932624;
+}
+/* line 12, ../../app/stylesheets/partials/_buttons.scss */
+.awesome.red:hover, .awesome.red:visited:hover, .awesome:visited.red:hover, .awesome:visited.red:visited:hover {
+  background-color: #721d1c;
+}
+/* line 50, ../../app/stylesheets/partials/_buttons.scss */
 .awesome.remove, .awesome:visited.remove {
   font-family: 'Lucida Grande', Lucida, Arial, sans_serif;
   color: #000;
@@ -41,39 +59,9 @@
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
 }
-/* line 50, ../../app/stylesheets/partials/_buttons.scss */
+/* line 67, ../../app/stylesheets/partials/_buttons.scss */
 .awesome.remove:hover, .awesome:visited.remove:hover {
   color: #932624;
-}
-
-/* line 56, ../../app/stylesheets/partials/_buttons.scss */
-.red.awesome, .red.awesome:visited {
-  background-color: #e33100;
-}
-
-/* line 57, ../../app/stylesheets/partials/_buttons.scss */
-.red.awesome:hover {
-  background-color: #872300;
-}
-
-/* line 59, ../../app/stylesheets/partials/_buttons.scss */
-.green.awesome, .green.awesome:visited {
-  background-color: #91bd09;
-}
-
-/* line 60, ../../app/stylesheets/partials/_buttons.scss */
-.green.awesome:hover {
-  background-color: #749a02;
-}
-
-/* line 61, ../../app/stylesheets/partials/_buttons.scss */
-.blue.awesome, .blue.awesome:visited {
-  background-color: #2daebf;
-}
-
-/* line 62, ../../app/stylesheets/partials/_buttons.scss */
-.blue.awesome:hover {
-  background-color: #007d9a;
 }
 
 /* Reset --------------------------------------------------------------*/
@@ -884,7 +872,7 @@ footer h1 {
 }
 /* line 277, ../../app/stylesheets/application.scss */
 #add_connection_dialog form fieldset input:not([type="submit"]) {
-  padding: 8px;
+  padding: 5px;
   background: #fff;
   font-size: 0.875em;
   line-height: 1.714em;
