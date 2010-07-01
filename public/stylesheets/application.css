@@ -1,8 +1,11 @@
-/* line 17, ../../app/stylesheets/partials/_buttons.scss */
+/* line 18, ../../app/stylesheets/partials/_buttons.scss */
 .awesome, .awesome:visited {
+  font-family: 'Lucida Grande', sans-serif;
+  font-size: .8em;
+  line-height: 1em;
   background: #222222 url(/images/alert-overlay.png) repeat-x;
   display: inline-block;
-  padding: 5px 10px 6px;
+  padding: 8px 14px 9px;
   color: #fff;
   text-decoration: none;
   -moz-border-radius: 5px;
@@ -15,36 +18,35 @@
   cursor: pointer;
   margin-bottom: 5px;
 }
-/* line 33, ../../app/stylesheets/partials/_buttons.scss */
+/* line 37, ../../app/stylesheets/partials/_buttons.scss */
 .awesome:hover, .awesome:visited:hover {
   background-color: #111;
   color: #fff;
 }
-/* line 38, ../../app/stylesheets/partials/_buttons.scss */
+/* line 42, ../../app/stylesheets/partials/_buttons.scss */
 .awesome:active, .awesome:visited:active {
   top: 1px;
 }
-/* line 42, ../../app/stylesheets/partials/_buttons.scss */
-.awesome.blue, .awesome.blue:visited, .awesome:visited.blue, .awesome:visited.blue:visited {
-  font-family: 'Lucida Grande', Lucida, Arial, sans_serif;
-  background-color: #245a93;
-}
-/* line 12, ../../app/stylesheets/partials/_buttons.scss */
-.awesome.blue:hover, .awesome.blue:visited:hover, .awesome:visited.blue:hover, .awesome:visited.blue:visited:hover {
-  background-color: #1c4672;
-}
 /* line 46, ../../app/stylesheets/partials/_buttons.scss */
+.awesome.blue, .awesome.blue:visited, .awesome:visited.blue, .awesome:visited.blue:visited {
+  font-family: 'Lucida Grande', sans-serif;
+  background-color: #0088c0;
+}
+/* line 13, ../../app/stylesheets/partials/_buttons.scss */
+.awesome.blue:hover, .awesome.blue:visited:hover, .awesome:visited.blue:hover, .awesome:visited.blue:visited:hover {
+  background-color: #006b97;
+}
+/* line 50, ../../app/stylesheets/partials/_buttons.scss */
 .awesome.red, .awesome.red:visited, .awesome:visited.red, .awesome:visited.red:visited {
-  font-family: 'Lucida Grande', Lucida, Arial, sans_serif;
+  font-family: 'Lucida Grande', sans-serif;
   background-color: #932624;
 }
-/* line 12, ../../app/stylesheets/partials/_buttons.scss */
+/* line 13, ../../app/stylesheets/partials/_buttons.scss */
 .awesome.red:hover, .awesome.red:visited:hover, .awesome:visited.red:hover, .awesome:visited.red:visited:hover {
   background-color: #721d1c;
 }
-/* line 50, ../../app/stylesheets/partials/_buttons.scss */
+/* line 54, ../../app/stylesheets/partials/_buttons.scss */
 .awesome.remove, .awesome:visited.remove {
-  font-family: 'Lucida Grande', Lucida, Arial, sans_serif;
   color: #000;
   background-color: #ddd;
   padding: 2px 6px;
@@ -59,7 +61,7 @@
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
 }
-/* line 67, ../../app/stylesheets/partials/_buttons.scss */
+/* line 70, ../../app/stylesheets/partials/_buttons.scss */
 .awesome.remove:hover, .awesome:visited.remove:hover {
   color: #932624;
 }
@@ -120,14 +122,12 @@ form #submit, form #cancel {
   float: left;
   width: 37.5%;
   margin-right: 4.167%;
-  display: block;
-  padding: 8px;
   font-size: 0.875em;
   line-height: 1.714em;
-  border: none;
+  border: 0px;
   text-align: center;
 }
-/* line 45, ../../app/stylesheets/partials/_forms.scss */
+/* line 43, ../../app/stylesheets/partials/_forms.scss */
 form #submit {
   display: inline;
   float: right;
@@ -835,8 +835,6 @@ section article #connections .connection ul li strong {
 /* line 194, ../../app/stylesheets/application.scss */
 section article #connections .connection a.connect {
   margin-bottom: 0px;
-  font-size: 0.875em;
-  line-height: 1.714em;
   text-align: center;
   outline: none;
   text-decoration: none;

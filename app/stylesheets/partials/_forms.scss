@@ -35,10 +35,8 @@ form {
   
   #submit, #cancel {
     @include columns(2,5);
-    display: block;
-    padding: 8px; 
     @include adjust-font-size-to(14px);
-    border: none;
+    border: 0px;
     text-align: center;
   }
   

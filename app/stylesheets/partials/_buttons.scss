@@ -1,12 +1,13 @@
 @import "compass/css3/border-radius";
 
 $green: darken(#57b42c, 8);
-$blue: adjust_hue($green, 110);
+//$blue: adjust_hue($green, 110);
+$blue: #0088C0;
 $red: adjust_hue($green, -100);
 $heart_button: saturate(lighten($red, 2), 20);
 
 @mixin awesome_button($color) {
-  font-family: 'Lucida Grande', Lucida, Arial, sans_serif;
+  font-family: 'Lucida Grande', sans-serif;
   background-color: $color;
   
   &:hover {
@@ -15,9 +16,12 @@ $heart_button: saturate(lighten($red, 2), 20);
 }
 
 .awesome, .awesome:visited {
+  font-family: 'Lucida Grande', sans-serif;
+  font-size: .8em;
+  line-height: 1em;
 	background: #222 url(/images/alert-overlay.png) repeat-x; 
-	display: inline-block; 
-	padding: 5px 10px 6px; 
+	display: inline-block;  
+	padding: 8px 14px 9px;
 	color: #fff; 
 	text-decoration: none;
 	-moz-border-radius: 5px; 
@@ -48,7 +52,6 @@ $heart_button: saturate(lighten($red, 2), 20);
 	}
 	
 	&.remove {
-	  font-family: 'Lucida Grande', Lucida, Arial, sans_serif;
 	  color: #000;
     background-color: #ddd;
     padding: 2px 6px;
