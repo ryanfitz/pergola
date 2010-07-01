@@ -1,4 +1,35 @@
 form {
+  .field-errors {
+//    border: 2px solid #444;
+    margin-bottom: 2em;
+    background-color: #f2f2f2;
+    border: 1px solid #e0e0e0;
+    
+    @include box-shadow;
+    
+    h2 {
+      @include adjust-font-size-to(18px);
+//       background: #C2C2C2;
+       color: red;
+       text-align: center;
+       @include linear-gradient(color-stops(#EAEAEA, #C2C2C2));
+    }
+    
+    p {
+      margin-bottom: .5em;
+    }
+    
+    ul {
+      @include no-style-list;
+      
+      li {
+        color: #5583B1;
+        padding: 5px 10px 5px 10px;
+        border-top: 1px solid #e1e1e1;
+      }
+    }
+  }
+  
   fieldset {
     border: 0;
     padding: 0;
@@ -29,6 +60,10 @@ form {
 
       &:hover { 
           background: #eee; 
+      }
+      
+      &.invalid {
+        border: 2px solid red;
       }
     }
   }
