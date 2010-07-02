@@ -30,13 +30,25 @@
 /* line 46, ../../app/stylesheets/partials/_buttons.scss */
 .awesome.blue, .awesome.blue:visited, .awesome:visited.blue, .awesome:visited.blue:visited {
   font-family: 'Lucida Grande', sans-serif;
-  background-color: #0088c0;
+  background-color: #135f9f;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #76b7ef), color-stop(2%, #1c87e3), color-stop(100%, #135f9f));
+  background-image: -moz-linear-gradient(top, #76b7ef 0%, #1c87e3 2%, #135f9f 100%);
 }
 /* line 13, ../../app/stylesheets/partials/_buttons.scss */
 .awesome.blue:hover, .awesome.blue:visited:hover, .awesome:visited.blue:hover, .awesome:visited.blue:visited:hover {
-  background-color: #006b97;
+  background-color: #0f497b;
 }
-/* line 50, ../../app/stylesheets/partials/_buttons.scss */
+/* line 52, ../../app/stylesheets/partials/_buttons.scss */
+.awesome.blue:hover, .awesome.blue:visited:hover, .awesome:visited.blue:hover, .awesome:visited.blue:visited:hover {
+  -moz-opacity: 0.95;
+  -webkit-opacity: 0.95;
+  -o-opacity: 0.95;
+  -khtml-opacity: 0.95;
+  opacity: 0.95;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
+}
+/* line 57, ../../app/stylesheets/partials/_buttons.scss */
 .awesome.red, .awesome.red:visited, .awesome:visited.red, .awesome:visited.red:visited {
   font-family: 'Lucida Grande', sans-serif;
   background-color: #932624;
@@ -45,7 +57,7 @@
 .awesome.red:hover, .awesome.red:visited:hover, .awesome:visited.red:hover, .awesome:visited.red:visited:hover {
   background-color: #721d1c;
 }
-/* line 54, ../../app/stylesheets/partials/_buttons.scss */
+/* line 61, ../../app/stylesheets/partials/_buttons.scss */
 .awesome.remove, .awesome:visited.remove {
   color: #000;
   background-color: #ddd;
@@ -61,7 +73,7 @@
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
 }
-/* line 70, ../../app/stylesheets/partials/_buttons.scss */
+/* line 77, ../../app/stylesheets/partials/_buttons.scss */
 .awesome.remove:hover, .awesome:visited.remove:hover {
   color: #932624;
 }

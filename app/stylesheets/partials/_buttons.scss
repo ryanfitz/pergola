@@ -2,7 +2,7 @@
 
 $green: darken(#57b42c, 8);
 //$blue: adjust_hue($green, 110);
-$blue: #0088C0;
+$blue: #135F9F;
 $red: adjust_hue($green, -100);
 $heart_button: saturate(lighten($red, 2), 20);
 
@@ -45,6 +45,13 @@ $heart_button: saturate(lighten($red, 2), 20);
 	
 	&.blue, &.blue:visited {
 	  @include awesome_button($blue);
+//    background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(#76B7EF), color-stop(0.02, #1C87E3), to(#135F9F));
+    
+    @include linear-gradient(color-stops(#76B7EF, #1C87E3 2%, #135F9F));
+    
+    &:hover { 
+      @include opacity(0.95);
+  	}
 	}
 	
 	&.red, &.red:visited {
