@@ -12,9 +12,12 @@ gem 'compass-susy-plugin', :require => "susy"
 gem 'activerecord', '= 2.3.8', :require => "active_record"
 gem 'sqlite3-ruby', :require => "sqlite3"
 
+gem 'bson_ext'
+gem 'mongo', '>= 1.0.3'
+
 # Test requirements
 gem 'rspec', :require => "spec", :group => "test"
 gem 'rack-test', :require => 'rack/test', :group => 'test'
 
 # Padrino
-gem 'padrino', "0.9.10"
+gem 'padrino', "0.9.14"

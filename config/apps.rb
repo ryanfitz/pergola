@@ -23,4 +23,4 @@
 #
 
 # Mounts the core application for this project
-Padrino.mount_core("Pergola")
+Padrino.mount("Pergola").to('/')
