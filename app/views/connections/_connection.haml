@@ -15,5 +15,5 @@
       %strong Port
       = connection.port
     %li
-      = link_to "Connect >>", url_for(:new, :format => :js), :remote => true, :class => 'connect awesome blue'
+      = link_to "Connect >>", url_for(:mongo_index, :id => connection.id), :class => 'connect awesome blue'
       .clear
