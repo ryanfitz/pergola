@@ -69,7 +69,7 @@ header {
   @include linear-gradient(color-stops(#1b1b1b, #0d0d0d 50%, #050505 75%, #0c0c0c));
   
   h1 {
-    @include columns(2);
+    @include columns(4);
     @include alpha;
     @include adjust-font-size-to(32px);
     padding: 10px 0px 0px 0px;

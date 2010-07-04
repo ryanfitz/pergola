@@ -1,1 +1,8 @@
+- content_for :page_nav do
+  %h1 
+    = @connection.title
+  %ul
+    %li.active
+      = link_to "Info", url_for(:index, :format => :js), :remote => true
+      
 HELLLO WORLD

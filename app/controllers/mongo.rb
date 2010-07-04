@@ -1,29 +1,25 @@
 Pergola.controllers :mongo do
-  # get :index, :map => "/foo/bar" do
-  #   session[:foo] = "bar"
-  #   render 'index'
-  # end
-
-  # get :sample, :map => "/sample/url", :provides => [:any, :js] do
-  #   case content_type
-  #     when :js then ...
-  #     else ...
-  # end
-
-  # get :foo, :with => :id do
-  #   "Maps to url '/foo/#{params[:id]}'"
-  # end
-
-  # get "/example" do
-  #   "Hello world!"
-  # end
-
-  get :index do
-    redirect url_for :index
+  include MongoHelper
+  
+  before do
+    if params[:id].nil?
+      redirect url_for :index
+    end
+    
+    @connection = Connection.find_by_id(params[:id])
+    
+    if @connection.nil?
+      halt 404, "Server Not Found!"
+    end
+    
+    unless connect? @connection
+      halt 403, "Can't Connect"
+    end
+    
   end
   
   get :index, :with => [:id] do
-    puts params[:id]
+    
     render 'mongo/index'
   end
   
