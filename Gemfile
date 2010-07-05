@@ -16,8 +16,11 @@ gem 'bson_ext'
 gem 'mongo', '>= 1.0.3'
 
 # Test requirements
-gem 'rspec', :require => "spec", :group => "test"
-gem 'rack-test', :require => 'rack/test', :group => 'test'
+group :test do
+  gem 'rspec', :require => "spec"
+  gem 'rack-test', :require => 'rack/test'
+  gem 'mocha'
+end
 
 # Padrino
 gem 'padrino', "0.9.14"

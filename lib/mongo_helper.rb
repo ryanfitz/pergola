@@ -1,21 +1,36 @@
 require 'timeout'
 
 module MongoHelper
-  @@connections = {}
-  
-  def connect?(connection)
-    begin 
-        timeout(5) do
-            con = Mongo::Connection.new(connection.host, connection.port)
-            @@connections[connection.id] = con
-            true
-        end
-    rescue Timeout::Error, Mongo::ConnectionFailure
-        false
-    end    
+  def connections
+    @@connections ||= {}
   end
-
-  # def self.connection=(connection)
-  #      @@connection = new_connection
-  #    end
+  
+  def connection
+    connections[id]
+  end
+  
+  def connection=(mongo_connection)
+    connections[id] = mongo_connection
+  end
+  
+  def connect
+    unless not connection.nil? and connection.connected?
+      begin 
+        timeout(5) do
+          self.connection=(Mongo::Connection.new(host, port))
+        end
+      rescue Timeout::Error, Mongo::ConnectionFailure
+        self.connection= FailedMongoConnection.new
+      end
+    end
+    
+    connection.connected?    
+  end
+  
+  class FailedMongoConnection
+    def connected?
+      false
+    end
+  end
+  
 end
