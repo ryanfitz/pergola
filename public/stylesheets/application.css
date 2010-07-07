@@ -593,13 +593,18 @@ form #submit {
   color: #380000;
 }
 /* line 18, ../../app/stylesheets/partials/_databases.scss */
+#databases ul li a {
+  text-decoration: none;
+  color: #380000;
+}
+/* line 23, ../../app/stylesheets/partials/_databases.scss */
 #databases ul li #new_db_name {
   background-color: #dde4eb;
   opacity: 1;
   border: none;
   padding-left: 11.111%;
 }
-/* line 24, ../../app/stylesheets/partials/_databases.scss */
+/* line 29, ../../app/stylesheets/partials/_databases.scss */
 #databases ul li h3 {
   padding-left: 11.111%;
   font-size: 0.875em;
@@ -607,7 +612,7 @@ form #submit {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 30, ../../app/stylesheets/partials/_databases.scss */
+/* line 35, ../../app/stylesheets/partials/_databases.scss */
 #databases ul li h3 .arrow {
   display: inline;
   font-size: 0.5em;
@@ -616,47 +621,51 @@ form #submit {
   opacity: 1;
   padding-right: .2em;
 }
-/* line 37, ../../app/stylesheets/partials/_databases.scss */
+/* line 42, ../../app/stylesheets/partials/_databases.scss */
 #databases ul li h3.selected {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #76b7ef), color-stop(2%, #1c87e3), color-stop(100%, #135f9f));
   background-image: -moz-linear-gradient(top, #76b7ef 0%, #1c87e3 2%, #135f9f 100%);
   color: #fff;
 }
-/* line 41, ../../app/stylesheets/partials/_databases.scss */
+/* line 46, ../../app/stylesheets/partials/_databases.scss */
 #databases ul li h3.selected .arrow {
   color: #fff;
 }
-/* line 44, ../../app/stylesheets/partials/_databases.scss */
+/* line 49, ../../app/stylesheets/partials/_databases.scss */
 #databases ul li h3:hover {
   cursor: pointer;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #76b7ef), color-stop(2%, #1c87e3), color-stop(100%, #135f9f));
   background-image: -moz-linear-gradient(top, #76b7ef 0%, #1c87e3 2%, #135f9f 100%);
   color: #fff;
 }
-/* line 49, ../../app/stylesheets/partials/_databases.scss */
+/* line 54, ../../app/stylesheets/partials/_databases.scss */
+#databases ul li h3:hover a {
+  color: #fff;
+}
+/* line 58, ../../app/stylesheets/partials/_databases.scss */
 #databases ul li h3:hover .arrow {
   color: #fff;
 }
-/* line 53, ../../app/stylesheets/partials/_databases.scss */
+/* line 62, ../../app/stylesheets/partials/_databases.scss */
 #databases ul li .collections {
   display: none;
 }
-/* line 56, ../../app/stylesheets/partials/_databases.scss */
+/* line 65, ../../app/stylesheets/partials/_databases.scss */
 #databases ul li .collections li {
   padding-left: 25%;
 }
-/* line 58, ../../app/stylesheets/partials/_databases.scss */
+/* line 67, ../../app/stylesheets/partials/_databases.scss */
 #databases ul li .collections li:hover {
   cursor: pointer;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #76b7ef), color-stop(2%, #1c87e3), color-stop(100%, #135f9f));
   background-image: -moz-linear-gradient(top, #76b7ef 0%, #1c87e3 2%, #135f9f 100%);
   color: #fff;
 }
-/* line 65, ../../app/stylesheets/partials/_databases.scss */
+/* line 74, ../../app/stylesheets/partials/_databases.scss */
 #databases ul li .collections.show {
   display: block;
 }
-/* line 72, ../../app/stylesheets/partials/_databases.scss */
+/* line 81, ../../app/stylesheets/partials/_databases.scss */
 #databases #db_toolbar {
   color: #F1F3F4;
   font-size: 1.5em;
@@ -666,12 +675,12 @@ form #submit {
   border-top: 1px solid #21272C;
   padding-left: 5.263%;
 }
-/* line 81, ../../app/stylesheets/partials/_databases.scss */
+/* line 90, ../../app/stylesheets/partials/_databases.scss */
 #databases #db_toolbar a {
   text-decoration: none;
 }
 
-/* line 87, ../../app/stylesheets/partials/_databases.scss */
+/* line 96, ../../app/stylesheets/partials/_databases.scss */
 #server_status {
   display: inline;
   float: left;

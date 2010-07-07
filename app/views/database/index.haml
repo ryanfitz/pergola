@@ -1,0 +1,9 @@
+- content_for :page_nav do
+  %h1 
+    Database:
+    = @database.name
+  %ul
+    %li.active
+      = link_to "Info", url_for(:mongo_index, :id => @connection.id, :format => :js), :remote => true
+    %li
+      = link_to "Drop Database", url_for(:mongo, :new_db, :id => @connection.id, :format => :js), :remote => true

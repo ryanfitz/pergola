@@ -4,7 +4,7 @@
     = @connection.title
   %ul
     %li.active
-      = link_to "Info", url_for(:index, :format => :js), :remote => true
+      = link_to "Info", url_for(:mongo_index, :id => @connection.id, :format => :js), :remote => true
     %li
       = link_to "Add Database", url_for(:mongo, :new_db, :id => @connection.id, :format => :js), :remote => true
 

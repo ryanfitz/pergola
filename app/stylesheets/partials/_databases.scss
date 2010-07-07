@@ -15,6 +15,11 @@
     li {
       color: #380000;
       
+      a {
+        text-decoration: none;
+        color: #380000;
+      }
+      
       #new_db_name {
         background-color: rgb(221,228,235); opacity: 1;
         border: none;
@@ -45,6 +50,10 @@
             cursor:pointer;
             @include linear-gradient(color-stops(#76B7EF, #1C87E3 2%, #135F9F));
             color: #fff;
+            
+            a {
+              color: #fff;
+            }
 
             .arrow { color: #fff;}
           }

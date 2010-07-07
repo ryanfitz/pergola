@@ -2,7 +2,7 @@
   %h3
     / .arrow
     / &#9654
-    =database.name
+    = link_to database.name, url_for(:database_index, :mongo_id=> @connection.id, :name => database.name)
   %ul.collections
     - database.collection_names.each do |coll|
       %li
