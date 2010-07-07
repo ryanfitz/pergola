@@ -42,6 +42,12 @@ module MongoHelper
     connection.db(name)
   end
   
+  def create_database(name)
+    db = connection.db(name)
+    
+    db.create_collection("pergola")
+  end
+  
   class FailedMongoConnection
     def connected?
       false
