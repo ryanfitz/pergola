@@ -77,8 +77,15 @@
     border-top: 1px solid #21272C;
     
     padding-left: gutter(4);
+    
     a {
       text-decoration: none;
     }
   }
+}
+
+#server_status {
+ @include columns(9);
+ @include omega;
+ padding-top: 10px;
 }

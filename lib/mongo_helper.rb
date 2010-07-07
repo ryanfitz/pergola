@@ -42,6 +42,10 @@ module MongoHelper
     connection.db(name)
   end
   
+  def server_status 
+    connection.db("admin").command({:serverStatus => 1})
+  end
+  
   def create_database(name)
     db = connection.db(name)
     

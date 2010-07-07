@@ -10,7 +10,7 @@ $(document).ready(function () {
     $('.database h3').removeClass("selected");
     $(this).find('h3').addClass("selected");
   });
-  
+
   $('.arrow').toggle(
     function() {
       $(this).html("\u25BC");
