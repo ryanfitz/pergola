@@ -14,7 +14,19 @@ Pergola.controllers :mongo do
     end 
   end
   
-  get :server, :with => :id do
+  get :server, :map => "/mongo/:id" do
+    @databases = @connection.databases
+    render 'mongo/index'
+  end
+  
+  get :new_db, :with => [:id], :provides => [:js] do
+    render 'mongo/new_db'
+  end
+  
+  post :create_db, :with => [:id], :provides => [:js] do
+    puts params[:db_name]
+    
+    @databases = @connection.databases
     render 'mongo/index'
   end
   

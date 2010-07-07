@@ -1,6 +1,7 @@
 require 'timeout'
 
 module MongoHelper
+  
   def connections
     @@connections ||= {}
   end
@@ -9,7 +10,7 @@ module MongoHelper
     connections[id]
   end
   
-  def connection=(mongo_connection)
+  def connection=(mongo_connection)    
     connections[id] = mongo_connection
   end
   
@@ -25,6 +26,20 @@ module MongoHelper
     end
     
     connection.connected?    
+  end
+  
+  def databases
+    databases = []
+
+    connection.database_names.each do |db_name|
+      databases << get_database(db_name)
+    end
+
+    databases.sort {|x,y| x.name <=> y.name} 
+  end
+
+  def get_database(name)
+    connection.db(name)
   end
   
   class FailedMongoConnection

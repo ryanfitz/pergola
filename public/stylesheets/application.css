@@ -557,6 +557,120 @@ form #submit {
   #margin-left: -1em;
 }
 
+/* line 1, ../../app/stylesheets/partials/_databases.scss */
+#databases {
+  display: inline;
+  float: left;
+  width: 22.951%;
+  margin-right: 1.639%;
+  background-color: #dde4eb;
+  opacity: 1;
+  border-right: 1px solid #B4B4B4;
+}
+/* line 6, ../../app/stylesheets/partials/_databases.scss */
+#databases h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+  padding-left: 7.143%;
+  margin-bottom: .1em;
+  color: #71819f;
+  opacity: 1;
+}
+/* line 12, ../../app/stylesheets/partials/_databases.scss */
+#databases ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 11, ../../../../.rvm/gems/ruby-1.9.2-rc1/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.scss */
+#databases ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+}
+/* line 15, ../../app/stylesheets/partials/_databases.scss */
+#databases ul li {
+  color: #380000;
+}
+/* line 18, ../../app/stylesheets/partials/_databases.scss */
+#databases ul li #new_db_name {
+  background-color: #dde4eb;
+  opacity: 1;
+  border: none;
+  padding-left: 11.111%;
+}
+/* line 24, ../../app/stylesheets/partials/_databases.scss */
+#databases ul li h3 {
+  padding-left: 11.111%;
+  font-size: 0.875em;
+  line-height: 1.714em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 30, ../../app/stylesheets/partials/_databases.scss */
+#databases ul li h3 .arrow {
+  display: inline;
+  font-size: 0.5em;
+  line-height: 3em;
+  color: #71819f;
+  opacity: 1;
+  padding-right: .2em;
+}
+/* line 37, ../../app/stylesheets/partials/_databases.scss */
+#databases ul li h3.selected {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #76b7ef), color-stop(2%, #1c87e3), color-stop(100%, #135f9f));
+  background-image: -moz-linear-gradient(top, #76b7ef 0%, #1c87e3 2%, #135f9f 100%);
+  color: #fff;
+}
+/* line 41, ../../app/stylesheets/partials/_databases.scss */
+#databases ul li h3.selected .arrow {
+  color: #fff;
+}
+/* line 44, ../../app/stylesheets/partials/_databases.scss */
+#databases ul li h3:hover {
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #76b7ef), color-stop(2%, #1c87e3), color-stop(100%, #135f9f));
+  background-image: -moz-linear-gradient(top, #76b7ef 0%, #1c87e3 2%, #135f9f 100%);
+  color: #fff;
+}
+/* line 49, ../../app/stylesheets/partials/_databases.scss */
+#databases ul li h3:hover .arrow {
+  color: #fff;
+}
+/* line 53, ../../app/stylesheets/partials/_databases.scss */
+#databases ul li .collections {
+  display: none;
+}
+/* line 56, ../../app/stylesheets/partials/_databases.scss */
+#databases ul li .collections li {
+  padding-left: 25%;
+}
+/* line 58, ../../app/stylesheets/partials/_databases.scss */
+#databases ul li .collections li:hover {
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #76b7ef), color-stop(2%, #1c87e3), color-stop(100%, #135f9f));
+  background-image: -moz-linear-gradient(top, #76b7ef 0%, #1c87e3 2%, #135f9f 100%);
+  color: #fff;
+}
+/* line 65, ../../app/stylesheets/partials/_databases.scss */
+#databases ul li .collections.show {
+  display: block;
+}
+/* line 72, ../../app/stylesheets/partials/_databases.scss */
+#databases #db_toolbar {
+  color: #F1F3F4;
+  font-size: 1.5em;
+  line-height: 1em;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(#666666), color-stop(0.02, #1f1f1f), color-stop(0.5, #212121), color-stop(0.51, #1a1a1a), to(black));
+  border-top: 1px solid #21272C;
+  padding-left: 5.263%;
+}
+/* line 80, ../../app/stylesheets/partials/_databases.scss */
+#databases #db_toolbar a {
+  text-decoration: none;
+}
+
 /* Layout --------------------------------------------------------------*/
 /* line 29, ../../../../.rvm/gems/ruby-1.9.2-rc1/gems/compass-susy-plugin-0.7.0/sass/susy/_vertical_rhythm.scss */
 body {
@@ -703,7 +817,7 @@ header #db_box {
 #page_nav ul {
   display: inline;
   float: left;
-  width: 63.934%;
+  width: 47.541%;
   margin-right: 1.639%;
   display: inline;
   float: right;

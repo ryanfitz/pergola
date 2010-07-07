@@ -78,7 +78,7 @@ header {
   }
   
   ul { 
-    @include columns(8);
+    @include columns(6);
     @include omega;   
     text-align: right;
     @include no-style-list;

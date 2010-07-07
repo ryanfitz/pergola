@@ -1,0 +1,3 @@
+%li
+  -form_tag url_for(:mongo, :create_db, :id => @connection.id), :method => :post, :remote => true do
+    = text_field_tag :db_name, :value => params[:name], :placeholder => 'new database', :id => 'new_db_name', :value => 'new database'

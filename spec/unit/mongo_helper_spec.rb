@@ -1,12 +1,11 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper.rb')
 
 describe "MongoHelper" do
-  before :each do
+  before do
     @mock_connection = mock()
     
     @connection_info = Connection.new
     @connection_info.id = 1
-    
     @connection_info.connection = nil
   end
 

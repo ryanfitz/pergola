@@ -1,0 +1,9 @@
+%li.database
+  %h3
+    / .arrow
+    / &#9654
+    =database.name
+  %ul.collections
+    - database.collection_names.each do |coll|
+      %li
+        =coll

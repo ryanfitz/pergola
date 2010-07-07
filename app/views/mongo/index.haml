@@ -4,5 +4,11 @@
   %ul
     %li.active
       = link_to "Info", url_for(:index, :format => :js), :remote => true
-      
-HELLLO WORLD
+
+#databases
+  %h4 Databases
+  %ul.databases
+    = partial 'mongo/database', :collection => @databases
+    
+  #db_toolbar
+    = link_to "+", url_for(:mongo, :new_db, :id => @connection.id, :format => :js), :remote => true

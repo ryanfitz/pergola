@@ -5,12 +5,21 @@ function remove_active() {
 }
 
 $(document).ready(function () {	 
-   
-  // $("#add_connection").button({
-  //         icons: {
-  //           primary: 'ui-icon-plusthick'
-  //         },
-  //         text: true
-  //       });
+  
+  $('.database').click(function () { 
+    $('.database h3').removeClass("selected");
+    $(this).find('h3').addClass("selected");
+  });
+  
+  $('.arrow').toggle(
+    function() {
+      $(this).html("\u25BC");
+      $(this).parent().parent().find('.collections').addClass("show");
+    },
+    function() {
+      $(this).html("\u25BA");
+      $(this).parent().parent().find('.collections').removeClass("show");
+    }
+  );
   
 });
