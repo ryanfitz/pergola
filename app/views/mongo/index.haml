@@ -8,12 +8,12 @@
     %li
       = link_to "Add Database", url_for(:mongo, :new_db, :id => @connection.id, :format => :js), :remote => true
 
-#databases
+#left_nav
   %h4 Databases
   %ul.databases
     = partial 'mongo/database', :collection => @databases
     
-  #db_toolbar
+  #black_toolbar
     = link_to "+", url_for(:mongo, :new_db, :id => @connection.id, :format => :js), :remote => true
     
     
@@ -21,7 +21,6 @@
 - status = @connection.server_status
 
 #server_status
-  
   %h3 Info
   %ul
     %li

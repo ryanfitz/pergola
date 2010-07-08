@@ -7,3 +7,13 @@
       = link_to "Info", url_for(:mongo_index, :id => @connection.id, :format => :js), :remote => true
     %li
       = link_to "Drop Database", url_for(:mongo, :new_db, :id => @connection.id, :format => :js), :remote => true
+
+= render_breadcrumb
+
+#left_nav
+  %h4 Collections
+  %ul.collections
+    = partial 'database/collection', :collection => @database.collections
+    
+  #black_toolbar
+    = link_to "+", url_for(:mongo, :new_db, :id => @connection.id, :format => :js), :remote => true

@@ -1,6 +1,1 @@
-$('#databases ul.databases').html("<%=js_escape_html partial "mongo/database", :collection => @databases %>");
-  
-$('.database').click(function () { 
-  $('.database h3').removeClass("selected");
-  $(this).find('h3').addClass("selected");
-});
+$('#left_nav ul.databases').html("<%=js_escape_html partial "mongo/database", :collection => @databases %>");

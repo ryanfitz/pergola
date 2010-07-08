@@ -1,0 +1,9 @@
+- unless @breadcrumbs.nil?
+  #breadcrumb
+    %ul
+      - @breadcrumbs.each_with_index do |crumb, index|
+        %li
+          - if index < (@breadcrumbs.length - 1)
+            = link_to crumb[:name] + " > ", crumb[:link]
+          - else
+            = crumb[:name]

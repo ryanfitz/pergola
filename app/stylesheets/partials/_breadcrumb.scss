@@ -1,0 +1,23 @@
+#breadcrumb {
+  background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(#B7C0C8), color-stop(0.02, #7E8D9B), to(#596774));
+  border-top: 1px solid #384148;
+  
+  ul {
+    @include no-style-list;
+    @include full;
+  	display: block;
+//    margin-top: 1em;
+    padding: .5em 0px .5em 0px;
+  	text-align: middle;
+  	
+  	li {
+  	  color:#F1F3F4;
+      padding-right: 10px;
+    	display: inline;
+    	
+    	a {
+    	  text-decoration: none;
+    	}
+  	}
+  }
+}

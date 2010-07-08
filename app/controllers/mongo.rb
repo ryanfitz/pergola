@@ -1,4 +1,4 @@
-Pergola.controllers :mongo do
+Pergola.controllers :mongo do  
   before do
     add_connection_to_request
   end

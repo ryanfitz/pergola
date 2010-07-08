@@ -14,6 +14,15 @@ Pergola.helpers do
     unless @connection.connect
       halt 403, "Can't Connect"
     end
-    
   end
+  
+  def add_breadcrumb(name, url)
+    @breadcrumbs ||= []
+    @breadcrumbs << {:name => name, :link => url}
+  end
+    
+  def render_breadcrumb
+    partial "layouts/breadcrumb"
+  end
+  
 end
