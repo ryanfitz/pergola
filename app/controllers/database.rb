@@ -24,4 +24,14 @@ Pergola.controllers :database, :parent => :mongo do
     
   end
   
+  get :clone, :with => :name, :provides => [:js] do
+    @connections = Connection.all
+    
+    render 'database/clone'
+  end
+  
+  post :clone, :with => :name do
+    puts "figure out how to clone!!!"
+  end
+  
 end

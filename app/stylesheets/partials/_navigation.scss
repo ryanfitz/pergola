@@ -2,6 +2,7 @@
   @include columns(3);
   background-color: rgb(221,228,235); opacity: 1;
   border-right: 1px solid #B4B4B4;
+  padding-top: 1em;
   
   h4 {
     @include adjust-font-size-to(16px);

@@ -23,10 +23,14 @@
       #page_nav
         .container
           = yield_content :page_nav
-        
+      
     #main
       .container
         = render_breadcrumb
+        
+        #flash
+          / = flash_tag :notice
+          
         = yield
       
     %footer

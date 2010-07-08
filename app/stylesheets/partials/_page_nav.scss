@@ -1,0 +1,55 @@
+#page_nav {
+  @include container;
+  @include border-top-radius(15px); 
+  @include linear-gradient(color-stops(#1b1b1b, #0d0d0d 50%, #050505 75%, #0c0c0c));
+  
+  h1 {
+    @include columns(5);
+    @include alpha;
+    @include adjust-font-size-to(28px);
+    padding: 10px 0px 0px 0px;
+    margin-bottom: 0px;
+    color: #fff;
+  }
+  
+  ul { 
+    @include columns(6);
+    @include omega;   
+    text-align: right;
+    @include no-style-list;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 10px;
+  	display: inline;
+  	margin-top: 1em;
+  	
+  	li {
+  	  @include adjust-font-size-to(14px);
+  	  margin-left: 0;
+  	  margin-right: 0;
+    	margin-bottom: 0;
+    	color: #ACACAC;
+      padding:6px 12px 6px 16px;
+    	list-style: none;
+    	display: inline;
+    	
+    	&.active {
+    	  a {
+  	      color: #fff;
+	      }
+	      
+  	    background-color: #202020;
+    	  @include border-radius(20px);
+  	  }
+    	
+    	a {
+        color: #ACACAC;
+    	  text-decoration: none;
+    	  
+    	  &:hover {
+    	    color: #fff;
+    	  }
+    	}
+  	}
+  }
+}

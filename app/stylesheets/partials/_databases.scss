@@ -8,3 +8,8 @@
  @include omega;
  padding-top: 10px;
 }
+
+#db_main {
+  @include columns(9);
+  padding-top: 1em;
+}
