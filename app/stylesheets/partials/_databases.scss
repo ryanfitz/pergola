@@ -1,29 +1,6 @@
-#databases {
-  ul{
-    @include no-style-list;
-     a {
-        text-decoration: none;
-        color: #380000;
-      }
-      
-    li {
-      padding-left: gutter(2);
-      color: #380000;
-      @include adjust-font-size-to(14px);
-      margin-top: 0;
-      margin-bottom: 0;
-      
-      &:hover {
-        @include linear-gradient(color-stops(#76B7EF, #1C87E3 2%, #135F9F));
-        color: #fff;
-      }
-      
-      #new_db_name {
-        background-color: rgb(221,228,235); opacity: 1;
-        border: none;
-      }
-    }
-  }
+#new_db_name {
+  background-color: rgb(221,228,235); opacity: 1;
+  border: none;
 }
 
 #server_status {
