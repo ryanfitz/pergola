@@ -1,0 +1,14 @@
+%h3
+  = "Clone Database #{params[:name]}"
+  
+- form_tag url(:database_clone, :mongo_id => @connection.id, :name => params[:name]), :class => 'form', :method => :post, :remote => true do
+  = flash_tag(:notice)
+
+  %p
+    = label_tag "To Server"
+    
+    %select{:name => "to_server"}
+      - connections.each do |conn|
+        %option{:label => conn.title, :value => conn.id}
+
+  = submit_tag "Clone", :class => 'awesome blue'
