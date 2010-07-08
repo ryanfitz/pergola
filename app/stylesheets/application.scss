@@ -89,14 +89,14 @@ header {
   	margin-top: 1em;
   	
   	li {
+  	  @include adjust-font-size-to(14px);
   	  margin-left: 0;
+  	  margin-right: 0;
     	margin-bottom: 0;
     	color: #ACACAC;
-      padding:6px 14px 6px 14px;
+      padding:6px 12px 6px 16px;
     	list-style: none;
     	display: inline;
-    	@include adjust-font-size-to(14px);
-    	text-align: center;
     	
     	&.active {
     	  a {

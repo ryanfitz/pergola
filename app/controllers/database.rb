@@ -20,4 +20,8 @@ Pergola.controllers :database, :parent => :mongo do
     redirect url(:mongo_index, :id => @connection.id)
   end
   
+  post :repair, :with => :name, :provides => [:js] do
+    
+  end
+  
 end

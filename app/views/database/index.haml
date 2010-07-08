@@ -6,9 +6,11 @@
     %li.active
       = link_to "Info", url_for(:mongo_index, :id => @connection.id, :format => :js), :remote => true
     %li
-      = link_to "Drop Database", url_for(:database_destroy, :mongo_id => @connection.id, :name => @database.name, :format => :js),:method => :delete, :'data-confirm' => "Delete database?"
-
-= render_breadcrumb
+      = link_to "Repair", url_for(:database_repair, :mongo_id => @connection.id, :name => @database.name, :format => :js), :method => :post, :remote => true
+    %li
+      = link_to "Clone", url_for(:mongo_index, :id => @connection.id, :format => :js), :remote => true
+    %li
+      = link_to "Drop", url_for(:database_destroy, :mongo_id => @connection.id, :name => @database.name, :format => :js),:method => :delete, :'data-confirm' => "Delete database?"
 
 #left_nav
   %h4 Collections

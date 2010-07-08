@@ -653,10 +653,10 @@ form #submit {
 
 /* line 1, ../../app/stylesheets/partials/_breadcrumb.scss */
 #breadcrumb {
-  background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(#b7c0c8), color-stop(0.02, #7e8d9b), to(#596774));
-  border-top: 1px solid #384148;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #b7c0c8), color-stop(2%, #7e8d9b), color-stop(100%, #596774));
+  background-image: -moz-linear-gradient(top, #b7c0c8 0%, #7e8d9b 2%, #596774 100%);
 }
-/* line 5, ../../app/stylesheets/partials/_breadcrumb.scss */
+/* line 4, ../../app/stylesheets/partials/_breadcrumb.scss */
 #breadcrumb ul {
   list-style: none;
   margin: 0;
@@ -674,15 +674,24 @@ form #submit {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 13, ../../app/stylesheets/partials/_breadcrumb.scss */
+/* line 11, ../../app/stylesheets/partials/_breadcrumb.scss */
 #breadcrumb ul li {
   color: #F1F3F4;
   padding-right: 10px;
   display: inline;
+  padding: 0;
 }
-/* line 18, ../../app/stylesheets/partials/_breadcrumb.scss */
+/* line 17, ../../app/stylesheets/partials/_breadcrumb.scss */
 #breadcrumb ul li a {
   text-decoration: none;
+}
+/* line 20, ../../app/stylesheets/partials/_breadcrumb.scss */
+#breadcrumb ul li a:hover {
+  text-decoration: underline;
+}
+/* line 25, ../../app/stylesheets/partials/_breadcrumb.scss */
+#breadcrumb ul li .arrow {
+  padding: 0px 7px 0px 7px;
 }
 
 /* Layout --------------------------------------------------------------*/
@@ -856,15 +865,15 @@ header #db_box {
 }
 /* line 91, ../../app/stylesheets/application.scss */
 #page_nav ul li {
-  margin-left: 0;
-  margin-bottom: 0;
-  color: #ACACAC;
-  padding: 6px 14px 6px 14px;
-  list-style: none;
-  display: inline;
   font-size: 0.875em;
   line-height: 1.714em;
-  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  color: #ACACAC;
+  padding: 6px 12px 6px 16px;
+  list-style: none;
+  display: inline;
 }
 /* line 101, ../../app/stylesheets/application.scss */
 #page_nav ul li.active {

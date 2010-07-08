@@ -10,7 +10,7 @@
       .container
         %hgroup
           %h1 Pergola
-          %h4 {"tagline": "web frontend to mongoDB"} 
+          %h4 {"slogan": "web frontend to mongoDB"} 
           / = link_to "Pergola", url_for(:index)
         / #db_box
         /           Not Connected
@@ -26,6 +26,7 @@
         
     #main
       .container
+        = render_breadcrumb
         = yield
       
     %footer

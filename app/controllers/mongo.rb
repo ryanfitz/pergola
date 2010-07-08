@@ -1,9 +1,13 @@
 Pergola.controllers :mongo do  
   before do
     add_connection_to_request
+    
+    add_breadcrumb "Servers", "/"
   end
   
   get :index, :map => "/mongo/:id", :provides => [:html, :js] do
+    add_breadcrumb @connection.title, "/"
+    
     @databases = @connection.databases
     render 'mongo/index'
   end
