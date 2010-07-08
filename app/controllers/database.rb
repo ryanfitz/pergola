@@ -13,4 +13,11 @@ Pergola.controllers :database, :parent => :mongo do
     @database = @connection.get_database(params[:name])
     render 'database/index'
   end 
+  
+  delete :destroy, :with => :name, :provides => [:js] do
+    @connection.connection.drop_database(params[:name])
+    
+    redirect url(:mongo_index, :id => @connection.id)
+  end
+  
 end
