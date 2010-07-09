@@ -2,6 +2,16 @@ require 'timeout'
 
 module MongoHelper
   
+  def self.proxy_calls_to_mongo_connection
+    Mongo::Connection.instance_methods(false).each do |meth|
+      unless MongoHelper.method_defined? meth or [:host, :port].include? meth
+        define_method(meth) { |*args, &blk| connection.send(meth, *args, &blk) }
+      end 
+    end
+  end
+  
+  proxy_calls_to_mongo_connection
+  
   def connections
     @@connections ||= {}
   end

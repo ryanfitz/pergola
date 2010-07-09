@@ -22,7 +22,7 @@ Pergola.controllers :mongo do
       redirect url(:mongo_new_db, :id => @connection.id, :db_name => params[:db_name])
     end
     
-    if @connection.connection.database_names.include? params[:db_name] 
+    if @connection.database_names.include? params[:db_name] 
       flash[:error] = "Server already contains database #{params[:db_name]}"
       redirect url(:mongo_new_db, :id => @connection.id, :db_name => params[:db_name])
     end
