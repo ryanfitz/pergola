@@ -16,36 +16,7 @@
   #black_toolbar
     = link_to "+", url_for(:mongo, :new_db, :id => @connection.id, :format => :js), :remote => true
     
-    
-- info = @connection.connection.server_info
-- status = @connection.server_status
-
 #server_status
-  %h3 Info
-  %ul
-    %li
-      = "Running mongoDB #{info["version"]} - #{info["bits"]} bit" 
-    %li
-      = "Uptime #{status["uptime"]} seconds"
-    %li
-      Memory Usage
-      %ul
-        %li
-          ="Resident #{status["mem"]["resident"]} megs"
-        %li
-          ="Virtual #{status["mem"]["virtual"]} megs"
-        %li
-          ="Mapped #{status["mem"]["mapped"]} megs"
-          
-    %li
-      = "#{status["connections"]["current"]} active connections, #{status["connections"]["available"]} available"
-      
-  %h3 Status
-  -status.each_pair do | k, v|
-    %li
-      =k
-      =v
-    
-    
+  = partial 'mongo/status'
   
   

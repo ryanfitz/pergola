@@ -1,9 +1,12 @@
 %h3 Create New Database
 
 -form_tag url_for(:mongo, :create_db, :id => @connection.id), :method => :post, :remote => true do
+  
+  = flash_tag :error, :class => 'flash_error'
+  
   %fieldset
     = label_tag "Name"
-    = text_field_tag :db_name, :value => params[:name], :id => 'new_db_name'
+    = text_field_tag :db_name, :value => params[:db_name], :id => 'new_db_name'
   
   %fieldset
     .left

@@ -1,8 +1,3 @@
-#new_db_name {
-  background-color: rgb(221,228,235); opacity: 1;
-  border: none;
-}
-
 #server_status {
  @include columns(9);
  @include omega;

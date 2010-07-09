@@ -558,13 +558,6 @@ form #submit {
 }
 
 /* line 1, ../../app/stylesheets/partials/_databases.scss */
-#new_db_name {
-  background-color: #dde4eb;
-  opacity: 1;
-  border: none;
-}
-
-/* line 6, ../../app/stylesheets/partials/_databases.scss */
 #server_status {
   display: inline;
   float: left;
@@ -578,7 +571,7 @@ form #submit {
   padding-top: 10px;
 }
 
-/* line 12, ../../app/stylesheets/partials/_databases.scss */
+/* line 7, ../../app/stylesheets/partials/_databases.scss */
 #db_main {
   display: inline;
   float: left;
@@ -1110,4 +1103,10 @@ footer h1 {
   font-size: 2em;
   line-height: 1.5em;
   border-bottom: 3px solid #44475f;
+}
+
+/* line 190, ../../app/stylesheets/application.scss */
+.flash_error {
+  padding-bottom: 1em;
+  color: red;
 }

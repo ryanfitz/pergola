@@ -16,16 +16,18 @@ Pergola.controllers :mongo do
     render 'mongo/new_db'
   end
   
-  post :create_db, :with => [:id], :provides => [:js] do 
-    name = params[:db_name]
-    
-    if name.include?("\s")
+  post :create_db, :with => [:id], :provides => [:js] do     
+    if params[:db_name].include?("\s")
       flash[:error] = "Database name cannot contain spaces"
-      redirect url(:mongo_new_db, :id => @connection.id)
+      redirect url(:mongo_new_db, :id => @connection.id, :db_name => params[:db_name])
     end
-       
+    
+    if @connection.connection.database_names.include? params[:db_name] 
+      flash[:error] = "Server already contains database #{params[:db_name]}"
+      redirect url(:mongo_new_db, :id => @connection.id, :db_name => params[:db_name])
+    end
+     
     @connection.create_database(params[:db_name])
-  
     redirect url(:mongo, :index, :id => params[:id])
   end
   
