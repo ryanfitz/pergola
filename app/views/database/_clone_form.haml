@@ -8,7 +8,7 @@
     = label_tag "To Server"
     
     %select{:name => "to_server"}
-      - connections.each do |conn|
+      - @connections.each do |conn|
         %option{:label => conn.title, :value => conn.id}
 
   = submit_tag "Clone", :class => 'awesome blue'

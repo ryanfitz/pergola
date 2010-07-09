@@ -16,7 +16,14 @@ Pergola.controllers :mongo do
     render 'mongo/new_db'
   end
   
-  post :create_db, :with => [:id], :provides => [:js] do  
+  post :create_db, :with => [:id], :provides => [:js] do 
+    name = params[:db_name]
+    
+    if name.include?("\s")
+      flash[:error] = "Database name cannot contain spaces"
+      redirect url(:mongo_new_db, :id => @connection.id)
+    end
+       
     @connection.create_database(params[:db_name])
   
     redirect url(:mongo, :index, :id => params[:id])

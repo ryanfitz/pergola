@@ -3,7 +3,7 @@
     Server:
     = @connection.title
   %ul
-    %li.active
+    %li#server_info_link.active
       = link_to "Info", url_for(:mongo_index, :id => @connection.id, :format => :js), :remote => true
     %li
       = link_to "Add Database", url_for(:mongo, :new_db, :id => @connection.id, :format => :js), :remote => true

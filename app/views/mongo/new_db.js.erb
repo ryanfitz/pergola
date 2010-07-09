@@ -1,3 +1,1 @@
-$('ul.databases').append("<%=js_escape_html partial "mongo/db_form", :object => @connection %>");
-
-$('#new_db_name').focus();
+$('#server_status').html("<%=js_escape_html partial "mongo/db_form", :object => @connection %>");

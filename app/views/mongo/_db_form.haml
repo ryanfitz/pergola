@@ -1,3 +1,12 @@
-%li
-  -form_tag url_for(:mongo, :create_db, :id => @connection.id), :method => :post, :remote => true do
-    = text_field_tag :db_name, :value => params[:name], :placeholder => 'new database', :id => 'new_db_name', :value => 'new database'
+%h3 Create New Database
+
+-form_tag url_for(:mongo, :create_db, :id => @connection.id), :method => :post, :remote => true do
+  %fieldset
+    = label_tag "Name"
+    = text_field_tag :db_name, :value => params[:name], :id => 'new_db_name'
+  
+  %fieldset
+    .left
+      = link_to "Cancel", url_for(:mongo_index, :id => @connection.id, :format => :js), :remote => true, :id => 'cancel', :class => 'awesome red'
+    .right
+      = submit_tag "Create", :id => 'submit', :class => 'awesome blue'

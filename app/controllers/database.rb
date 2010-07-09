@@ -7,7 +7,7 @@ Pergola.controllers :database, :parent => :mongo do
     add_breadcrumb @connection.title, url(:mongo, :index, :id => @connection.id)
   end
   
-  get :index, :map =>"/database/:name" do
+  get :index, :map =>"/database/:name", :provides => [:html,:js] do
     add_breadcrumb params[:name], "/"
     
     @database = @connection.get_database(params[:name])

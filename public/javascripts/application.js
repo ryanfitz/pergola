@@ -22,4 +22,9 @@ $(document).ready(function () {
     }
   );
   
+  $('#page_nav ul li a').click(function() {
+    remove_active();
+    $(this).parent().addClass('active');
+  });
+  
 });
