@@ -2,5 +2,4 @@ $('#left_nav ul.databases').html("<%=js_escape_html partial "mongo/database", :c
 
 $('#server_status').html("<%=js_escape_html partial "mongo/status" %>");
 
-remove_active();
-$('#server_info_link').addClass("active");
+activate_link("#server_info_link")

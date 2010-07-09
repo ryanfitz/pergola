@@ -4,6 +4,11 @@ function remove_active() {
   $('#page_nav ul li').removeClass('active');
 }
 
+function activate_link(div) {
+  remove_active();
+  $(div).addClass('active');
+}
+
 $(document).ready(function () {	 
   
   $('.database').click(function () { 

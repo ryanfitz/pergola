@@ -4,11 +4,15 @@
 - form_tag url(:database_clone, :mongo_id => @connection.id, :name => params[:name]), :class => 'form', :method => :post, :remote => true do
   = flash_tag(:notice)
 
-  %p
+  %fieldset
     = label_tag "To Server"
     
     %select{:name => "to_server"}
       - @connections.each do |conn|
         %option{:label => conn.title, :value => conn.id}
-
-  = submit_tag "Clone", :class => 'awesome blue'
+  
+  %fieldset
+    .left
+      = link_to "Cancel", url_for(:database_index, :mongo_id => @connection.id, :name => params[:name], :format => :js), :remote => true, :id => 'cancel', :class => 'awesome red'
+    .right
+      = submit_tag "Clone", :id => 'submit', :class => 'awesome blue'
