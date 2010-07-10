@@ -1,1 +1,9 @@
 $('#server_status').html("<%=js_escape_html partial "mongo/db_form", :object => @connection %>");
+
+$('#create_db').show();
+$('#loading_dialog').hide();
+
+$('#create_db_form').submit(function() {
+  $('#create_db').hide();
+  $('#loading_dialog').show();
+});

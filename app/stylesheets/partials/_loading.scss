@@ -1,0 +1,16 @@
+#loading_dialog { 
+  margin-left: auto;
+  margin-right: auto; 
+  @include background-size(auto);
+  display: none;
+  
+  h3{
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  background: {
+        image: inline-image("loader.gif");
+        repeat: no-repeat;
+        position: bottom center; 
+  };
+}

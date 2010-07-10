@@ -28,7 +28,7 @@ module MongoHelper
     unless not server.nil? and server.connected?
       begin 
         timeout(5) do
-          self.server=(Mongo::Connection.new(host, port))
+          self.server=(Mongo::Connection.new(host, port, :slave_ok => true))
         end
       rescue Timeout::Error, Mongo::ConnectionFailure
         self.server= FailedMongoConnection.new
