@@ -56,8 +56,12 @@ module MongoHelper
     server.db("admin").command({:serverStatus => 1})
   end
   
+  def repair_database(name)
+    get_database(name).command({:repairDatabase => 1})
+  end
+  
   def create_database(name)
-    db = server.db(name)
+    db = get_database(name)
     
     db.create_collection("pergola")
   end

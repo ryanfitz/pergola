@@ -1,0 +1,9 @@
+$('#db_main').html("<%=js_escape_html partial "database/repair" %>");
+
+$('#repair_db').show();
+$('#loading_dialog').hide();
+
+$('#repair_db_form').submit(function() {
+  $('#repair_db').hide();
+  $('#loading_dialog').show();
+});

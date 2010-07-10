@@ -20,8 +20,16 @@ Pergola.controllers :database, :parent => :mongo do
     redirect url(:mongo_index, :id => @connection.id)
   end
   
+  get :repair, :with => :name, :provides => [:js] do
+    render 'database/repair'
+  end
+  
   post :repair, :with => :name, :provides => [:js] do
+    @connection.repair_database(params[:name])
     
+    flash[:notice] = "Database #{params[:name]} successfully repaird"
+    
+    redirect url(:database_index, :mongo_id => @connection.id, :name => params[:name])
   end
   
   get :clone, :with => :name, :provides => [:js] do

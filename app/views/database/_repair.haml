@@ -1,0 +1,17 @@
+#repair_db
+  %h3
+    = "Repair Database #{params[:name]}"
+    
+  %p
+    Repairing a database is a slow operation, are you sure you wish to repair this database?
+    
+  -form_tag url_for(:database_repair, :mongo_id => @connection.id, :name => params[:name]), :method => :post, :remote => true, :id => "repair_db_form" do
+
+    %fieldset
+      .left
+        = link_to "Cancel", url_for(:database_index, :mongo_id => @connection.id, :name => params[:name], :format => :js), :remote => true, :id => 'cancel', :class => 'awesome red'
+      .right
+        = submit_tag "Repair", :id => 'submit', :class => 'awesome blue'
+    
+#loading_dialog
+  %h3 Repairing Database...

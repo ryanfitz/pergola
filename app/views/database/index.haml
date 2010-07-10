@@ -6,7 +6,7 @@
     %li#info.active
       = link_to "Info", url_for(:database_index, :mongo_id => @connection.id, :name => @database.name, :format => :js), :remote => true
     %li
-      = link_to "Repair", url_for(:database_repair, :mongo_id => @connection.id, :name => @database.name, :format => :js), :method => :post, :remote => true
+      = link_to "Repair", url_for(:database_repair, :mongo_id => @connection.id, :name => @database.name, :format => :js), :remote => true
     %li
       = link_to "Clone", url_for(:database_clone, :mongo_id => @connection.id, :name => @database.name, :format => :js), :remote => true
     %li
