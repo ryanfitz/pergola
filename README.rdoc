@@ -1,5 +1,5 @@
 = pergola 
-web frontend for mongoDB development based on padrino, haml, and jquery.
+web frontend for mongoDB development based on padrino, haml, compass and jquery.
 
 == Installation
 
@@ -13,9 +13,14 @@ This will copy the latest version of pergola to your machine.
 Now with the latest version installed on your machine run the following to setup the pergola environment
   $ cd pergola
   $ bundle install
-  $ padrino rake ar:setup
-  $ padrino start
+  $ rake ar:setup
+  $ thin start -R config.ru -p 3000
   
 Pergola is now up and running at http://localhost:3000 
+
+== Rackup
+Pergola is a standard rack based app, you can deploy it using any rack compliant webserver
+
+  $ thin start -R config.ru
 
 
