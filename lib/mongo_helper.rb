@@ -5,43 +5,43 @@ module MongoHelper
   def self.proxy_calls_to_mongo_connection
     Mongo::Connection.instance_methods(false).each do |meth|
       unless MongoHelper.method_defined? meth or [:host, :port].include? meth
-        define_method(meth) { |*args, &blk| connection.send(meth, *args, &blk) }
+        define_method(meth) { |*args, &blk| server.send(meth, *args, &blk) }
       end 
     end
   end
   
   proxy_calls_to_mongo_connection
   
-  def connections
-    @@connections ||= {}
+  def servers
+    @@servers ||= {}
   end
   
-  def connection
-    connections[id]
+  def server
+    servers[id]
   end
   
-  def connection=(mongo_connection)    
-    connections[id] = mongo_connection
+  def server=(mongo_server)    
+    servers[id] = mongo_server
   end
   
   def connect
-    unless not connection.nil? and connection.connected?
+    unless not server.nil? and server.connected?
       begin 
         timeout(5) do
-          self.connection=(Mongo::Connection.new(host, port))
+          self.server=(Mongo::Connection.new(host, port))
         end
       rescue Timeout::Error, Mongo::ConnectionFailure
-        self.connection= FailedMongoConnection.new
+        self.server= FailedMongoConnection.new
       end
     end
     
-    connection.connected?    
+    server.connected?    
   end
   
   def databases
     databases = []
 
-    connection.database_names.each do |db_name|
+    server.database_names.each do |db_name|
       databases << get_database(db_name)
     end
 
@@ -49,15 +49,15 @@ module MongoHelper
   end
 
   def get_database(name)
-    connection.db(name)
+    server.db(name)
   end
   
   def server_status 
-    connection.db("admin").command({:serverStatus => 1})
+    server.db("admin").command({:serverStatus => 1})
   end
   
   def create_database(name)
-    db = connection.db(name)
+    db = server.db(name)
     
     db.create_collection("pergola")
   end
