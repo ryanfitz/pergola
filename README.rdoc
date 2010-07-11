@@ -7,7 +7,7 @@ To install pergola, simply clone the git repo and run the rake setup task:
 
   $ git clone git@github.com:ryanfitz/pergola.git
   $ cd pergola
-  $ rake:setup
+  $ rake setup
 
 This will copy the latest version of pergola to your machine and create the needed runtime environment to launch pergola.
 
