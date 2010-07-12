@@ -1,22 +1,32 @@
 begin
   require 'rubygems'
   require 'bundler'
-  require 'padrino'
   rescue LoadError
     puts <<MSG
     
-Pergola requires bundler and padrino.
+Pergola requires bundler.
 You can install them as follows:
   
   gem install bundler
-  gem install padrino
 
 MSG
   exit
 end
 
-require File.dirname(__FILE__) + '/config/boot.rb'
-require 'thor'
-require 'padrino-core/cli/rake'
+desc 'Setup the environment to run pergola'
+task :setup do
+  puts "Setting up pergola environment..."
+  puts "Installing dependencies..."
+  sh "bundle install"
+  
+  puts "finished installing dependencies"
+  
+  require File.dirname(__FILE__) + '/config/boot.rb'
+  require 'thor'
+  require 'padrino-core/cli/rake'
 
-PadrinoTasks.init
+  PadrinoTasks.init
+  Rake::Task["ar:setup"].invoke
+  
+  puts "Finished setting up pergola"
+end
