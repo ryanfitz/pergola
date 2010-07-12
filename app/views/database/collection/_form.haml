@@ -1,0 +1,31 @@
+#create_collection
+  %h3 Create New Collection
+
+  -form_tag url_for(:database_new_collection, :mongo_id => @connection.id, :name => params[:name]), :method => :post, :remote => true, :id => "create_collection_form" do
+  
+    = flash_tag :error, :class => 'flash_error'
+  
+    %fieldset
+      = label_tag "Name"
+      = text_field_tag :collection_name, :id => 'new_db_name'
+      
+    %fieldset
+      = label_tag "capped", :caption => "Capped?"
+      = check_box_tag :capped, :checked => false
+      
+    %fieldset
+      = label_tag "size", :caption => "size (in bytes)"
+      = input_tag :number, :min => 0, :name => "size"
+  
+    %fieldset
+      = label_tag "max", :caption => "maximum number of records"
+      = input_tag :number, :min => 0, :name => "max_records"
+      
+    %fieldset
+      .left
+        = link_to "Cancel", url_for(:database_index, :mongo_id => @connection.id, :name => params[:name], :format => :js), :remote => true, :id => 'cancel', :class => 'awesome red'
+      .right
+        = submit_tag "Create", :id => 'submit', :class => 'awesome blue'
+      
+#loading_dialog
+  %h3 Creating Database...

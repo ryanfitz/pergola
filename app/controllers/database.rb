@@ -42,4 +42,19 @@ Pergola.controllers :database, :parent => :mongo do
     puts "figure out how to clone!!!"
   end
   
+  get :new_collection, :with => :name, :provides => [:js] do
+    render 'database/collection/new'
+  end
+  
+  post :new_collection, :with => :name, :provides => [:js] do
+    @connection.get_database(params[:name]).create_collection(params[:collection_name])
+    
+    puts params[:collection_name]
+    puts params[:capped]
+    puts params[:size]
+    puts params[:max_records]
+    
+    redirect url(:database_index, :mongo_id => @connection.id, :name => params[:name])
+  end
+  
 end

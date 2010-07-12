@@ -1,3 +1,5 @@
 $('#db_main').html("");
 
+$('#left_nav ul.collections').html("<%=js_escape_html partial "database/collection", :collection => @database.collections %>");
+
 activate_link('#info');

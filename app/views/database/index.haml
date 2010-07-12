@@ -9,6 +9,8 @@
       = link_to "Repair", url_for(:database_repair, :mongo_id => @connection.id, :name => @database.name, :format => :js), :remote => true
     %li
       = link_to "Clone", url_for(:database_clone, :mongo_id => @connection.id, :name => @database.name, :format => :js), :remote => true
+    %li#add_collection
+      = link_to "Add Collection", url_for(:database_new_collection, :mongo_id => @connection.id, :name => @database.name, :format => :js), :remote => true
     %li
       = link_to "Drop", url_for(:database_destroy, :mongo_id => @connection.id, :name => @database.name, :format => :js),:method => :delete, :'data-confirm' => "Delete database?"
 
@@ -18,6 +20,6 @@
     = partial 'database/collection', :collection => @database.collections
     
   #black_toolbar
-    = link_to "+", url_for(:mongo, :new_db, :id => @connection.id, :format => :js), :remote => true
+    = link_to "+", url_for(:database_new_collection, :mongo_id => @connection.id, :name => @database.name, :format => :js), :remote => true
     
 #db_main
