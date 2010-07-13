@@ -820,6 +820,90 @@ form #submit {
   padding-bottom: 40px;
 }
 
+/* line 1, ../../app/stylesheets/partials/_datatables.scss */
+#documents_table_wrapper {
+  clear: both;
+  margin-right: 1.639%;
+  margin-left: 1.639%;
+}
+/* line 4, ../../app/stylesheets/partials/_datatables.scss */
+#documents_table_wrapper #documents_table_length {
+  display: inline;
+  float: left;
+  width: 22.951%;
+  margin-right: 1.639%;
+}
+/* line 8, ../../app/stylesheets/partials/_datatables.scss */
+#documents_table_wrapper #documents_table_filter {
+  display: inline;
+  float: left;
+  width: 39.344%;
+  margin-right: 1.639%;
+  display: inline;
+  float: right;
+  margin-right: 1.639%;
+  /* ugly hacks for IE6-7 */
+  #margin-left: -1em;
+}
+/* line 12, ../../app/stylesheets/partials/_datatables.scss */
+#documents_table_wrapper #documents_table_filter input {
+  width: 79.167%;
+  display: inline;
+}
+/* line 18, ../../app/stylesheets/partials/_datatables.scss */
+#documents_table_wrapper #documents_table_info {
+  display: inline;
+  float: left;
+  width: 22.951%;
+  margin-right: 1.639%;
+}
+
+/* line 24, ../../app/stylesheets/partials/_datatables.scss */
+#documents_table {
+  display: inline;
+  float: left;
+  width: 96.721%;
+  margin-right: 1.639%;
+  margin-top: 1em;
+}
+/* line 28, ../../app/stylesheets/partials/_datatables.scss */
+#documents_table thead {
+  color: #2C2C2C;
+  -moz-border-radius-topleft: 20px;
+  -webkit-border-top-left-radius: 20px;
+  -o-border-top-left-radius: 20px;
+  -ms-border-top-left-radius: 20px;
+  -khtml-border-top-left-radius: 20px;
+  border-top-left-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -o-border-top-right-radius: 20px;
+  -ms-border-top-right-radius: 20px;
+  -khtml-border-top-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+/* line 36, ../../app/stylesheets/partials/_datatables.scss */
+#documents_table tbody tr {
+  border: none;
+}
+/* line 38, ../../app/stylesheets/partials/_datatables.scss */
+#documents_table tbody tr.odd {
+  background-color: #dde4eb;
+  opacity: 1;
+}
+/* line 40, ../../app/stylesheets/partials/_datatables.scss */
+#documents_table tbody tr td {
+  border: none;
+}
+/* line 46, ../../app/stylesheets/partials/_datatables.scss */
+#documents_table th {
+  width: 14.754%;
+}
+/* line 48, ../../app/stylesheets/partials/_datatables.scss */
+#documents_table th:hover {
+  cursor: pointer;
+}
+
 /* Layout --------------------------------------------------------------*/
 /* line 29, ../../../../.rvm/gems/ruby-1.9.2-rc2/gems/compass-susy-plugin-0.7.0/sass/susy/_vertical_rhythm.scss */
 body {

@@ -1,3 +1,7 @@
+- content_for :include do
+  = javascript_include_tag 'jquery.dataTables.min', 'documentTables'
+  
+  
 - content_for :page_nav do
   %h1 
     Collection:
@@ -17,7 +21,7 @@
 #main
   %h3 Documents
   
-  %table
+  %table#documents_table
     %thead
       %tr
         - @header.each do |head|
