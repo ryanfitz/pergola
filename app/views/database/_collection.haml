@@ -1,2 +1,3 @@
-%li.collection
-  = collection.name
+- link_to url_for(:collection_index, :mongo_id=> @connection.id, :database_id => @database.name, :name => collection.name) do
+  %li.collection
+    = collection.name

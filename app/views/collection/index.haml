@@ -1,1 +1,27 @@
-asdfasdfasdafs
+- content_for :page_nav do
+  %h1 
+    Collection:
+    = @collection.name
+  %ul
+    %li#info.active
+      = link_to "Documents", url_for(:database_index, :mongo_id => @connection.id, :name => @database.name, :format => :js), :remote => true
+    %li
+      = link_to "Rename", url_for(:database_repair, :mongo_id => @connection.id, :name => @database.name, :format => :js), :remote => true
+    %li
+      = link_to "Clone", url_for(:database_clone, :mongo_id => @connection.id, :name => @database.name, :format => :js), :remote => true
+    %li#add_collection
+      = link_to "Add Index", url_for(:database_new_collection, :mongo_id => @connection.id, :name => @database.name, :format => :js), :remote => true
+    %li
+      = link_to "Drop", url_for(:database_destroy, :mongo_id => @connection.id, :name => @database.name, :format => :js),:method => :delete, :'data-confirm' => "Delete database?"
+    
+#main
+  %h3 Documents
+  
+  %table
+    %tr
+      - @header.each do |head|
+        %th= head
+    - @documents.each do |doc|
+      %tr
+        - doc.values.each do |val|
+          %td= val

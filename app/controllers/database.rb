@@ -47,13 +47,14 @@ Pergola.controllers :database, :parent => :mongo do
   end
   
   post :new_collection, :with => :name, :provides => [:js] do
-    @connection.get_database(params[:name]).create_collection(params[:collection_name])
+    if @connection.get_database(params[:name]).collection_names.include? params[:collection_name]
+      flash[:error] = "collection #{params[:collection_name]} already exists"
+      
+      redirect url(:database_new_collection, :mongo_id => @connection.id, :name => params[:name])
+    end
     
-    puts params[:collection_name]
-    puts params[:capped]
-    puts params[:size]
-    puts params[:max_records]
-    
+    @connection.get_database(params[:name]).create_collection(params[:collection_name], :capped => params[:capped], :size => params[:size], :max => params[:max_records])
+        
     redirect url(:database_index, :mongo_id => @connection.id, :name => params[:name])
   end
   
