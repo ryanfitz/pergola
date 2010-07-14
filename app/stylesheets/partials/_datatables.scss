@@ -39,7 +39,13 @@
      &.odd { background-color: rgb(221,228,235); opacity: 1;} 
      
      td {
+       padding-top: .3em;
+       padding-bottom: .3em;
        border:none;
+       
+       input {
+         width: 10px;
+       }
      }
    }
   }

@@ -886,20 +886,26 @@ form #submit {
 #documents_table tbody tr {
   border: none;
 }
-/* line 38, ../../app/stylesheets/partials/_datatables.scss */
+/* line 39, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table tbody tr.odd {
   background-color: #dde4eb;
   opacity: 1;
 }
-/* line 40, ../../app/stylesheets/partials/_datatables.scss */
+/* line 41, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table tbody tr td {
+  padding-top: .3em;
+  padding-bottom: .3em;
   border: none;
 }
 /* line 46, ../../app/stylesheets/partials/_datatables.scss */
+#documents_table tbody tr td input {
+  width: 10px;
+}
+/* line 53, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table th {
   width: 14.754%;
 }
-/* line 48, ../../app/stylesheets/partials/_datatables.scss */
+/* line 55, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table th:hover {
   cursor: pointer;
 }

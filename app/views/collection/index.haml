@@ -28,5 +28,8 @@
           %th= head
     - @documents.each do |doc|
       %tr
-        - doc.values.each do |val|
-          %td= val || "-"
+        - doc.each do |key, val|
+          %td
+            - if key == "_id"
+              %input{:type=>"checkbox", :value=> val}
+            = val || "-"
