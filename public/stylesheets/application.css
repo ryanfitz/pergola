@@ -912,6 +912,17 @@ form #submit {
   cursor: pointer;
 }
 
+/* line 61, ../../app/stylesheets/partials/_datatables.scss */
+code {
+  font-size: 0.875em;
+  line-height: 1.714em;
+  font-family: 'DejaVu Sans Mono', Menlo, Courier, monospace;
+  border-left: none;
+  padding: 0px 0px 0px 0px;
+  display: inline;
+  margin: 0px 0px 0px 0px;
+}
+
 /* Layout --------------------------------------------------------------*/
 /* line 29, ../../../../.rvm/gems/ruby-1.9.2-rc2/gems/compass-susy-plugin-0.7.0/sass/susy/_vertical_rhythm.scss */
 body {

@@ -14,21 +14,23 @@ Pergola.controllers :collection, :parent => [:mongo, :database] do
     add_breadcrumb params[:name], "/"
     @collection = @database.collection params[:name]
     
-    @header = Set.new
+    @docs = @collection.find
     
-    @collection.find.each do |doc|
-      @header += doc.keys
-    end
-    
-    @documents = []
-    
-    @collection.find.each do |doc|
-      rdoc = {}
-      @header.each do |head|
-        rdoc[head] = doc[head]
-      end
-      @documents << rdoc
-    end
+    # @header = Set.new
+    #     
+    #     @collection.find.each do |doc|
+    #       @header += doc.keys
+    #     end
+    #     
+    #     @documents = []
+    #     
+    #     @collection.find.each do |doc|
+    #       rdoc = {}
+    #       @header.each do |head|
+    #         rdoc[head] = doc[head]
+    #       end
+    #       @documents << rdoc
+    #     end
   
     render 'collection/index'
   end

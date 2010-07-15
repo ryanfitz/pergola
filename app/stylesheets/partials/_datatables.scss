@@ -57,3 +57,12 @@
     }
   }
 }
+
+code {
+  @include adjust-font-size-to(14px);
+  font-family: 'DejaVu Sans Mono', Menlo, Courier, monospace;
+  border-left: none;
+  padding: 0px 0px 0px 0px;
+  display: inline;
+  margin: 0px 0px 0px 0px;
+}
