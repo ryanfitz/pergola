@@ -654,6 +654,13 @@ form #submit {
   text-decoration: none;
 }
 
+/* line 55, ../../app/stylesheets/partials/_navigation.scss */
+#main {
+  clear: both;
+  margin-right: 1.639%;
+  margin-left: 1.639%;
+}
+
 /* line 1, ../../app/stylesheets/partials/_breadcrumb.scss */
 #breadcrumb {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #b7c0c8), color-stop(2%, #7e8d9b), color-stop(100%, #596774));
@@ -822,18 +829,17 @@ form #submit {
 
 /* line 1, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table_wrapper {
-  clear: both;
-  margin-right: 1.639%;
-  margin-left: 1.639%;
+  margin-top: 0px;
+  padding-top: 0px;
 }
-/* line 4, ../../app/stylesheets/partials/_datatables.scss */
+/* line 5, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table_wrapper #documents_table_length {
   display: inline;
   float: left;
   width: 22.951%;
   margin-right: 1.639%;
 }
-/* line 8, ../../app/stylesheets/partials/_datatables.scss */
+/* line 9, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table_wrapper #documents_table_filter {
   display: inline;
   float: left;
@@ -845,12 +851,12 @@ form #submit {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
-/* line 12, ../../app/stylesheets/partials/_datatables.scss */
+/* line 13, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table_wrapper #documents_table_filter input {
   width: 79.167%;
   display: inline;
 }
-/* line 18, ../../app/stylesheets/partials/_datatables.scss */
+/* line 19, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table_wrapper #documents_table_info {
   display: inline;
   float: left;
@@ -858,13 +864,9 @@ form #submit {
   margin-right: 1.639%;
 }
 
-/* line 24, ../../app/stylesheets/partials/_datatables.scss */
+/* line 25, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table {
-  display: inline;
-  float: left;
-  width: 96.721%;
-  margin-right: 1.639%;
-  margin-top: 1em;
+  margin-top: 0;
 }
 /* line 28, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table thead {

@@ -1,5 +1,6 @@
 #documents_table_wrapper {
-  @include full;
+  margin-top:0px;
+  padding-top: 0px;
   
   #documents_table_length {
     @include columns(3);
@@ -22,8 +23,7 @@
 }
 
 #documents_table {
-  @include columns(12);
-  margin-top: 1em;
+  margin-top: 0;
   
   thead {
 //    background: #C2C2C2;

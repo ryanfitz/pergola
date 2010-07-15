@@ -33,4 +33,7 @@ Pergola.controllers :collection, :parent => [:mongo, :database] do
     render 'collection/index'
   end
   
+  get :query, :map =>"/collection/:name/search", :provides => [:json] do
+    puts "asdfasdfd"
+  end
 end

@@ -1,5 +1,11 @@
 $(document).ready(function() {
-	$('#documents_table').dataTable({"sPaginationType": "full_numbers", "bLengthChange": false, "iDisplayLength": 50});
+	$('#documents_table').dataTable({
+    "sPaginationType": "full_numbers", 
+	  "bLengthChange": false, 
+	  "iDisplayLength": 50,
+	  "bProcessing": true,
+	  "bFilter" :false
+	  });
 	
 	$(":checkbox").click(function() {
 	  var ids = new Array();

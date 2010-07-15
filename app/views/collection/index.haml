@@ -21,6 +21,14 @@
 #main
   %h3 Documents
   
+  #search
+    -form_tag url_for(:collection_query, :mongo_id => @connection.id, :database_id => @database.name, :name => @collection.name), :method => :post, :remote => true do
+      %fieldset
+        .left
+          = text_field_tag :criteria, :id => 'criteria', :placeholder => "key => val"
+        .right
+          = submit_tag "search", :id => 'submit', :class => 'awesome blue'
+    
   %table#documents_table
     %thead
       %tr

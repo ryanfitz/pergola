@@ -51,3 +51,7 @@
     text-decoration: none;
   }
 }
+
+#main {
+  @include full;
+}
