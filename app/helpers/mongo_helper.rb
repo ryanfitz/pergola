@@ -25,4 +25,12 @@ Pergola.helpers do
     partial "layouts/breadcrumb"
   end
   
+  def determin_style_class_for(object)
+    if object.is_a? BSON::ObjectID 
+      return "string"
+    else
+      object.class.name.downcase
+    end
+  end
+  
 end

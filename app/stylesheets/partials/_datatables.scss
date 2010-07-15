@@ -65,4 +65,25 @@ code {
   padding: 0px 0px 0px 0px;
   display: inline;
   margin: 0px 0px 0px 0px;
+  
+  &.key {
+    color: #333;
+    font-weight: bold;
+  }
+
+  &.fixnum, &.boolean {
+    color: #339;
+  }
+  
+  &.string {
+    color: #393;
+    
+    &:before {
+      content: "\201C";
+    }
+    
+    &:after {
+      content: "\201D";
+    }
+  }
 }

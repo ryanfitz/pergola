@@ -922,6 +922,27 @@ code {
   display: inline;
   margin: 0px 0px 0px 0px;
 }
+/* line 69, ../../app/stylesheets/partials/_datatables.scss */
+code.key {
+  color: #333;
+  font-weight: bold;
+}
+/* line 74, ../../app/stylesheets/partials/_datatables.scss */
+code.fixnum, code.boolean {
+  color: #339;
+}
+/* line 78, ../../app/stylesheets/partials/_datatables.scss */
+code.string {
+  color: #393;
+}
+/* line 81, ../../app/stylesheets/partials/_datatables.scss */
+code.string:before {
+  content: "\201C";
+}
+/* line 85, ../../app/stylesheets/partials/_datatables.scss */
+code.string:after {
+  content: "\201D";
+}
 
 /* Layout --------------------------------------------------------------*/
 /* line 29, ../../../../.rvm/gems/ruby-1.9.2-rc2/gems/compass-susy-plugin-0.7.0/sass/susy/_vertical_rhythm.scss */

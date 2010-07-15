@@ -4,7 +4,8 @@ $(document).ready(function() {
 	  "bLengthChange": false, 
 	  "iDisplayLength": 50,
 	  "bProcessing": true,
-	  "bFilter" :false
+	  "bFilter" :false,
+	  "bAutoWidth": false
 	  });
 	
 	$(":checkbox").click(function() {
