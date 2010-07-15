@@ -928,18 +928,22 @@ code.key {
   font-weight: bold;
 }
 /* line 74, ../../app/stylesheets/partials/_datatables.scss */
+code.object {
+  color: #999;
+}
+/* line 78, ../../app/stylesheets/partials/_datatables.scss */
 code.fixnum, code.boolean {
   color: #339;
 }
-/* line 78, ../../app/stylesheets/partials/_datatables.scss */
+/* line 82, ../../app/stylesheets/partials/_datatables.scss */
 code.string {
   color: #393;
 }
-/* line 81, ../../app/stylesheets/partials/_datatables.scss */
+/* line 85, ../../app/stylesheets/partials/_datatables.scss */
 code.string:before {
   content: "\201C";
 }
-/* line 85, ../../app/stylesheets/partials/_datatables.scss */
+/* line 89, ../../app/stylesheets/partials/_datatables.scss */
 code.string:after {
   content: "\201D";
 }

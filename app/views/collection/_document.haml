@@ -1,8 +1,21 @@
+- seperator = ","
+- counter = 0
+
 %code{:class=>"object"}
-  = surround '{','}' do
+  = surround '{','}' do  
     - document.each do |key, value|
-      %code{:class=> "key"}= "#{key}:"
-      - if value.is_a? Hash
-        = partial 'collection/document', :object => value
-      - else
-        %code{:class=> determin_style_class_for(value) }= value
+       
+      - if counter >= (document.size - 1)
+        - seperator = ""
+           
+      = succeed ':' do
+        %code{:class=> "key", :nospace =>"both"}= "#{key}"
+       
+      = succeed seperator do
+        - if value.is_a? Hash
+          = partial 'collection/document', :object => value
+        - else
+          %code{:class=> determin_style_class_for(value) }= value
+          
+          
+      - counter += 1

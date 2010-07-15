@@ -70,6 +70,10 @@ code {
     color: #333;
     font-weight: bold;
   }
+  
+  &.object {
+    color: #999;
+  }
 
   &.fixnum, &.boolean {
     color: #339;
