@@ -18,7 +18,7 @@
     %li
       = link_to "Drop", url_for(:database_destroy, :mongo_id => @connection.id, :name => @database.name, :format => :js),:method => :delete, :'data-confirm' => "Delete database?"
     
-#main
+#main_content
   %h3 Documents
   
   #search

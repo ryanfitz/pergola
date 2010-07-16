@@ -656,7 +656,7 @@ form #submit {
 }
 
 /* line 51, ../../app/stylesheets/partials/_navigation.scss */
-#main {
+#main_content {
   clear: both;
   margin-right: 1.639%;
   margin-left: 1.639%;
@@ -695,12 +695,13 @@ form #submit {
 /* line 17, ../../app/stylesheets/partials/_breadcrumb.scss */
 #breadcrumb ul li a {
   text-decoration: none;
+  color: #fff;
 }
-/* line 20, ../../app/stylesheets/partials/_breadcrumb.scss */
+/* line 21, ../../app/stylesheets/partials/_breadcrumb.scss */
 #breadcrumb ul li a:hover {
   text-decoration: underline;
 }
-/* line 25, ../../app/stylesheets/partials/_breadcrumb.scss */
+/* line 26, ../../app/stylesheets/partials/_breadcrumb.scss */
 #breadcrumb ul li .arrow {
   padding: 0px 7px 0px 7px;
 }

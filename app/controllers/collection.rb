@@ -36,6 +36,10 @@ Pergola.controllers :collection, :parent => [:mongo, :database] do
   end
   
   get :edit_doc, :map =>"/collection/:name/doc/:doc_id", :provides => [:js] do
+    @collection = @database.collection params[:name]
+    
+    @document = @collection.find_one(BSON::ObjectID.from_string(params[:doc_id]))
+    
     render 'collection/document/edit'
   end
   

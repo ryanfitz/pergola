@@ -13,7 +13,7 @@ gem 'activerecord', '= 2.3.8', :require => "active_record"
 gem 'sqlite3-ruby', :require => "sqlite3"
 
 gem 'bson_ext'
-gem 'mongo', '>= 1.0.3'
+gem 'mongo', '>= 1.0.5'
 
 # Test requirements
 group :test do
