@@ -23,3 +23,4 @@
     = link_to "+", url_for(:database_new_collection, :mongo_id => @connection.id, :name => @database.name, :format => :js), :remote => true
     
 #db_main
+  = @database.stats
