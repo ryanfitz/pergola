@@ -1,8 +1,9 @@
-%table
+%table#documents_table
   %thead
     %tr
-      %th Key
-      %th Value
+      %th.id Key
+      %th.value Value
+
   %tbody
   - @document.each do |key, value|
     %tr

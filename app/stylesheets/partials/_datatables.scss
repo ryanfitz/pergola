@@ -23,6 +23,7 @@
 }
 
 #documents_table {
+  border-bottom: 1px solid #D9D9D9;
   margin-top: 0;
   @include adjust-font-size-to(14px);
   
@@ -52,7 +53,9 @@
    tr {
      border: none;
      
-     &.odd { background-color: rgb(221,228,235); opacity: 1;} 
+     &:nth-child(odd) {
+       background-color: rgb(221,228,235); opacity: 1;
+     }
      
      td {
        padding-top: .3em;
