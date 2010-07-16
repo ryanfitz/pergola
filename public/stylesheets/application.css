@@ -171,101 +171,102 @@ body {
 /* Links --------------------------------------------------------------*/
 /* line 30, ../../app/stylesheets/partials/_default.scss */
 a:link, a:visited {
-  color: white;
-}
-/* line 33, ../../app/stylesheets/partials/_default.scss */
-a:focus, a:hover, a:active {
-  color: #f2f2f2;
+  color: black;
   text-decoration: none;
 }
-/* line 37, ../../app/stylesheets/partials/_default.scss */
+/* line 34, ../../app/stylesheets/partials/_default.scss */
+a:focus, a:hover, a:active {
+  color: black;
+  text-decoration: none;
+}
+/* line 38, ../../app/stylesheets/partials/_default.scss */
 a img {
   border: none;
 }
 
 /* Headings --------------------------------------------------------------*/
-/* line 44, ../../app/stylesheets/partials/_default.scss */
+/* line 45, ../../app/stylesheets/partials/_default.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
-/* line 46, ../../app/stylesheets/partials/_default.scss */
+/* line 47, ../../app/stylesheets/partials/_default.scss */
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
   margin: 0;
 }
 
-/* line 51, ../../app/stylesheets/partials/_default.scss */
+/* line 52, ../../app/stylesheets/partials/_default.scss */
 h1 {
   font-size: 3em;
   line-height: 1em;
   margin-bottom: 0.5em;
 }
 
-/* line 56, ../../app/stylesheets/partials/_default.scss */
+/* line 57, ../../app/stylesheets/partials/_default.scss */
 h2 {
   font-size: 2em;
   line-height: 1.5em;
   margin-bottom: 0.75em;
 }
 
-/* line 61, ../../app/stylesheets/partials/_default.scss */
+/* line 62, ../../app/stylesheets/partials/_default.scss */
 h3 {
   font-size: 1.5em;
   line-height: 1em;
   margin-bottom: 1em;
 }
 
-/* line 66, ../../app/stylesheets/partials/_default.scss */
+/* line 67, ../../app/stylesheets/partials/_default.scss */
 h4 {
   font-size: 1.125em;
   line-height: 1.333em;
   margin-bottom: 1.333em;
 }
 
-/* line 71, ../../app/stylesheets/partials/_default.scss */
+/* line 72, ../../app/stylesheets/partials/_default.scss */
 h5, h6 {
   margin-bottom: 1.5em;
   font-weight: bold;
 }
 
 /* Text --------------------------------------------------------------*/
-/* line 78, ../../app/stylesheets/partials/_default.scss */
+/* line 79, ../../app/stylesheets/partials/_default.scss */
 cite, em, dfn {
   font-style: italic;
 }
 
-/* line 82, ../../app/stylesheets/partials/_default.scss */
+/* line 83, ../../app/stylesheets/partials/_default.scss */
 strong, dfn {
   font-weight: bold;
 }
 
-/* line 86, ../../app/stylesheets/partials/_default.scss */
+/* line 87, ../../app/stylesheets/partials/_default.scss */
 sup, sub {
   line-height: 0;
 }
 
-/* line 90, ../../app/stylesheets/partials/_default.scss */
+/* line 91, ../../app/stylesheets/partials/_default.scss */
 abbr, acronym {
   border-bottom: 1px dotted;
   cursor: help;
 }
 
-/* line 95, ../../app/stylesheets/partials/_default.scss */
+/* line 96, ../../app/stylesheets/partials/_default.scss */
 address {
   margin-bottom: 1.5em;
   font-style: italic;
 }
 
-/* line 100, ../../app/stylesheets/partials/_default.scss */
+/* line 101, ../../app/stylesheets/partials/_default.scss */
 ins {
   text-decoration: underline;
 }
 
-/* line 104, ../../app/stylesheets/partials/_default.scss */
+/* line 105, ../../app/stylesheets/partials/_default.scss */
 del {
   text-decoration: line-through;
 }
 
-/* line 108, ../../app/stylesheets/partials/_default.scss */
+/* line 109, ../../app/stylesheets/partials/_default.scss */
 pre, code, tt {
   margin: 1.5em;
   margin-left: -1.5em;
@@ -274,36 +275,36 @@ pre, code, tt {
   font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
 }
 
-/* line 117, ../../app/stylesheets/partials/_default.scss */
+/* line 118, ../../app/stylesheets/partials/_default.scss */
 pre {
   white-space: pre;
 }
 
-/* line 121, ../../app/stylesheets/partials/_default.scss */
+/* line 122, ../../app/stylesheets/partials/_default.scss */
 code {
   display: block;
 }
 
-/* line 125, ../../app/stylesheets/partials/_default.scss */
+/* line 126, ../../app/stylesheets/partials/_default.scss */
 q {
   font-style: italic;
 }
-/* line 127, ../../app/stylesheets/partials/_default.scss */
+/* line 128, ../../app/stylesheets/partials/_default.scss */
 q em {
   font-style: normal;
 }
 
-/* line 132, ../../app/stylesheets/partials/_default.scss */
+/* line 133, ../../app/stylesheets/partials/_default.scss */
 p {
   margin-bottom: 1.5em;
 }
 
-/* line 136, ../../app/stylesheets/partials/_default.scss */
+/* line 137, ../../app/stylesheets/partials/_default.scss */
 blockquote, q {
   quotes: "" "";
 }
 
-/* line 140, ../../app/stylesheets/partials/_default.scss */
+/* line 141, ../../app/stylesheets/partials/_default.scss */
 blockquote {
   margin: 1.5em;
   margin-left: -1.5em;
@@ -313,51 +314,51 @@ blockquote {
   font-style: italic;
 }
 
-/* line 151, ../../app/stylesheets/partials/_default.scss */
+/* line 152, ../../app/stylesheets/partials/_default.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
 /* Replaced --------------------------------------------------------------*/
-/* line 158, ../../app/stylesheets/partials/_default.scss */
+/* line 159, ../../app/stylesheets/partials/_default.scss */
 img {
   vertical-align: bottom;
 }
 
 /* Lists --------------------------------------------------------------*/
-/* line 179, ../../app/stylesheets/partials/_default.scss */
+/* line 180, ../../app/stylesheets/partials/_default.scss */
 ol {
   margin: 0 1.5em 1.5em 0;
   list-style: decimal;
 }
 
-/* line 183, ../../app/stylesheets/partials/_default.scss */
+/* line 184, ../../app/stylesheets/partials/_default.scss */
 ul {
   margin: 0 1.5em 1.5em 0;
   list-style: disc;
 }
 
-/* line 188, ../../app/stylesheets/partials/_default.scss */
+/* line 189, ../../app/stylesheets/partials/_default.scss */
 li ul, li ol {
   list-style-type: circle;
   margin: 0 1.5em 0.75em;
 }
 
-/* line 194, ../../app/stylesheets/partials/_default.scss */
+/* line 195, ../../app/stylesheets/partials/_default.scss */
 dl {
   margin-bottom: 1.5em;
   border-top-style: solid;
   border-top-width: 0.063em;
   padding-top: 1.438em;
 }
-/* line 197, ../../app/stylesheets/partials/_default.scss */
+/* line 198, ../../app/stylesheets/partials/_default.scss */
 dl dt {
   font-size: 1.125em;
   line-height: 1.333em;
   margin-bottom: 0.667em;
 }
 
-/* line 203, ../../app/stylesheets/partials/_default.scss */
+/* line 204, ../../app/stylesheets/partials/_default.scss */
 dd {
   margin-bottom: 1.5em;
   border-bottom-style: solid;
@@ -367,7 +368,7 @@ dd {
 
 /* Tables --------------------------------------------------------------*/
 /* tables still need 'cellspacing="0"' in the markup */
-/* line 211, ../../app/stylesheets/partials/_default.scss */
+/* line 212, ../../app/stylesheets/partials/_default.scss */
 table {
   margin-bottom: 1.5em;
   width: 100%;
@@ -375,37 +376,37 @@ table {
   border-spacing: 0;
 }
 
-/* line 218, ../../app/stylesheets/partials/_default.scss */
+/* line 219, ../../app/stylesheets/partials/_default.scss */
 table, td, th {
   vertical-align: top;
 }
 
-/* line 222, ../../app/stylesheets/partials/_default.scss */
+/* line 223, ../../app/stylesheets/partials/_default.scss */
 th, thead th {
   font-weight: bold;
 }
 
-/* line 226, ../../app/stylesheets/partials/_default.scss */
+/* line 227, ../../app/stylesheets/partials/_default.scss */
 th, td, caption {
   padding: 0.75em;
   text-align: left;
   font-weight: normal;
 }
 
-/* line 232, ../../app/stylesheets/partials/_default.scss */
+/* line 233, ../../app/stylesheets/partials/_default.scss */
 th, td {
   border-bottom-style: solid;
   border-bottom-width: 0.063em;
   padding-bottom: 0.688em;
 }
 
-/* line 236, ../../app/stylesheets/partials/_default.scss */
+/* line 237, ../../app/stylesheets/partials/_default.scss */
 tfoot {
   font-size: 0.875em;
   line-height: 1.714em;
 }
 
-/* line 240, ../../app/stylesheets/partials/_default.scss */
+/* line 241, ../../app/stylesheets/partials/_default.scss */
 caption {
   font-size: 1.5em;
   line-height: 1em;
@@ -413,7 +414,7 @@ caption {
 }
 
 /* Forms --------------------------------------------------------------*/
-/* line 247, ../../app/stylesheets/partials/_default.scss */
+/* line 248, ../../app/stylesheets/partials/_default.scss */
 fieldset {
   margin-bottom: 1.5em;
   border-style: solid;
@@ -421,19 +422,19 @@ fieldset {
   padding: 1.438em;
 }
 
-/* line 252, ../../app/stylesheets/partials/_default.scss */
+/* line 253, ../../app/stylesheets/partials/_default.scss */
 legend {
   font-size: 1.125em;
   line-height: 1.333em;
   font-weight: bold;
 }
 
-/* line 257, ../../app/stylesheets/partials/_default.scss */
+/* line 258, ../../app/stylesheets/partials/_default.scss */
 label {
   font-weight: bold;
 }
 
-/* line 261, ../../app/stylesheets/partials/_default.scss */
+/* line 262, ../../app/stylesheets/partials/_default.scss */
 textarea, input:not([type="radio"]) {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -642,19 +643,19 @@ form #submit {
 /* line 41, ../../app/stylesheets/partials/_navigation.scss */
 #black_toolbar {
   color: #F1F3F4;
-  font-size: 1.5em;
-  line-height: 1em;
   -webkit-transform: translate3d(0px, 0px, 0px);
   background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(#666666), color-stop(0.02, #1f1f1f), color-stop(0.5, #212121), color-stop(0.51, #1a1a1a), to(black));
   border-top: 1px solid #21272C;
+  font-size: 1.5em;
+  line-height: 1em;
   padding-left: 5.263%;
 }
-/* line 50, ../../app/stylesheets/partials/_navigation.scss */
+/* line 46, ../../app/stylesheets/partials/_navigation.scss */
 #black_toolbar a {
   text-decoration: none;
 }
 
-/* line 55, ../../app/stylesheets/partials/_navigation.scss */
+/* line 51, ../../app/stylesheets/partials/_navigation.scss */
 #main {
   clear: both;
   margin-right: 1.639%;
@@ -867,10 +868,11 @@ form #submit {
 /* line 25, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table {
   margin-top: 0;
+  font-size: 0.875em;
+  line-height: 1.714em;
 }
-/* line 28, ../../app/stylesheets/partials/_datatables.scss */
+/* line 29, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table thead {
-  color: #2C2C2C;
   -moz-border-radius-topleft: 20px;
   -webkit-border-top-left-radius: 20px;
   -o-border-top-left-radius: 20px;
@@ -883,67 +885,96 @@ form #submit {
   -ms-border-top-right-radius: 20px;
   -khtml-border-top-right-radius: 20px;
   border-top-right-radius: 20px;
+  color: #F1F3F4;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(#666666), color-stop(0.02, #1f1f1f), color-stop(0.5, #212121), color-stop(0.51, #1a1a1a), to(black));
+  border-top: 1px solid #21272C;
 }
-/* line 36, ../../app/stylesheets/partials/_datatables.scss */
+/* line 33, ../../app/stylesheets/partials/_datatables.scss */
+#documents_table thead th.id {
+  width: 20%;
+}
+/* line 37, ../../app/stylesheets/partials/_datatables.scss */
+#documents_table thead th.value {
+  width: 80%;
+}
+/* line 42, ../../app/stylesheets/partials/_datatables.scss */
+#documents_table tfoot {
+  color: #F1F3F4;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(#666666), color-stop(0.02, #1f1f1f), color-stop(0.5, #212121), color-stop(0.51, #1a1a1a), to(black));
+  border-top: 1px solid #21272C;
+  font-size: 1.125em;
+  line-height: 1.333em;
+}
+/* line 46, ../../app/stylesheets/partials/_datatables.scss */
+#documents_table tfoot #paging {
+  float: right;
+}
+/* line 52, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table tbody tr {
   border: none;
 }
-/* line 39, ../../app/stylesheets/partials/_datatables.scss */
+/* line 55, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table tbody tr.odd {
   background-color: #dde4eb;
   opacity: 1;
 }
-/* line 41, ../../app/stylesheets/partials/_datatables.scss */
+/* line 57, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table tbody tr td {
   padding-top: .3em;
   padding-bottom: .3em;
   border: none;
+  border-left: 1px solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
 }
-/* line 46, ../../app/stylesheets/partials/_datatables.scss */
+/* line 64, ../../app/stylesheets/partials/_datatables.scss */
+#documents_table tbody tr td a, #documents_table tbody tr td a:visited {
+  color: #BA1E16;
+}
+/* line 67, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table tbody tr td input {
   width: 10px;
 }
-/* line 53, ../../app/stylesheets/partials/_datatables.scss */
+/* line 74, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table th {
   width: 14.754%;
 }
-/* line 55, ../../app/stylesheets/partials/_datatables.scss */
+/* line 76, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table th:hover {
   cursor: pointer;
 }
 
-/* line 61, ../../app/stylesheets/partials/_datatables.scss */
+/* line 82, ../../app/stylesheets/partials/_datatables.scss */
 code {
-  font-size: 0.875em;
-  line-height: 1.714em;
-  font-family: 'DejaVu Sans Mono', Menlo, Courier, monospace;
+  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
   border-left: none;
   padding: 0px 0px 0px 0px;
   display: inline;
   margin: 0px 0px 0px 0px;
 }
-/* line 69, ../../app/stylesheets/partials/_datatables.scss */
+/* line 89, ../../app/stylesheets/partials/_datatables.scss */
 code.key {
   color: #333;
   font-weight: bold;
 }
-/* line 74, ../../app/stylesheets/partials/_datatables.scss */
+/* line 94, ../../app/stylesheets/partials/_datatables.scss */
 code.object {
   color: #999;
 }
-/* line 78, ../../app/stylesheets/partials/_datatables.scss */
+/* line 98, ../../app/stylesheets/partials/_datatables.scss */
 code.fixnum, code.boolean {
   color: #339;
 }
-/* line 82, ../../app/stylesheets/partials/_datatables.scss */
+/* line 102, ../../app/stylesheets/partials/_datatables.scss */
 code.string {
   color: #393;
 }
-/* line 85, ../../app/stylesheets/partials/_datatables.scss */
+/* line 105, ../../app/stylesheets/partials/_datatables.scss */
 code.string:before {
   content: "\201C";
 }
-/* line 89, ../../app/stylesheets/partials/_datatables.scss */
+/* line 109, ../../app/stylesheets/partials/_datatables.scss */
 code.string:after {
   content: "\201D";
 }

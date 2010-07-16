@@ -35,6 +35,10 @@ Pergola.controllers :collection, :parent => [:mongo, :database] do
     render 'collection/index'
   end
   
+  get :edit_doc, :map =>"/collection/:name/doc/:doc_id", :provides => [:js] do
+    render 'collection/document/edit'
+  end
+  
   get :query, :map =>"/collection/:name/search", :provides => [:json] do
     puts "asdfasdfd"
   end

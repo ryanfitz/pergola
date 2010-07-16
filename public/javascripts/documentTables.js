@@ -1,11 +1,13 @@
 $(document).ready(function() {
 	$('#documents_table').dataTable({
     "sPaginationType": "full_numbers", 
+    "bPaginate": false,
+    "bInfo": false,
 	  "bLengthChange": false, 
-	  "iDisplayLength": 50,
 	  "bProcessing": true,
 	  "bFilter" :false,
-	  "bAutoWidth": false
+	  "bAutoWidth": false,
+    "aoColumns": [null, { "bSortable": false }]
 	  });
 	
 	$(":checkbox").click(function() {

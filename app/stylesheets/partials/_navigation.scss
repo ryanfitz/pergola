@@ -39,12 +39,8 @@
 }
 
 #black_toolbar {
-  color: #F1F3F4;
+  @include black_bar;
   @include adjust-font-size-to(24px);
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(#666), color-stop(0.02, #1F1F1F), color-stop(0.5, #212121), color-stop(0.51, #1A1A1A), to(black));
-  border-top: 1px solid #21272C;
-  
   padding-left: gutter(4);
   
   a {

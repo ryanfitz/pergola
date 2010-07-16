@@ -22,7 +22,7 @@ $side-gutter-width: $gutter-width;
 // Colors --------------------------------------------------------------
 
 $base: #4c4c4c;
-$alt: #fff;
+$alt: #000;
 
 // Fonts --------------------------------------------------------------
 
@@ -41,3 +41,10 @@ $alt: #fff;
 // OTHER MIXINS --------------------------------------------------------------
 // Mixins set here will be available in defaults, screen, print and IE
 // Or anywhere you import either base.sass or defaults.sass
+
+@mixin black_bar {
+  color: #F1F3F4;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(#666), color-stop(0.02, #1F1F1F), color-stop(0.5, #212121), color-stop(0.51, #1A1A1A), to(black));
+  border-top: 1px solid #21272C;
+}

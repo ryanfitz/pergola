@@ -29,6 +29,7 @@ body {
 a {
   &:link, &:visited {
     color: $alt;
+    text-decoration: none;
   }
   &:focus, &:hover, &:active {
     color: darken($alt,5);
