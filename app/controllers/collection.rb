@@ -22,6 +22,9 @@ Pergola.controllers :collection, :parent => [:mongo, :database] do
   end
   
   get :edit_doc, :map =>"/collection/:name/doc/:doc_id", :provides => [:js] do
+    add_breadcrumb params[:name], url(:collection_index, :mongo_id => @connection.id, :database_id => @database.name, :name => params[:name])
+    add_breadcrumb params[:doc_id], "/"
+    
     @collection = @database.collection params[:name]
     
     @document = @collection.find_one(BSON::ObjectID.from_string(params[:doc_id]))

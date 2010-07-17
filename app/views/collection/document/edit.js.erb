@@ -1,3 +1,5 @@
+$("#breadcrumb").html("<%= js_escape_html partial 'layouts/breadcrumb' %>");
+
 $("#main_content").html("<%= js_escape_html partial 'collection/document/form' %>");
 
 var updateDoc = function(value, settings) { 
