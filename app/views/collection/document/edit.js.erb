@@ -4,12 +4,12 @@ $("#main_content").html("<%= js_escape_html partial 'collection/document/form' %
 var updateDoc = function(value, settings) { 
   var _this = this;
   
-  $.post("<%= url(:collection_save_doc, :mongo_id => @connection.id, :database_id => @database.name, :name => @collection.name) %>", 
-    {doc_id : '<%= @document["_id"] %>', value : value},
-    function(data){
-      $(_this).html(data);
-      // console.log(data);
-    });
+  // $.post("<%= url(:collection_save_doc, :mongo_id => @connection.id, :database_id => @database.name, :name => @collection.name) %>", 
+  //     {doc_id : '<%= @document["_id"] %>', value : value},
+  //     function(data){
+  //       // $(_this).html(data);
+  //       // console.log(data);
+  //     });
    
    // console.log(this);
    console.log(value.constructor.name);

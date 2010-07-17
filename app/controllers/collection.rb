@@ -14,31 +14,16 @@ Pergola.controllers :collection, :parent => [:mongo, :database] do
   
   get :index, :map =>"/collection/:name", :provides => [:html,:js] do
     add_breadcrumb params[:name], "/"
+    
     @collection = @database.collection params[:name]
-    
     @docs = @collection.find
-    
-    # @header = Set.new
-    #     
-    #     @collection.find.each do |doc|
-    #       @header += doc.keys
-    #     end
-    #     
-    #     @documents = []
-    #     
-    #     @collection.find.each do |doc|
-    #       rdoc = {}
-    #       @header.each do |head|
-    #         rdoc[head] = doc[head]
-    #       end
-    #       @documents << rdoc
-    #     end
   
     render 'collection/index'
   end
   
   get :edit_doc, :map =>"/collection/:name/doc/:doc_id", :provides => [:js] do
     @collection = @database.collection params[:name]
+    
     @document = @collection.find_one(BSON::ObjectID.from_string(params[:doc_id]))
     
     render 'collection/document/edit'
@@ -46,12 +31,13 @@ Pergola.controllers :collection, :parent => [:mongo, :database] do
   
   post :save_doc, :map => "/collection/:name", :provides => [:js] do
     @collection = @database.collection params[:name]
-    @collection.save document
     
+    @collection.save convert_to_mongo_document(params[:document])
     code_tag params[:value]
   end
 
   get :query, :map =>"/collection/:name/search", :provides => [:json] do
     puts "asdfasdfd"
   end
+  
 end

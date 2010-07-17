@@ -45,4 +45,11 @@ Pergola.helpers do
     content_tag(:code, pretty_print(object), :class => determin_style_class_for(object) )
   end
   
+  def convert_to_mongo_document(hash)
+    document = JSON.parse(params[:document])
+    document["_id"] = BSON::ObjectID.from_string(document["_id"])
+    
+    document
+  end
+  
 end
