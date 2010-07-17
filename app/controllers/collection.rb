@@ -1,4 +1,6 @@
 Pergola.controllers :collection, :parent => [:mongo, :database] do
+  require 'pp'
+  
   before do
     params[:id] = params[:mongo_id]
     add_connection_to_request
@@ -43,6 +45,11 @@ Pergola.controllers :collection, :parent => [:mongo, :database] do
     render 'collection/document/edit'
   end
   
+  post :save_doc, :map => "/collection/:name", :provides => [:js] do
+    pp params
+    code_tag params[:value]
+  end
+
   get :query, :map =>"/collection/:name/search", :provides => [:json] do
     puts "asdfasdfd"
   end

@@ -67,9 +67,17 @@
        a, a:visited {
          color: #BA1E16;
        }
+
        input {
-         width: 10px;
+         display: block;
+         width: 100%;
+//        padding:0px;
        }
+       
+       form {
+         display: inline;
+       }
+       
      }
    }
   }
@@ -106,11 +114,11 @@ code {
     color: #393;
     
     &:before {
-      content: "\201C";
+//      content: "\201C";
     }
     
     &:after {
-      content: "\201D";
+//      content: "\201D";
     }
   }
 }

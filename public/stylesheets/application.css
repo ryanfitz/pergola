@@ -934,20 +934,25 @@ form #submit {
 #documents_table tbody tr td a, #documents_table tbody tr td a:visited {
   color: #BA1E16;
 }
-/* line 70, ../../app/stylesheets/partials/_datatables.scss */
+/* line 71, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table tbody tr td input {
-  width: 10px;
+  display: block;
+  width: 100%;
 }
 /* line 77, ../../app/stylesheets/partials/_datatables.scss */
+#documents_table tbody tr td form {
+  display: inline;
+}
+/* line 85, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table th {
   width: 14.754%;
 }
-/* line 79, ../../app/stylesheets/partials/_datatables.scss */
+/* line 87, ../../app/stylesheets/partials/_datatables.scss */
 #documents_table th:hover {
   cursor: pointer;
 }
 
-/* line 85, ../../app/stylesheets/partials/_datatables.scss */
+/* line 93, ../../app/stylesheets/partials/_datatables.scss */
 code {
   font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
   border-left: none;
@@ -955,30 +960,22 @@ code {
   display: inline;
   margin: 0px 0px 0px 0px;
 }
-/* line 92, ../../app/stylesheets/partials/_datatables.scss */
+/* line 100, ../../app/stylesheets/partials/_datatables.scss */
 code.key {
   color: #333;
   font-weight: bold;
 }
-/* line 97, ../../app/stylesheets/partials/_datatables.scss */
+/* line 105, ../../app/stylesheets/partials/_datatables.scss */
 code.object {
   color: #999;
 }
-/* line 101, ../../app/stylesheets/partials/_datatables.scss */
+/* line 109, ../../app/stylesheets/partials/_datatables.scss */
 code.fixnum, code.boolean {
   color: #339;
 }
-/* line 105, ../../app/stylesheets/partials/_datatables.scss */
+/* line 113, ../../app/stylesheets/partials/_datatables.scss */
 code.string {
   color: #393;
-}
-/* line 108, ../../app/stylesheets/partials/_datatables.scss */
-code.string:before {
-  content: "\201C";
-}
-/* line 112, ../../app/stylesheets/partials/_datatables.scss */
-code.string:after {
-  content: "\201D";
 }
 
 /* Layout --------------------------------------------------------------*/

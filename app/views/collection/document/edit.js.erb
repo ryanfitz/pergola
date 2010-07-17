@@ -1,1 +1,60 @@
 $("#main_content").html("<%= js_escape_html partial 'collection/document/form' %>");
+
+
+var updateDoc = function(value, settings) { 
+  var _this = this;
+  
+  $.post("<%= url(:collection_save_doc, :mongo_id => @connection.id, :database_id => @database.name, :name => @collection.name) %>", 
+    {doc_id : '<%= @document["_id"] %>', value : value},
+    function(data){
+      $(_this).html(data);
+      // console.log(data);
+    });
+   
+   // console.log(this);
+   console.log(value.constructor.name);
+   // console.log(settings);
+   return(value);
+}
+  
+$('.editable').editable(updateDoc, { 
+         type      : 'text',
+         cancel    : 'Cancel',
+         submit    : 'OK',
+         indicator : 'Saving...',
+         tooltip   : 'Click to edit...',
+         width     : 'none',
+         height    : 'none',
+         onblur    : 'ignore'
+     });
+  
+console.log(code_block_to_json("#documents_table tbody tr"));   
+
+function get_key_for(selector) {
+  return $(".key", selector).html();
+}
+
+function get_value_for(selector) {
+  if($("code.object", selector).length != 0) {
+    return code_block_to_json($("code.object", selector));
+  } else {
+    return $(".value", selector).html();
+  }
+}
+
+function code_block_to_json(selector) {
+  var result = "{";
+  
+  $(selector).each(function(index, value) {
+    var key = get_key_for(this);
+    var value = get_value_for(this);
+        
+    if(index != 0) {
+      result += ",";
+    }
+    result += key + ": " + value;
+  })
+  result += "}"
+  
+  return result;
+}

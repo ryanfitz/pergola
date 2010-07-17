@@ -33,4 +33,16 @@ Pergola.helpers do
     end
   end
   
+  def pretty_print(object)
+    if object.is_a? String
+      "\"#{object}\""
+    else
+      object.to_s
+    end
+  end
+  
+  def code_tag(object)    
+    content_tag(:code, pretty_print(object), :class => determin_style_class_for(object) )
+  end
+  
 end

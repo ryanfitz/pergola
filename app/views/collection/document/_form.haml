@@ -9,9 +9,9 @@
   - @document.each do |key, value|
     %tr
       %td
-        %code{:class=> "key"}= key
+        %code{:class=> "key editable"}= key
       %td
         - if value.is_a? Hash
           = partial 'collection/document', :object => value
         - else
-          %code{:class=> determin_style_class_for(value) }= value
+          %code{:class=> "#{determin_style_class_for(value)} editable value" }= pretty_print value
