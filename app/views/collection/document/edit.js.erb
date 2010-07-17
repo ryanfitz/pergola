@@ -1,6 +1,5 @@
 $("#main_content").html("<%= js_escape_html partial 'collection/document/form' %>");
 
-
 var updateDoc = function(value, settings) { 
   var _this = this;
   
@@ -13,10 +12,22 @@ var updateDoc = function(value, settings) {
    
    // console.log(this);
    console.log(value.constructor.name);
-   // console.log(settings);
    return(value);
 }
   
+function add_editable() {
+  $('.editable').editable(updateDoc, { 
+           type      : 'text',
+           cancel    : 'Cancel',
+           submit    : 'OK',
+           indicator : 'Saving...',
+           tooltip   : 'Click to edit...',
+           width     : 'none',
+           height    : 'none',
+           onblur    : 'ignore'
+       });
+}
+
 $('.editable').editable(updateDoc, { 
          type      : 'text',
          cancel    : 'Cancel',
@@ -34,11 +45,15 @@ $("#save_document").click(function() {
     function(data){
       console.log(data);
     });
-    
-  // console.log(code_block_to_json("#documents_table tbody tr"));
-  
+      
   event.preventDefault();
-})
+});
+
+$("#add_field").click(function() {
+  $('#documents_table > tbody:last').append("<%= js_escape_html partial 'collection/document/new_row' %>");
+  add_editable();
+  event.preventDefault();
+});
 
 function get_key_for(selector) {
   return "\"" + $(".key", selector).html() + "\"";
