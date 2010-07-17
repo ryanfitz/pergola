@@ -169,104 +169,104 @@ body {
 }
 
 /* Links --------------------------------------------------------------*/
-/* line 30, ../../app/stylesheets/partials/_default.scss */
+/* line 31, ../../app/stylesheets/partials/_default.scss */
 a:link, a:visited {
-  color: black;
+  color: white;
   text-decoration: none;
 }
-/* line 34, ../../app/stylesheets/partials/_default.scss */
+/* line 35, ../../app/stylesheets/partials/_default.scss */
 a:focus, a:hover, a:active {
-  color: black;
+  color: #f2f2f2;
   text-decoration: none;
 }
-/* line 38, ../../app/stylesheets/partials/_default.scss */
+/* line 39, ../../app/stylesheets/partials/_default.scss */
 a img {
   border: none;
 }
 
 /* Headings --------------------------------------------------------------*/
-/* line 45, ../../app/stylesheets/partials/_default.scss */
+/* line 46, ../../app/stylesheets/partials/_default.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
-/* line 47, ../../app/stylesheets/partials/_default.scss */
+/* line 48, ../../app/stylesheets/partials/_default.scss */
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
   margin: 0;
 }
 
-/* line 52, ../../app/stylesheets/partials/_default.scss */
+/* line 53, ../../app/stylesheets/partials/_default.scss */
 h1 {
   font-size: 3em;
   line-height: 1em;
   margin-bottom: 0.5em;
 }
 
-/* line 57, ../../app/stylesheets/partials/_default.scss */
+/* line 58, ../../app/stylesheets/partials/_default.scss */
 h2 {
   font-size: 2em;
   line-height: 1.5em;
   margin-bottom: 0.75em;
 }
 
-/* line 62, ../../app/stylesheets/partials/_default.scss */
+/* line 63, ../../app/stylesheets/partials/_default.scss */
 h3 {
   font-size: 1.5em;
   line-height: 1em;
   margin-bottom: 1em;
 }
 
-/* line 67, ../../app/stylesheets/partials/_default.scss */
+/* line 68, ../../app/stylesheets/partials/_default.scss */
 h4 {
   font-size: 1.125em;
   line-height: 1.333em;
   margin-bottom: 1.333em;
 }
 
-/* line 72, ../../app/stylesheets/partials/_default.scss */
+/* line 73, ../../app/stylesheets/partials/_default.scss */
 h5, h6 {
   margin-bottom: 1.5em;
   font-weight: bold;
 }
 
 /* Text --------------------------------------------------------------*/
-/* line 79, ../../app/stylesheets/partials/_default.scss */
+/* line 80, ../../app/stylesheets/partials/_default.scss */
 cite, em, dfn {
   font-style: italic;
 }
 
-/* line 83, ../../app/stylesheets/partials/_default.scss */
+/* line 84, ../../app/stylesheets/partials/_default.scss */
 strong, dfn {
   font-weight: bold;
 }
 
-/* line 87, ../../app/stylesheets/partials/_default.scss */
+/* line 88, ../../app/stylesheets/partials/_default.scss */
 sup, sub {
   line-height: 0;
 }
 
-/* line 91, ../../app/stylesheets/partials/_default.scss */
+/* line 92, ../../app/stylesheets/partials/_default.scss */
 abbr, acronym {
   border-bottom: 1px dotted;
   cursor: help;
 }
 
-/* line 96, ../../app/stylesheets/partials/_default.scss */
+/* line 97, ../../app/stylesheets/partials/_default.scss */
 address {
   margin-bottom: 1.5em;
   font-style: italic;
 }
 
-/* line 101, ../../app/stylesheets/partials/_default.scss */
+/* line 102, ../../app/stylesheets/partials/_default.scss */
 ins {
   text-decoration: underline;
 }
 
-/* line 105, ../../app/stylesheets/partials/_default.scss */
+/* line 106, ../../app/stylesheets/partials/_default.scss */
 del {
   text-decoration: line-through;
 }
 
-/* line 109, ../../app/stylesheets/partials/_default.scss */
+/* line 110, ../../app/stylesheets/partials/_default.scss */
 pre, code, tt {
   margin: 1.5em;
   margin-left: -1.5em;
@@ -275,36 +275,36 @@ pre, code, tt {
   font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
 }
 
-/* line 118, ../../app/stylesheets/partials/_default.scss */
+/* line 119, ../../app/stylesheets/partials/_default.scss */
 pre {
   white-space: pre;
 }
 
-/* line 122, ../../app/stylesheets/partials/_default.scss */
+/* line 123, ../../app/stylesheets/partials/_default.scss */
 code {
   display: block;
 }
 
-/* line 126, ../../app/stylesheets/partials/_default.scss */
+/* line 127, ../../app/stylesheets/partials/_default.scss */
 q {
   font-style: italic;
 }
-/* line 128, ../../app/stylesheets/partials/_default.scss */
+/* line 129, ../../app/stylesheets/partials/_default.scss */
 q em {
   font-style: normal;
 }
 
-/* line 133, ../../app/stylesheets/partials/_default.scss */
+/* line 134, ../../app/stylesheets/partials/_default.scss */
 p {
   margin-bottom: 1.5em;
 }
 
-/* line 137, ../../app/stylesheets/partials/_default.scss */
+/* line 138, ../../app/stylesheets/partials/_default.scss */
 blockquote, q {
   quotes: "" "";
 }
 
-/* line 141, ../../app/stylesheets/partials/_default.scss */
+/* line 142, ../../app/stylesheets/partials/_default.scss */
 blockquote {
   margin: 1.5em;
   margin-left: -1.5em;
@@ -314,51 +314,51 @@ blockquote {
   font-style: italic;
 }
 
-/* line 152, ../../app/stylesheets/partials/_default.scss */
+/* line 153, ../../app/stylesheets/partials/_default.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
 /* Replaced --------------------------------------------------------------*/
-/* line 159, ../../app/stylesheets/partials/_default.scss */
+/* line 160, ../../app/stylesheets/partials/_default.scss */
 img {
   vertical-align: bottom;
 }
 
 /* Lists --------------------------------------------------------------*/
-/* line 180, ../../app/stylesheets/partials/_default.scss */
+/* line 181, ../../app/stylesheets/partials/_default.scss */
 ol {
   margin: 0 1.5em 1.5em 0;
   list-style: decimal;
 }
 
-/* line 184, ../../app/stylesheets/partials/_default.scss */
+/* line 185, ../../app/stylesheets/partials/_default.scss */
 ul {
   margin: 0 1.5em 1.5em 0;
   list-style: disc;
 }
 
-/* line 189, ../../app/stylesheets/partials/_default.scss */
+/* line 190, ../../app/stylesheets/partials/_default.scss */
 li ul, li ol {
   list-style-type: circle;
   margin: 0 1.5em 0.75em;
 }
 
-/* line 195, ../../app/stylesheets/partials/_default.scss */
+/* line 196, ../../app/stylesheets/partials/_default.scss */
 dl {
   margin-bottom: 1.5em;
   border-top-style: solid;
   border-top-width: 0.063em;
   padding-top: 1.438em;
 }
-/* line 198, ../../app/stylesheets/partials/_default.scss */
+/* line 199, ../../app/stylesheets/partials/_default.scss */
 dl dt {
   font-size: 1.125em;
   line-height: 1.333em;
   margin-bottom: 0.667em;
 }
 
-/* line 204, ../../app/stylesheets/partials/_default.scss */
+/* line 205, ../../app/stylesheets/partials/_default.scss */
 dd {
   margin-bottom: 1.5em;
   border-bottom-style: solid;
@@ -368,7 +368,7 @@ dd {
 
 /* Tables --------------------------------------------------------------*/
 /* tables still need 'cellspacing="0"' in the markup */
-/* line 212, ../../app/stylesheets/partials/_default.scss */
+/* line 213, ../../app/stylesheets/partials/_default.scss */
 table {
   margin-bottom: 1.5em;
   width: 100%;
@@ -376,37 +376,37 @@ table {
   border-spacing: 0;
 }
 
-/* line 219, ../../app/stylesheets/partials/_default.scss */
+/* line 220, ../../app/stylesheets/partials/_default.scss */
 table, td, th {
   vertical-align: top;
 }
 
-/* line 223, ../../app/stylesheets/partials/_default.scss */
+/* line 224, ../../app/stylesheets/partials/_default.scss */
 th, thead th {
   font-weight: bold;
 }
 
-/* line 227, ../../app/stylesheets/partials/_default.scss */
+/* line 228, ../../app/stylesheets/partials/_default.scss */
 th, td, caption {
   padding: 0.75em;
   text-align: left;
   font-weight: normal;
 }
 
-/* line 233, ../../app/stylesheets/partials/_default.scss */
+/* line 234, ../../app/stylesheets/partials/_default.scss */
 th, td {
   border-bottom-style: solid;
   border-bottom-width: 0.063em;
   padding-bottom: 0.688em;
 }
 
-/* line 237, ../../app/stylesheets/partials/_default.scss */
+/* line 238, ../../app/stylesheets/partials/_default.scss */
 tfoot {
   font-size: 0.875em;
   line-height: 1.714em;
 }
 
-/* line 241, ../../app/stylesheets/partials/_default.scss */
+/* line 242, ../../app/stylesheets/partials/_default.scss */
 caption {
   font-size: 1.5em;
   line-height: 1em;
@@ -414,7 +414,7 @@ caption {
 }
 
 /* Forms --------------------------------------------------------------*/
-/* line 248, ../../app/stylesheets/partials/_default.scss */
+/* line 249, ../../app/stylesheets/partials/_default.scss */
 fieldset {
   margin-bottom: 1.5em;
   border-style: solid;
@@ -422,19 +422,19 @@ fieldset {
   padding: 1.438em;
 }
 
-/* line 253, ../../app/stylesheets/partials/_default.scss */
+/* line 254, ../../app/stylesheets/partials/_default.scss */
 legend {
   font-size: 1.125em;
   line-height: 1.333em;
   font-weight: bold;
 }
 
-/* line 258, ../../app/stylesheets/partials/_default.scss */
+/* line 259, ../../app/stylesheets/partials/_default.scss */
 label {
   font-weight: bold;
 }
 
-/* line 262, ../../app/stylesheets/partials/_default.scss */
+/* line 263, ../../app/stylesheets/partials/_default.scss */
 textarea, input:not([type="radio"]) {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;

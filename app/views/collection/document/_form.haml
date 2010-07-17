@@ -3,6 +3,8 @@
 = link_to "Save Document", "/#", :class => 'awesome blue', :id => "save_document"
 = link_to "Add Field", "/#", :class => 'awesome blue', :id => "add_field"
 
+= link_to "Delete Document", url_for(:collection_doc_destroy, :mongo_id => @connection.id, :database_id => @database.name, :name => @collection.name, :doc_id => @document["_id"], :format => :js),:method => :delete, :'data-confirm' => "Delete document?", :remote => true, :class => 'awesome blue'
+
 %table#documents_table
   %thead
     %tr

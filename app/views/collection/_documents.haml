@@ -1,0 +1,25 @@
+%h3 Documents
+
+#search
+  -form_tag url_for(:collection_query, :mongo_id => @connection.id, :database_id => @database.name, :name => @collection.name), :method => :post, :remote => true do
+    %fieldset
+      .left
+        = text_field_tag :criteria, :id => 'criteria', :placeholder => "key => val"
+      .right
+        = submit_tag "search", :id => 'submit', :class => 'awesome blue'
+  
+%table#documents_table
+  %thead
+    %tr
+      %th.id ID
+      %th.value Value
+  %tfoot
+    %tr
+      %td{:colspan => 2} 
+        #paging
+          ← Previous Page | Next Page →
+        %span= "Showing 1-11 of #{@collection.count} Documents"
+  - @docs.each do |doc|
+    %tr
+      %td.id= link_to doc["_id"], url(:collection_edit_doc, :mongo_id => @connection.id, :database_id=>@database.name, :name=>@collection.name, :doc_id=> doc["_id"]), :remote => true
+      %td.value= partial 'collection/document', :object => doc

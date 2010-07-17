@@ -40,4 +40,12 @@ Pergola.controllers :collection, :parent => [:mongo, :database] do
     puts "asdfasdfd"
   end
   
+  delete :doc_destroy, :map =>"/collection/:name/doc_id/:doc_id", :provides =>[:js] do  
+    collection = @database.collection params[:name]
+    
+    collection.remove({"_id" => BSON::ObjectID.from_string(params[:doc_id]) })
+    
+    redirect url(:collection_index, :mongo_id => @connection.id, :database_id => @database.name, :name => params[:name])
+  end
+  
 end
