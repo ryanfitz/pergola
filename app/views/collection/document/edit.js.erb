@@ -28,10 +28,20 @@ $('.editable').editable(updateDoc, {
          onblur    : 'ignore'
      });
   
-console.log(code_block_to_json("#documents_table tbody tr"));   
+$("#save_document").click(function() {
+  $.post("<%= url(:collection_save_doc, :mongo_id => @connection.id, :database_id => @database.name, :name => @collection.name) %>", 
+    {document : code_block_to_json("#documents_table tbody tr")},
+    function(data){
+      console.log(data);
+    });
+    
+  // console.log(code_block_to_json("#documents_table tbody tr"));
+  
+  event.preventDefault();
+})
 
 function get_key_for(selector) {
-  return $(".key", selector).html();
+  return "\"" + $(".key", selector).html() + "\"";
 }
 
 function get_value_for(selector) {

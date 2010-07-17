@@ -970,7 +970,7 @@ code.object {
   color: #999;
 }
 /* line 109, ../../app/stylesheets/partials/_datatables.scss */
-code.fixnum, code.boolean {
+code.fixnum, code.falseclass, code.trueclass {
   color: #339;
 }
 /* line 113, ../../app/stylesheets/partials/_datatables.scss */

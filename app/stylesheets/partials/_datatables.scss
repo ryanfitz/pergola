@@ -106,7 +106,7 @@ code {
     color: #999;
   }
 
-  &.fixnum, &.boolean {
+  &.fixnum, &.falseclass, &.trueclass {
     color: #339;
   }
   

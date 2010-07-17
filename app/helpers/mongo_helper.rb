@@ -34,7 +34,7 @@ Pergola.helpers do
   end
   
   def pretty_print(object)
-    if object.is_a? String
+    if object.is_a? String or object.is_a? BSON::ObjectID
       "\"#{object}\""
     else
       object.to_s
