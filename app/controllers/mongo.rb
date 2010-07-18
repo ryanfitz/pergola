@@ -1,7 +1,7 @@
 Pergola.controllers :mongo do  
   before do
-    add_connection_to_request
-    
+    add_connection_to_request params[:id]
+        
     add_breadcrumb "Servers", "/"
   end
   

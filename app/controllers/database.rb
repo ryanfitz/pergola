@@ -1,7 +1,6 @@
 Pergola.controllers :database, :parent => :mongo do
   before do
-    params[:id] = params[:mongo_id]
-    add_connection_to_request
+    add_connection_to_request params[:mongo_id]
     
     add_breadcrumb "Servers", url(:index)
     add_breadcrumb @connection.title, url(:mongo, :index, :id => @connection.id)

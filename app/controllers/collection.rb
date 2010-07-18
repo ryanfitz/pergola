@@ -2,8 +2,7 @@ Pergola.controllers :collection, :parent => [:mongo, :database] do
   require 'pp'
   
   before do
-    params[:id] = params[:mongo_id]
-    add_connection_to_request
+    add_connection_to_request params[:mongo_id]
     
     @database = @connection.get_database(params[:database_id])
     
