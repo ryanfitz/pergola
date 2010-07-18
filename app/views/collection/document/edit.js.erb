@@ -45,6 +45,8 @@ $("#save_document").click(function() {
 $("#add_field").click(function() {
   $('#documents_table > tbody:last').append("<%= js_escape_html partial 'collection/document/new_row' %>");
   add_editable();
+  
+  $('#documents_table > tbody tr:last code:first').trigger('click');
   event.preventDefault();
 });
 
