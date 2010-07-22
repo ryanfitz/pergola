@@ -1,4 +1,5 @@
 .bundle
-db/*.db
-tmp/**/*
 .sass-cache
+db/*.db
+log/*.log
+tmp/**/*

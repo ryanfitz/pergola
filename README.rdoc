@@ -11,6 +11,9 @@ To install pergola, simply clone the git repo and run the rake setup task:
 
 This will copy the latest version of pergola to your machine and create the needed runtime environment to launch pergola.
 
+If you plan on running pergola in production mode then you need to run:
+  $ rake setup RACK_ENV=production
+
 == Startup
 Pergola is a standard rack based app, you can deploy it using any rack compliant webserver
   $ thin start -R config.ru -p 3000
