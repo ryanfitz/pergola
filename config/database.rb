@@ -19,15 +19,15 @@ ActiveRecord::Base.configurations[:development] = {
 
 }
 
-ActiveRecord::Base.configurations[:production] = {
-  :adapter => 'sqlite3',
-  :database => Padrino.root('db', "pergola_production.db")
-
-}
-
 ActiveRecord::Base.configurations[:test] = {
   :adapter => 'sqlite3',
   :database => Padrino.root('db', "pergola_test.db")
+
+}
+
+ActiveRecord::Base.configurations[:production] = {
+  :adapter => 'sqlite3',
+  :database => Padrino.root('db', "/opt/webapps/shared/data/pergola_production.db")
 
 }
 
