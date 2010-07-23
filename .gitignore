@@ -3,3 +3,4 @@
 db/*.db
 log/*.log
 tmp/**/*
+Capfile
