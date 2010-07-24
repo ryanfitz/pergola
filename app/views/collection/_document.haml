@@ -9,12 +9,12 @@
         - seperator = ""
            
       = succeed ':' do
-        %code{:class=> "key", :nospace =>"both"}&= "#{key}"
+        %code{:class=> "key", :nospace =>"both"}= "#{key}"
        
       = succeed seperator do
         - if value.is_a? Hash
           = partial 'collection/document', :object => value
         - else
-          %code{:class=> "#{determin_style_class_for(value)} value" }&= pretty_print value
+          %code{:class=> "#{determin_style_class_for(value)} value" }= pretty_print value
           
       - counter += 1
