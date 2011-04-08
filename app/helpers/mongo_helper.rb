@@ -26,7 +26,7 @@ Pergola.helpers do
   end
   
   def determin_style_class_for(object)
-    if object.is_a? BSON::ObjectID 
+    if object.is_a? BSON::ObjectId
       return "string"
     else
       object.class.name.downcase
@@ -34,7 +34,7 @@ Pergola.helpers do
   end
   
   def pretty_print(object)
-    if object.is_a? String or object.is_a? BSON::ObjectID
+    if object.is_a? String or object.is_a? BSON::ObjectId
       "\"#{object}\""
     else
       object.to_s
